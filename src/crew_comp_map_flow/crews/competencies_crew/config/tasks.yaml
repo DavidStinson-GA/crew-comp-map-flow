@@ -1,0 +1,6 @@
+generate_competencies:
+  description: >
+
+  expected_output: >
+    A set of competencies for the crew to use in developing a competency map.
+  agent: led

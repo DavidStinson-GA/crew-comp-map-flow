@@ -5,48 +5,40 @@ from pydantic import BaseModel
 
 from crewai.flow import Flow, listen, start
 
-from crew_comp_map_flow.crews.poem_crew.poem_crew import PoemCrew
+from crew_comp_map_flow.crews.competencies_crew.competencies_crew import CompetenciesCrew
 
 
-class PoemState(BaseModel):
+class CompMapState(BaseModel):
     sentence_count: int = 1
     poem: str = ""
 
 
-class PoemFlow(Flow[PoemState]):
+class CompetencyFlow(Flow[CompMapState]):
 
     @start()
-    def generate_sentence_count(self):
-        print("Generating sentence count")
-        self.state.sentence_count = randint(1, 5)
+    def generate_comp_map(self):
+        print("Starting to generate competencies")
 
-    @listen(generate_sentence_count)
-    def generate_poem(self):
-        print("Generating poem")
+    @listen(generate_comp_map)
+    def generate_competencies(self):
+        print("Generating competencies")
         result = (
-            PoemCrew()
+            CompetenciesCrew()
             .crew()
-            .kickoff(inputs={"sentence_count": self.state.sentence_count})
+            .kickoff(inputs={})
         )
 
         print("Poem generated", result.raw)
         self.state.poem = result.raw
 
-    @listen(generate_poem)
-    def save_poem(self):
-        print("Saving poem")
-        with open("poem.txt", "w") as f:
-            f.write(self.state.poem)
-
-
 def kickoff():
-    poem_flow = PoemFlow()
-    poem_flow.kickoff()
+    competency_flow = CompetencyFlow()
+    competency_flow.kickoff()
 
 
 def plot():
-    poem_flow = PoemFlow()
-    poem_flow.plot()
+    competency_flow = CompetencyFlow()
+    competency_flow.plot()
 
 
 if __name__ == "__main__":

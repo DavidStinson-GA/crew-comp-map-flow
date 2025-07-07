@@ -7,8 +7,8 @@ from crewai.project import CrewBase, agent, crew, task
 
 
 @CrewBase
-class PoemCrew:
-    """Poem Crew"""
+class CompetencyCrew:
+    """Competency Crew"""
 
     # Learn more about YAML configuration files here:
     # Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended
@@ -19,18 +19,18 @@ class PoemCrew:
     # If you would lik to add tools to your crew, you can learn more about it here:
     # https://docs.crewai.com/concepts/agents#agent-tools
     @agent
-    def poem_writer(self) -> Agent:
+    def led(self) -> Agent:
         return Agent(
-            config=self.agents_config["poem_writer"],
+            config=self.agents_config["led"],
         )
 
     # To learn more about structured task outputs,
     # task dependencies, and task callbacks, check out the documentation:
     # https://docs.crewai.com/concepts/tasks#overview-of-a-task
     @task
-    def write_poem(self) -> Task:
+    def generate_competencies(self) -> Task:
         return Task(
-            config=self.tasks_config["write_poem"],
+            config=self.tasks_config["generate_competencies"],
         )
 
     @crew
