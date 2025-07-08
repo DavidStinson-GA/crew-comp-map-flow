@@ -1,6 +1,58 @@
 generate_competencies:
   description: >
+    At General Assembly we develop courses using competency-based learning. 
+    Your task is to develop the high-level competencies that will be used to
+    develop high-level details of the course.
+
+    Competencies are specific knowledge, abilities, or behaviors 
+    that outline what an individual needs to effectively have to carry out their job.
+
+    Your process should be informed by the following inputs:
+    
+    <inputs>
+
+    The course duration in hours: {course_duration_h}
+
+    The course description: {course_description}
+
+    The course's business outcomes: {course_business_outcomes}
+
+    The client's priorities: {client_priorities}
+
+    The primary learner persona job role: {primary_persona_job_role}
+
+    The learner persona description: {learner_persona_description}
+
+    The learner persona attributes and background: {learner_persona_attributes_and_background}
+
+    The learner persona's existing foundational knowledge related to the course topic (to be used as pre-requisites for the course): {learner_persona_existing_knowledge}
+
+    The high-level learning outcomes of the course: {course_learning_outcomes}
+
+    The software and tools that will be used in the course: {course_software_and_tools}
+    </inputs>
+
+    Examples:
+
+    Below are a few examples of existing competencies that you can use to develop
+    the competencies for this task:
+
+    1. Can build a full-stack web app with authentication and CRUD operations.
+    2. Can design a complete onboarding flow that meets user needs.
+    3. Can analyze a real-world dataset to answer business questions and 
+    communicate insights with visualizations.
 
   expected_output: >
-    A set of competencies for the crew to use in developing a competency map.
+    A set of competencies for the crew to use in developing a competency map 
+    formatted in JSON with the following structure:
+
+    {
+      "competencies": 
+          [
+            {"competency_1": "competency_1 description"}, 
+            {"competency_2": "competency_2 description"},
+            ...            
+          ]
+    }
+
   agent: led

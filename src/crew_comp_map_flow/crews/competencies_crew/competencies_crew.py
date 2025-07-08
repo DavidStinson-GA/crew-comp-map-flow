@@ -7,7 +7,7 @@ from crewai.project import CrewBase, agent, crew, task
 
 
 @CrewBase
-class CompetencyCrew:
+class CompetenciesCrew:
     """Competency Crew"""
 
     # Learn more about YAML configuration files here:
