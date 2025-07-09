@@ -1,4 +1,5 @@
-from crewai import Agent, Crew, Process, Task
+import os
+from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 
 # If you want to run a snippet of code before or after the crew starts,
@@ -22,6 +23,11 @@ class CompetenciesCrew:
     def led(self) -> Agent:
         return Agent(
             config=self.agents_config["led"],
+            llm = LLM(
+                api_key=os.getenv("PERPLEXITY_API_KEY"),
+                model="sonar",
+                base_url="https://api.perplexity.ai/"
+            )
         )
 
     # To learn more about structured task outputs,
