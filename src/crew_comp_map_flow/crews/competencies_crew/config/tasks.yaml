@@ -1,16 +1,17 @@
 generate_competencies:
   description: >
-    At General Assembly we develop courses using competency-based learning. 
+    # Objectives
+
+    As a  General Assembly we develop courses using competency-based learning.
     Your task is to develop the high-level competencies that will be used to
-    develop high-level details of the course.
+    develop lower-level details of the course.
 
-    Competencies are specific knowledge, abilities, or behaviors 
-    that outline what an individual needs to effectively have to carry out their job.
+    Competencies are specific knowledge, abilities, or behaviors that outline
+    what an individual needs to effectively have to carry out their job.
 
-    Your process should be informed by the following inputs:
+    You must use the following inputs (denoted by the <inputs> tag) to develop the competencies:
     
     <inputs>
-
     The course duration in hours: {course_duration_h}
 
     The course description: {course_description}
@@ -32,10 +33,8 @@ generate_competencies:
     The software and tools that will be used in the course: {course_software_and_tools}
     </inputs>
 
-    Examples:
-
-    Below are a few examples of existing competencies that you can use to develop
-    the competencies for this task:
+    Below are a few examples of existing competencies that you can use to 
+    develop the competencies for this task:
 
     1. Can build a full-stack web app with authentication and CRUD operations.
     2. Can design a complete onboarding flow that meets user needs.
@@ -47,12 +46,9 @@ generate_competencies:
     formatted in JSON with the following structure:
 
     {
-      "competencies": 
-          [
-            {"competency_1": "competency_1 description"}, 
-            {"competency_2": "competency_2 description"},
-            ...            
-          ]
+      "competencies": An array of strings, where each string is a single 
+      competency.
     }
 
+    You should only output a JSON object. Never output markdown.
   agent: led
