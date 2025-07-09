@@ -1,11 +1,18 @@
 import os
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
+from pydantic import BaseModel
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators
 # https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
 
+class Competency(BaseModel):
+    competency: str
+    rationale: str
+
+class CompetenciesResponse(BaseModel):
+    competencies: list[Competency]
 
 @CrewBase
 class CompetenciesCrew:
@@ -24,9 +31,7 @@ class CompetenciesCrew:
         return Agent(
             config=self.agents_config["led"],
             llm = LLM(
-                api_key=os.getenv("PERPLEXITY_API_KEY"),
-                model="sonar",
-                base_url="https://api.perplexity.ai/"
+                model="openai/gpt-4.1"
             )
         )
 
@@ -37,6 +42,7 @@ class CompetenciesCrew:
     def generate_competencies(self) -> Task:
         return Task(
             config=self.tasks_config["generate_competencies"],
+            output_json=CompetenciesResponse
         )
 
     @crew

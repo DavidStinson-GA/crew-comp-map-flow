@@ -69,7 +69,8 @@ class CompetencyFlow(Flow[CompMapState]):
         )
 
         print("Competencies generated", result.raw)
-        self.state.competencies = json.loads(result.raw)
+
+        self.state.competencies = json.loads(result.raw)["competencies"]
 
 def kickoff():
     competency_flow = CompetencyFlow()

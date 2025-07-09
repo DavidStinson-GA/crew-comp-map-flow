@@ -3,11 +3,12 @@ generate_competencies:
     # Objectives
 
     As a Learning Experience Designer at General Assembly you develop courses using competency-based learning.
-    Your task is to develop the high-level competencies that will be used to
-    develop lower-level details of the course.
 
-    Competencies are specific knowledge, abilities, or behaviors that outline
-    what an individual needs to effectively have to carry out their job.
+    Your task is to develop the high-level competencies that will be used to    develop lower-level details of the course.
+
+    Competencies are specific knowledge, abilities, or behaviors that outline what an individual needs to effectively have to carry out their job.
+
+    You will also explain your reasoning for including each competency, which will be used to justify your choices to human reviewers. Only include details specific to the inputs you were provided - you don't need to justify the competency itself. Keep the rationale concise and to the point.
 
     You must use the following inputs (denoted by the <inputs> tag) to develop the competencies:
     
@@ -33,8 +34,6 @@ generate_competencies:
     The software and tools that will be used in the course: {course_software_and_tools}
     </inputs>
 
-    Begin each competency with a verb. Keep each competency to 12 words or less.
-
     Below are a few examples of existing competencies that you can use to 
     develop the competencies for this task:
 
@@ -42,16 +41,22 @@ generate_competencies:
     2. Design a complete onboarding flow that meets user needs.
     3. Analyze a real-world dataset to answer business questions and communicate insights with visualizations.
 
-    You will also explain your reasoning for each competency.
+    Note these aspects of the example competencies - you should follow the same patterns:
 
+    - Begin each competency with a verb.
+    - Keep each competency succinct - typically 12 words or less.
+    - Do not include details about the specific tooling or software. Any competency that is aligned with or informed by specific software or tooling can still be included - just don't include it in the competency. If a competency is informed or aligned with a specific software or tooling, ensure you explain that in the rationale - you should include the name there.
+    - Create discreet competencies. Avoid bundling multiple competencies together - for example - do not create a generic "tooling" competency that acts as a catch-all for all the specific tooling and software that will be used in the course.
   expected_output: >
     A set of competencies for the crew to use in developing a competency map 
     formatted in JSON with the following structure:
 
      {
       "competencies": [
-        {"competency": "A single competency",
-         "rationale": "Explain the purpose of including this competency in relation to the input you were provided"}
+        {
+          "competency": "A single competency",
+          "rationale": "Explain the purpose of including this competency in relation to the input you were provided"
+        }
       ]
     }
 
