@@ -10,7 +10,7 @@ generate_modules:
 
     Modules can either be lectures or lab work.
 
-    Lecture modules are *typically* 60-90 minutes long, but may be longer or shorter, depending on the topic. 
+    Lecture modules are *typically* 60-90 minutes long, but may be longer or shorter, depending on the topic.
 
     You will also explain your reasoning for including each module, which will be used to justify your choices to human reviewers. Only include details specific to the inputs you were provided - you don't need to justify the module itself. Keep the rationale concise and to the point.
 
@@ -38,8 +38,69 @@ generate_modules:
     The software and tools that will be used in the course: {course_software_and_tools}
     </inputs>
 
-    
+    ## Developing modules
 
+    Modules are the building blocks of a course. They are the units of learning that are tied to a single competency.
+
+    Modules represent the component parts or steps required to achieve a single competency. Those steps require the application of various skills and knowledge to meet the competency's learning outcomes.
+
+    By extension, modules in a course should generally build on each other - don't skip important topics, or have students complete labs when they haven't yet learned the necessary skills.
+
+    ## Example modules and how they relate to competencies
+
+    Here are a couple of examples:
+
+    Competency: Build a full-stack web app with authentication and CRUD operations.
+
+    This is a larger competency (totalling 2400 minutes).
+
+    Modules associated with this competency:
+
+    - Intro to Node
+    - Intro to Express
+    - Intro to Express Lab
+    - RESTful Routing
+    - Exposing an API
+    - EJS
+    - EJS Lab
+    - Intro to Databases
+    - Environment Variables
+    - Building a MEN Stack CRUD App
+    - Building a MEN Stack CRUD App Lab
+    - Mongoose Relationships
+    - Mongoose Relationships Lab
+    - MEN Stack Session Authentication
+
+    Competency: User Research
+
+    This is a smaller competency (totalling 480 minutes).
+
+    - UX Research Approaches & Methods
+    - UX Research Approaches & Methods Workshop 
+    - UX Research Synthesis
+    - UX Research Synthesis Workshop
+
+    ## Module titles
+
+    Modules titles should be concise and are written in AP Style title case.
+
+    Module titles should not exceed 40 characters.
+
+    Lectures will never include the word "Lecture" in the title. Technical courses include Labs will always end with "Lab". Non-technical courses include Workshops the word "Workshop" in the title.
+
+    Note from the examples above that the module titles should include the specific technologies used in a module - for example if a module focuses on JavaScript or JavaScript concepts then the title should include "JavaScript".
+
+    ## Module overview
+
+    Each module will have a single paragraph (2-4 sentences) overview that describes the module's content.
+
+    This overview is student-facing and should be provide a high-level overview of the module's content.
+
+    ## Module time estimates
+
+    Time estimates should be provided in minutes. Modules are typically 60-90 minutes long, but may be longer or shorter, depending on the topic. Modules will be delivered live in a classroom setting, so leave time for student questions and discussion along the way.
+
+    It is natural for some modules to take longer than others. Attempt to make each time estimate a multiple of 15 minutes.
   expected_output: >
     A set of competencies for the crew to use in developing a competency map 
     formatted in JSON with the following structure:
@@ -52,7 +113,14 @@ generate_modules:
           "rationale": "Explain the purpose of including this competency in relation to the input you were provided. Again, this should match the rationale for the competency in the input data."
           "modules": [
             {
-            
+              "title": "",
+              "overview": "",
+              "time_estimate_m": ""
+              "type": "lecture" | "lab"
+              "rationale": "Explain the purpose of including this module in relation to the input you were provided."
+              "tools_and_technologies": [
+                "A list of tools and technologies used in the module. This should match the tools and technologies in the input data."
+              ]
             }
           ]
         }

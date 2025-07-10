@@ -62,6 +62,8 @@ generate_competencies:
 
     It goes without saying, but the total time to deliver all the competencies should be equal to the course duration in minutes.
 
+    Don't do this task until you've developed all of the competencies - it's important to have a complete understanding of the course before you start assigning time estimates.
+
     ## Developing the rationale
 
     You must explain your reasoning for including each competency, which will be used to justify your choices to human reviewers.
