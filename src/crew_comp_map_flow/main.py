@@ -7,7 +7,7 @@ from pydantic import BaseModel
 from crewai.flow import Flow, listen, start
 
 from crew_comp_map_flow.crews.competencies_crew.competencies_crew import CompetenciesCrew
-
+from crew_comp_map_flow.crews.modules_crew.modules_crew import ModulesCrew
 
 class CompMapState(BaseModel):
     competencies: list[str] = []
@@ -15,7 +15,7 @@ class CompMapState(BaseModel):
     client_name: str ='M&T Bank'
     course_delivery_method: str = 'Instructor-led'
     course_delivery_modality: str = 'remote'
-    course_duration_h: int = 30
+    course_duration_m: int = 1800
     course_description: str = 'This course equips developers with practical UX skills through hands-on exercises with real-world applications. With a strong focus on collaboration, participants will improve communication with UX teams and gain actionable strategies they can use right away.'
     course_business_outcomes: list[str] =[
         'Expand the mindset and steps in UX process to entire tech team include low and high fidelity technical design skills and UX research methodologies.',
@@ -46,8 +46,6 @@ class CompMapState(BaseModel):
         'Evaluate business requirements, metrics, key stakeholders, and technical constraints; and employ product management techniques to design products.'
     ]
     course_software_and_tools: list[str] = [
-        'Slack',
-        'Zoom',
         'Visual Studio Code',
         'Miro',
         'Currency Design System',
@@ -69,7 +67,16 @@ class CompetencyFlow(Flow[CompMapState]):
         )
 
         print("Competencies generated", result.raw)
-        self.state.competencies = json.loads(result.raw)
+
+        self.state.competencies = json.loads(result.raw)["competencies"]
+
+        print("Generating modules")
+        result = (
+            ModulesCrew()
+            .crew()
+            .kickoff(inputs=self.state.model_dump())
+        )
+        print("Modules generated", result.raw)
 
 def kickoff():
     competency_flow = CompetencyFlow()

@@ -3,16 +3,19 @@ generate_competencies:
     # Objectives
 
     As a Learning Experience Designer at General Assembly you develop courses using competency-based learning.
-    Your task is to develop the high-level competencies that will be used to
-    develop lower-level details of the course.
 
-    Competencies are specific knowledge, abilities, or behaviors that outline
-    what an individual needs to effectively have to carry out their job.
+    Your task is to develop the high-level competencies that will be used to    develop lower-level details of the course.
+
+    Competencies are specific knowledge, abilities, or behaviors that outline what an individual needs to effectively have to carry out their job.
+
+    You will also explain your reasoning for including each competency, which will be used to justify your choices to human reviewers.
+
+    Finally, you will include a time estimate for each competency to be delivered in minutes.
 
     You must use the following inputs (denoted by the <inputs> tag) to develop the competencies:
     
     <inputs>
-    The course duration in hours: {course_duration_h}
+    The course duration in minutes: {course_duration_m}
 
     The course description: {course_description}
 
@@ -33,7 +36,7 @@ generate_competencies:
     The software and tools that will be used in the course: {course_software_and_tools}
     </inputs>
 
-    Begin each competency with a verb. Keep each competency to 12 words or less.
+    ## Developing competencies
 
     Below are a few examples of existing competencies that you can use to 
     develop the competencies for this task:
@@ -42,16 +45,41 @@ generate_competencies:
     2. Design a complete onboarding flow that meets user needs.
     3. Analyze a real-world dataset to answer business questions and communicate insights with visualizations.
 
-    You will also explain your reasoning for each competency.
+    Note these aspects of the example competencies - you should follow the same patterns:
 
+    - Begin each competency with a verb.
+    - Keep each competency succinct - typically 12 words or less.
+    - Do not include details about the specific tooling or software. Any competency that is aligned with or informed by specific software or tooling can still be included - just don't include it in the competency. If a competency is informed or aligned with a specific software or tooling, ensure you explain that in the rationale - you should include the name there.
+    - Create discreet competencies. Avoid bundling multiple competencies together - for example - do not create a generic "tooling" competency that acts as a catch-all for all the specific tooling and software that will be used in the course.
+
+    ## Developing time estimates
+
+    Finally, calculate the total time to deliver each competency. Keep your time estimates realistic - General Assembly's courses are delivered to students in a live setting. Therefore, you should account for students getting set up, asking questions, and other factors that will impact the time it takes to deliver the course.
+
+    This may impact the total number of competencies that can be delivered in the course, so it's important not to overload the course with so many competencies that they cannot be delivered within the course duration.
+
+    It is natural for some competencies to take longer than others. Attempt to make each time estimate a multiple of 30 minutes.
+
+    It goes without saying, but the total time to deliver all the competencies should be equal to the course duration in minutes.
+
+    ## Developing the rationale
+
+    You must explain your reasoning for including each competency, which will be used to justify your choices to human reviewers.
+
+    Only include details specific to the inputs you were provided - you don't need to justify the competency itself. Keep the rationale concise and to the point.
+
+    If it's necessary, include justification for why you set the time estimate the way you did.
   expected_output: >
     A set of competencies for the crew to use in developing a competency map 
     formatted in JSON with the following structure:
 
-     {
+    {
       "competencies": [
-        {"competency": "A single competency",
-         "rationale": "Explain the purpose of including this competency in relation to the input you were provided"}
+        {
+          "competency": "A single competency",
+          "time_estimate_m": An integer representing the time it will take to deliver the competency in minutes.
+          "rationale": "Explain the purpose of including this competency in relation to the input you were provided"
+        }
       ]
     }
 
