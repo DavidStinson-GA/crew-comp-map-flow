@@ -13,7 +13,7 @@ generate_modules:
 
     Lecture modules are *typically* 60-90 minutes long, but may be longer or shorter, depending on the topic.
 
-    You will also explain your reasoning for including each module, which will be used to justify your choices to human reviewers. Only include details specific to the inputs you were provided - you don't need to justify the module itself. Keep the rationale concise and to the point.
+    You will also explain your rationale, which must detail how each module teaches the competencies, and fulfills the course and learning outcomes and client priorities in a way that's appropriate for the learner persona. Keep the rationale concise and to the point.
 
     You must use the following inputs (denoted by the <inputs> tag) to develop the modules:
 
