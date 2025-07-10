@@ -1,4 +1,5 @@
 generate_modules:
+  output_file: output/crew_modules_output.txt
   description: >
     # Objectives
 

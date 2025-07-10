@@ -1,4 +1,5 @@
 generate_competencies:
+  output_file: output/crew_comp_map_output.txt
   description: >
     # Objectives
 
