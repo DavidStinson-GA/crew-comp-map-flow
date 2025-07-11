@@ -18,8 +18,12 @@ class CompMapState(BaseModel):
     course_duration_m: int = 1800
     course_description: str = 'This course equips developers with practical UX skills through hands-on exercises with real-world applications. With a strong focus on collaboration, participants will improve communication with UX teams and gain actionable strategies they can use right away.'
     course_business_outcomes: list[str] =[
-        'Expand the mindset and steps in UX process to entire tech team include low and high fidelity technical design skills and UX research methodologies.',
-        'Making developers more self-reliant; speeding up design and development collaboration and process.'
+        # 'Expand the mindset and steps in UX process to entire tech team include low and high fidelity technical design skills and UX research methodologies.',
+        # 'Demonstrate ability to develop a low-fidelity design',
+        'Demonstrate ability to develop a high-fidelity design',
+        'Equip tech team with research methodologies',
+        'Making developers more self-reliant', 
+        'Speeding up design and development collaboration and process.'
     ]
     client_priorities: list[str] = [
         'The course should provide an understanding of baseline research techniques, methodologies and best practices for better cross-discipline collaboration.',
@@ -48,7 +52,8 @@ class CompMapState(BaseModel):
     course_software_and_tools: list[str] = [
         'Visual Studio Code',
         'Miro',
-        'Currency Design System',
+        # 'Currency Design System',
+        'Primer Design System',
     ]
 
 class CompetencyFlow(Flow[CompMapState]):

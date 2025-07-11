@@ -1,4 +1,4 @@
-from crewai import Agent, Crew, Process, Task
+from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 
 # If you want to run a snippet of code before or after the crew starts,
@@ -21,7 +21,11 @@ class ModulesCrew():
     def led(self) -> Agent:
         return Agent(
             config=self.agents_config['led'],
-            verbose=True
+            verbose=True,
+                llm = LLM(
+                model="openai/gpt-4.1"
+                # model="perplexity/sonar-pro"
+            )
         )
 
     # To learn more about structured task outputs,
