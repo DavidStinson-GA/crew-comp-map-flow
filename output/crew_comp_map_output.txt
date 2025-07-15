@@ -1,49 +1,44 @@
 {
   "competencies": [
     {
-      "competency": "Conduct foundational user research using established methodologies",
+      "competency": "Apply baseline user research methodologies to inform design decisions",
       "time_estimate_m": 270,
-      "rationale": "This competency addresses the business outcome of equipping the tech team with research methodologies and aligns with the client's priority to ensure engineers understand baseline research techniques and best practices. It prepares learners to gather user insights to inform design and collaboration work."
+      "rationale": "This competency directly supports business outcomes related to equipping the tech team with research methodologies and client priorities requiring understanding of foundational research techniques for cross-discipline collaboration. It also addresses the learning outcome of evaluating business requirements by practicing research that underpins sound design. Allocating 270 minutes allows time for instruction, guided exercises, and analysis practice for learners new to formal UX research."
     },
     {
-      "competency": "Analyze user research data to identify actionable design opportunities",
-      "time_estimate_m": 180,
-      "rationale": "Synthesizing research findings into actionable insights supports making developers more self-reliant, allowing them to base technical decisions on real user needs. This fulfills the learning outcome of evaluating business requirements and technical constraints."
-    },
-    {
-      "competency": "Create information architectures for logically structured digital products",
-      "time_estimate_m": 180,
-      "rationale": "This supports the learning outcome of designing product interactions and navigation, reinforcing the need for developers to understand and apply information architecture methodologies in their projects."
-    },
-    {
-      "competency": "Design wireframes to communicate ideas for new features or products",
-      "time_estimate_m": 210,
-      "rationale": "Wireframing is crucial for iterative design and collaboration; this meets the client's priority for engineers to visually communicate ideas and collaborate with the broader team, particularly using tools like Miro (integrated into the course delivery)."
-    },
-    {
-      "competency": "Develop high-fidelity digital product prototypes using design system components",
+      "competency": "Create low-fidelity wireframes to communicate user flows and application structure",
       "time_estimate_m": 240,
-      "rationale": "This competency enables learners to meet business outcomes around producing professional, polished designs and incorporates exposure to tools like the Primer Design System, making designs consistent and ready for real-world implementation."
+      "rationale": "Aligns with the client’s priority for engineers to visually express and iterate ideas for enhanced collaboration and lays the groundwork for higher-fidelity design work. It also satisfies the need for hands-on Miro practice, as required by the client. The time estimate covers instruction, practical group work, and peer feedback on wireframes."
     },
     {
-      "competency": "Articulate design decisions based on user research and business goals",
-      "time_estimate_m": 180,
-      "rationale": "Justifying design decisions aligns with the learning outcome of communicating with peers and UX professionals, bridging developers’ work with wider product and business objectives."
+      "competency": "Develop high-fidelity prototypes that meet defined design requirements",
+      "time_estimate_m": 390,
+      "rationale": "This directly addresses the business outcome for demonstrating high-fidelity design abilities and enables learners to meet learning outcomes involving creating polished, professional designs. The extended time is justified by the complexity and iterative nature of building, testing, and refining interactive prototypes."
     },
     {
-      "competency": "Iterate product designs based on usability feedback and testing results",
-      "time_estimate_m": 180,
-      "rationale": "Iteration based on feedback is vital for speeding up collaboration and improving design outcomes, directly supporting business goals for efficient processes and reinforcing developers’ ability to self-refine solutions."
+      "competency": "Implement visual design principles to enhance usability and aesthetic appeal",
+      "time_estimate_m": 210,
+      "rationale": "Supports the outcome of utilizing fundamental visual design techniques and meets the need for developers to critically apply design theory in their UI implementations. The time allocated allows for concept instruction, critique, and application to ongoing project work."
     },
     {
-      "competency": "Integrate design system guidelines into development workflows",
-      "time_estimate_m": 180,
-      "rationale": "Applying design system principles ensures consistency and velocity in product development, addressing the client's focus on the Currency Design System and its benefits for developer efficiency and product quality."
+      "competency": "Design intuitive navigation and information architecture for digital products",
+      "time_estimate_m": 210,
+      "rationale": "Fulfills the learning outcome around structuring product interactions logically using information architecture methodologies and aligns with client priorities on understanding end-to-end design processes. Time covers instruction, exercises, and review of navigation schemas."
     },
     {
-      "competency": "Evaluate product designs for alignment with stakeholder requirements and technical constraints",
+      "competency": "Use a design system to build consistent and scalable UI components",
+      "time_estimate_m": 210,
+      "rationale": "Directly links to the client’s emphasis on collaborative tools like the Currency Design System, ensuring learners build familiarity with efficient, standards-based UI creation. This time allows for guided demos, individual building sessions, and review."
+    },
+    {
+      "competency": "Evaluate and iterate on design solutions using usability testing feedback",
       "time_estimate_m": 180,
-      "rationale": "This competency helps learners practice balancing business needs, stakeholder input, and feasibility, tying directly into high-level learning outcomes about evaluating business requirements and collaborating with multiple disciplines."
+      "rationale": "Enables meeting business outcomes related to speeding up design-development collaboration by practicing feedback cycles and supports the learning outcome of articulating design decisions to UX peers. The time allocated permits running user tests, gathering insights, and refining designs accordingly."
+    },
+    {
+      "competency": "Articulate and defend design choices to technical and non-technical audiences",
+      "time_estimate_m": 90,
+      "rationale": "Supports the learning outcome requiring articulation of design decisions and is critical for effective cross-discipline collaboration, per the client's priorities. This time focuses on preparing and delivering short presentations and peer critique."
     }
   ]
 }

@@ -200,7 +200,7 @@ qa_modules:
     - The client's priorities should be addressed in the modules.
     - Modules should not lead with a soft-skill (for example - collaboration should not be the focus of any module, even if the client requests directly reference collaboration as a priority in the course).
     - Tool usage is appropriate for the module's content.
-    - The module overview should be at least 3 sentences and use student-facing language that provides a high-level overview of the module's content.
+    - The module overview should be at 4-5 sentences and use student-facing language that provides a high-level overview of the module's content.
 
     ## Module time estimates
 
@@ -236,7 +236,12 @@ qa_modules:
               "tools_and_technologies": [
                 "A list of tools and technologies used in the module. Only include tools and technologies that are relevant to the module's content. Do not include any tools or software that are not present in the input data."
               ]
-              "qa_feedback": "A list of suggestions for the module's content. Only include suggestions for the module's content. Do not include any suggestions for the module's time estimate or type."
+              "qa_feedback": [
+                "A list of suggestions for the module's content. Only include suggestions for the module's content. Do not include any suggestions for the module's time estimate or type."
+              ]
+              "learning_objectives": [
+                "A list of learning objectives for each module."
+              ]
             }
           ]
         }
@@ -257,8 +262,8 @@ generate_learning_objectives:
 
     A learning objective (LO) is: 
 
-    - SIMPLE. Clearly and plainly phrased. Don’t make me think! Not yet! 
-    - CLEAR. Someone who hasn’t taken the lesson yet can understand it. 
+    - SIMPLE. Clearly and plainly phrased. Don't make me think! Not yet! 
+    - CLEAR. Someone who hasn't taken the lesson yet can understand it. 
     - VALUABLE. A user or client would “pay” for it (with time and/or money). 
     - REALISTIC. Reflects an action that someone is likely to take in real life. 
     - MEASURABLE. Can be evaluated. 
@@ -284,8 +289,15 @@ generate_learning_objectives:
     
     When it comes to developing of effective learning objectives, we use the Bloom's Taxonomy, a widely adopted instructional design model.
 
-    Bloom’s Taxonomy scaffolds learning objectives from "low level learning" objectives (knowledge, comprehension) through to "high level learning" objectives (evaluation, synthesis). 
+    Bloom's Taxonomy scaffolds learning objectives from "low-level learning" objectives (knowledge, comprehension) through to "high-level learning" objectives (evaluation, synthesis).
+
     It is important to remember that we work with busy, professional, adult learners, often high achievers. We aim to teach through stories and through action, and should avoid lessons that are completely lower level whenever possible. 
+
+    Each learning objective should be able to be accomplished within 5 to 20 minutes of class time. This means that there will be multiple learning objectives for each module. While you won't output a time estimate for each learning objective, you should consider how long each learning objective will take to complete so you're able to create a list of learning objectives that are appropriate for the module's content.
+
+    As a general rule, you must create at least 4 learning objectives for a 60 minute module. Infer the number of learning objectives for other module lengths from this.
+
+    Remember to stay focused on the module's content and the competencies it's tied to - learning objectives should be tailored to a module's content and not stray from it.
     
     ## Example Learning Objectives
 

@@ -12,10 +12,6 @@
           "type": "lecture",
           "rationale": "Foundational theory and terminology are covered first so learners have a base for applied work in later modules. Prepares students to understand the range and purpose of research methods before hands-on activities.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "The overview is currently only three sentences; expand to four or five sentences to give learners a fuller sense of what they will experience and how it ties back to engineering practice.",
-            "Consider explicitly mentioning how research outcomes can be shared with stakeholders to reinforce the practice of cross-discipline collaboration."
-          ],
           "learning_objectives": [
             "Identify and differentiate between common user research methods such as interviews, surveys, and usability studies.",
             "Explain how selecting appropriate research methods informs design and development decisions."
@@ -28,10 +24,6 @@
           "type": "lecture",
           "rationale": "Planning is fundamental for actionable research. Software engineers will practice scoping and structuring research to ensure effort aligns with business needs and time constraints.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "The overview is three sentences; expand to include an example of how a research plan can impact real projects to reach four or five sentences.",
-            "Consider adding a note that learners will review sample research plans to see best practices in action."
-          ],
           "learning_objectives": [
             "Define clear research goals and scope for engineering projects.",
             "Develop participant criteria and draft research questions aligned to project objectives."
@@ -44,10 +36,6 @@
           "type": "lab",
           "rationale": "Lab work ensures skills are transferred to practical scenarios. This supports the client priority for real-world application and allows engineers to experience core research techniques firsthand.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Overview is three sentences; add one more sentence describing how students will share raw data or observations to make it four.",
-            "Clarify how learners will use their findings to inform the next module on synthesis."
-          ],
           "learning_objectives": [
             "Conduct user interviews and deploy surveys to gather feedback.",
             "Collaborate with peers to document and organize research insights effectively."
@@ -60,10 +48,6 @@
           "type": "lecture",
           "rationale": "Teaching synthesis and communication of findings bridges gaps between research and engineering decisions. Prepares engineers for collaboration with UX teams and for advocating user needs in their workflow.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Overview currently three sentences; expand to include how visualization tools or simple artifacts will be used to make it four or five sentences.",
-            "Consider referencing how to tie insights back to technical constraints to meet engineer needs."
-          ],
           "learning_objectives": [
             "Analyze and synthesize qualitative data to identify user patterns.",
             "Organize and present research findings to technical stakeholders."
@@ -83,10 +67,6 @@
           "type": "lecture",
           "rationale": "Introduces essential wireframing theory and ties wireframing benefits to cross-disciplinary communication, supporting the course focus on collaboration.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Overview is two sentences; expand to four or five sentences by adding examples of real-world use and benefits for engineers.",
-            "Mention that a brief demo of Miro’s interface will help anchor the theory in a tool context."
-          ],
           "learning_objectives": [
             "Describe the purpose and value of low-fidelity wireframes in the design process.",
             "Explain key concepts such as user flows, structure, and iteration in wireframing."
@@ -101,10 +81,6 @@
           "tools_and_technologies": [
             "Miro"
           ],
-          "qa_feedback": [
-            "Overview is three sentences; add one more sentence about exporting and sharing boards to make it four sentences.",
-            "Ensure instructions on setting up a blank Miro board are clear so students can start quickly."
-          ],
           "learning_objectives": [
             "Use Miro to sketch low-fidelity wireframes for user flows.",
             "Apply collaborative features in Miro to iterate on wireframe designs with peers."
@@ -118,10 +94,6 @@
           "rationale": "Feedback cycles are crucial for both good design practice and healthy engineering-team communication. Builds real skills for collaborative project workflows.",
           "tools_and_technologies": [
             "Miro"
-          ],
-          "qa_feedback": [
-            "Overview is two sentences; expand to include how change prioritization will be taught and tied to real constraints.",
-            "Consider including guidance on documenting iterations for future reference."
           ],
           "learning_objectives": [
             "Give and receive constructive feedback on wireframe designs.",
@@ -142,10 +114,6 @@
           "type": "lecture",
           "rationale": "Sets expectations and introduces design requirements as a foundation before students begin prototyping. Connects to course goals around creating professional-grade outputs.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Overview is two sentences; expand to four or five sentences by adding examples and discussion points.",
-            "Mention which prototyping conventions or frameworks will be referenced for consistency."
-          ],
           "learning_objectives": [
             "Differentiate high-fidelity prototypes from low-fidelity wireframes.",
             "Explain how prototypes support business and engineering decisions."
@@ -159,10 +127,6 @@
           "rationale": "Ensures all learners are equipped technically to proceed, reducing friction for future design work.",
           "tools_and_technologies": [
             "Visual Studio Code"
-          ],
-          "qa_feedback": [
-            "Overview is two sentences; add two more sentences about installing extensions and troubleshooting setup.",
-            "Include a checklist of initial configuration steps for clarity."
           ],
           "learning_objectives": [
             "Configure development environment for high-fidelity prototyping.",
@@ -178,10 +142,6 @@
           "tools_and_technologies": [
             "Visual Studio Code"
           ],
-          "qa_feedback": [
-            "Overview is three sentences; expand to include a sentence about interactions and responsive layouts to reach four or five sentences.",
-            "Clarify how students will test prototypes in a browser or device emulator."
-          ],
           "learning_objectives": [
             "Implement interactive elements and screen transitions in prototypes.",
             "Ensure prototypes meet design requirements and responsive standards."
@@ -196,10 +156,6 @@
           "tools_and_technologies": [
             "Visual Studio Code"
           ],
-          "qa_feedback": [
-            "Overview is two sentences; add points about usability and feasibility critique to reach four sentences.",
-            "Consider adding guidance on documenting feedback for implementation handoff."
-          ],
           "learning_objectives": [
             "Conduct peer reviews focusing on usability and feasibility.",
             "Iterate on prototypes based on stakeholder feedback."
@@ -213,10 +169,6 @@
           "rationale": "Supports the course and client priority of speeding up design-development collaboration—key for efficient, real-world outcomes.",
           "tools_and_technologies": [
             "Visual Studio Code"
-          ],
-          "qa_feedback": [
-            "Overview is two sentences; expand to four or five sentences by adding practice details and pitfalls discussion.",
-            "Include a reference to any handoff tools or plugins if they will be used."
           ],
           "learning_objectives": [
             "Document versioned prototypes with clear specifications.",
@@ -237,10 +189,6 @@
           "type": "lecture",
           "rationale": "Gives engineers a systematic framework for making design choices that are visually and functionally effective.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Overview is two sentences; expand to four or five sentences by adding examples and accessibility focus.",
-            "Consider demonstrating a simple before-and-after code example to connect theory to implementation."
-          ],
           "learning_objectives": [
             "Describe core visual design principles including color, typography, and hierarchy.",
             "Explain how these principles impact accessibility and usability."
@@ -255,10 +203,6 @@
           "tools_and_technologies": [
             "Visual Studio Code"
           ],
-          "qa_feedback": [
-            "Overview is two sentences; expand to include testing for accessibility and comparative review for a total of four or five sentences.",
-            "Ensure code snippets or components used in the lab are provided in advance."
-          ],
           "learning_objectives": [
             "Apply visual design principles to existing UI components.",
             "Test design changes against accessibility guidelines."
@@ -272,10 +216,6 @@
           "rationale": "Critique rounds show the importance of justifying and explaining design choices, an essential cross-team skill.",
           "tools_and_technologies": [
             "Visual Studio Code"
-          ],
-          "qa_feedback": [
-            "Overview is two sentences; expand to include evidence-based feedback focus and final refinement step for four sentences.",
-            "Provide a template for critique notes to guide learners."
           ],
           "learning_objectives": [
             "Conduct structured critiques of visual designs.",
@@ -296,10 +236,6 @@
           "type": "lecture",
           "rationale": "Lays theoretical groundwork for hands-on design and explains terminology to developers new to IA.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Overview is two sentences; expand to four or five sentences by adding examples and performance considerations.",
-            "Consider including a simple site map exercise demonstration."
-          ],
           "learning_objectives": [
             "Describe key concepts of information architecture and navigation design.",
             "Explain how IA decisions impact technical constraints like performance."
@@ -314,10 +250,6 @@
           "tools_and_technologies": [
             "Miro"
           ],
-          "qa_feedback": [
-            "Overview is two sentences; expand to include task testing and refinement steps to reach four sentences.",
-            "Ensure sample application context is clear so learners can focus on structure, not content."
-          ],
           "learning_objectives": [
             "Sketch navigation flows and hierarchies in Miro.",
             "Validate IA against common user tasks."
@@ -331,10 +263,6 @@
           "rationale": "Builds collaborative critique and iteration skills; feedback is key to refining IA in professional workflows.",
           "tools_and_technologies": [
             "Miro"
-          ],
-          "qa_feedback": [
-            "Overview is one sentence; expand to four or five sentences to describe discussion points and prioritization.",
-            "Provide criteria for evaluating menu depth versus breadth."
           ],
           "learning_objectives": [
             "Critique and refine navigation structures with peers.",
@@ -357,10 +285,6 @@
           "tools_and_technologies": [
             "Primer Design System"
           ],
-          "qa_feedback": [
-            "Overview is two sentences; expand to four or five sentences by adding details on tokens, components, and extension.",
-            "Consider including a brief demo of inspecting a live Primer component."
-          ],
           "learning_objectives": [
             "Describe the structure and benefits of the Primer Design System.",
             "Explain how tokens and components enforce consistency."
@@ -376,10 +300,6 @@
             "Primer Design System",
             "Visual Studio Code"
           ],
-          "qa_feedback": [
-            "Overview is two sentences; expand to four sentences by adding variants and responsive testing detail.",
-            "Ensure learners have starter code and access to the design system documentation."
-          ],
           "learning_objectives": [
             "Build and customize UI components using Primer Design System.",
             "Implement component variants and verify responsive behavior."
@@ -394,10 +314,6 @@
           "tools_and_technologies": [
             "Primer Design System",
             "Visual Studio Code"
-          ],
-          "qa_feedback": [
-            "Overview is two sentences; expand to four sentences by adding discussion of best practices and documentation steps.",
-            "Include criteria for evaluating when to extend versus create new components."
           ],
           "learning_objectives": [
             "Conduct peer reviews of design system components.",
@@ -418,10 +334,6 @@
           "type": "lecture",
           "rationale": "Gives learners foundational knowledge for effective usability evaluations and prepares them to organize feedback cycles that matter.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Overview is one sentence; expand to four or five sentences by adding test examples and method comparison.",
-            "Mention how results tie back to engineering sprints to close the loop."
-          ],
           "learning_objectives": [
             "Describe key steps in planning usability tests.",
             "Differentiate between moderated and unmoderated testing methods."
@@ -434,10 +346,6 @@
           "type": "lab",
           "rationale": "Provides structured experience in user testing, key for building self-reliance and collaborative design feedback loops.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Overview is two sentences; expand to four by adding debrief and data capture steps.",
-            "Clarify whether you’ll use recording tools or note templates for observation."
-          ],
           "learning_objectives": [
             "Conduct and observe usability tests with real users.",
             "Gather and document actionable usability insights."
@@ -451,10 +359,6 @@
           "rationale": "Supports the habit of rapid iteration, which meets business outcomes and reinforces the value of user testing for software engineers.",
           "tools_and_technologies": [
             "Visual Studio Code"
-          ],
-          "qa_feedback": [
-            "Overview is two sentences; expand to include trade-off discussion and group demonstration for four sentences.",
-            "Provide a template for documenting change rationale linked to usability findings."
           ],
           "learning_objectives": [
             "Prioritize and apply design changes based on usability feedback.",
@@ -475,10 +379,6 @@
           "type": "lecture",
           "rationale": "Introduces essential communication patterns and removes jargon barriers, so developers can contribute effectively to any cross-functional team.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Overview is two sentences; expand to four or five sentences by adding sample review and visual aid discussion.",
-            "Consider including a short checklist for structuring design arguments."
-          ],
           "learning_objectives": [
             "Apply frameworks to structure design presentations.",
             "Anticipate and address audience questions effectively."
@@ -491,10 +391,6 @@
           "type": "lab",
           "rationale": "Active presentation practice is central for building both communication capabilities and cross-disciplinary collaboration, key to client’s stated goals.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Overview is two sentences; expand to four or five sentences by adding focus areas and refinement steps.",
-            "Provide a template slide deck to guide learners."
-          ],
           "learning_objectives": [
             "Deliver a concise design rationale presentation to peers.",
             "Incorporate peer feedback to improve messaging and visuals."

@@ -60,6 +60,7 @@ class CompMapState(BaseModel):
     ]
 
     doc_voice: str = documentation["voice"]
+    doc_writing_learning_objectives: str = documentation["writing_learning_objectives"]
 
 # class CompMapState(BaseModel):
 #     ### Gen AI Champions Workshop for TAG Heuer ###
@@ -123,6 +124,7 @@ class CompMapState(BaseModel):
 #     ]
 
 #     doc_voice: str = documentation["voice"]
+#     doc_writing_learning_objectives: str = documentation["writing_learning_objectives"]
 
 # class CompMapState(BaseModel):
 #     ### Software Engineering Bootcamp for General Assembly ###
@@ -177,6 +179,7 @@ class CompMapState(BaseModel):
 #     ]
 
 #     doc_voice: str = documentation["voice"]
+#     doc_writing_learning_objectives: str = documentation["writing_learning_objectives"]
 
 class CompetencyFlow(Flow[CompMapState]):
 
