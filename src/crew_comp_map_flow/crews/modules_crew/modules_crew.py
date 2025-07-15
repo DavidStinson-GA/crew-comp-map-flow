@@ -23,8 +23,10 @@ class ModulesCrew():
             config=self.agents_config['led'],
             verbose=True,
             llm = LLM(
-                model="openai/gpt-4.1"
+                # model="openai/gpt-4.1"
                 # model="perplexity/sonar-pro"
+                model="openai/o4-mini",
+                additional_drop_params=["stop"]
             )
         )
     

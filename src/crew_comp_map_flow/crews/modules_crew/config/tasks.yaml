@@ -303,11 +303,12 @@ generate_learning_objectives:
 
     Here are a few examples:
 
-    - Create and manage pull requests on GitHub, using them to review and merge changes collaboratively.
-    - Identify common cybersecurity risks associated with NFC, including methods attackers might use to intercept or steal card data.
-    - Apply effective communication and technical writing skills to address customer concerns clearly and professionally.
-    - Update existing array elements and utilize methods like `push()` and `pop()` to add or remove elements at the start or end of an array.
-    - Implement a mobile-first design approach and use the viewport meta tag to optimize web pages for mobile devices.
+    - Compose a for loop to repeat specific blocks of code.
+    - Choose the most appropriate graphics to communicate your data story. 
+    - Explain your designs in a user-centric way.
+    - Discuss how empathy plays a role in the customer mindset.
+    - Choose the appropriate flow chart to ideate on potential designs.
+    - Describe six distinct phases a person goes through when making a purchase, known as the “customer decision journey.”
 
 
     ## Important Exceptions
@@ -328,7 +329,6 @@ generate_learning_objectives:
     - Construct
     - Build
     - Instantiate
-    - Create
     - Design
     - Develop
     - Establish
@@ -336,9 +336,18 @@ generate_learning_objectives:
     - Reconstruct
     - Write
     - Code
+    - Know
+    - Understand
 
     Please review the above list of Bloom's verbs and ensure you do not include them in the learning objectives you generate.
 
+    ### Double-barreled learning objectives
+
+    Do not generate double-barreled learning objectives.
+
+    In the context of writing learning objectives, "double-barreled" means that a single objective contains two or more distinct and separate learning outcomes or actions. This makes the objective problematic because it becomes difficult to assess whether a learner has achieved both parts, or to identify which part they struggled with.
+
+    
     ## Context
 
     When writing learning objectives for each module, you should use the following context:

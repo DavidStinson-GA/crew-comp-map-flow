@@ -1,299 +1,331 @@
 {
   "competencies": [
     {
-      "competency": "Apply foundational UX research methodologies to define user needs",
-      "time_estimate_m": 360,
-      "rationale": "This competency aligns with the business goal of equipping the tech team with research methodologies and addresses the client’s priority for engineers to understand baseline research techniques and best practices for cross-discipline collaboration. It ensures that software engineers can independently employ user research to inform their development decisions.",
-      "modules": [
-        {
-          "title": "UX Research Fundamentals",
-          "overview": "In this module, we’ll explore the basics of user research and why it matters for building great products. You’ll learn about core user research methodologies, such as surveys, interviews, and observational studies, and how they help uncover real user needs. By the end, you’ll be able to identify when and why to use each method in a software development context.",
-          "time_estimate_m": 75,
-          "type": "lecture",
-          "rationale": "This module gives software engineers foundational knowledge in UX research, matching the client’s priority for baseline techniques and supporting effective cross-discipline collaboration.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "User Interviews Lab",
-          "overview": "Let’s get hands-on with interviewing real users. We’ll plan and conduct mock user interviews, practicing skills in active listening and question design. Participants will work in pairs to gather qualitative data and reflect on findings.",
-          "time_estimate_m": 90,
-          "type": "lab",
-          "rationale": "This immersive activity builds practical skills in implementing research methodologies, fulfilling the competency’s emphasis on self-reliance and actionable research application.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Synthesizing Research Insights",
-          "overview": "Understanding what your research means is just as important as gathering the data. This module focuses on techniques for organizing and synthesizing qualitative data from interviews and surveys. We’ll cover affinity mapping and creating user personas to summarize findings.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "This module translates raw research into actionable insights, giving engineers a replicable approach for informing their development decisions.",
-          "tools_and_technologies": ["Miro"]
-        },
-        {
-          "title": "UX Research Synthesis Lab",
-          "overview": "In this hands-on lab, we’ll use Miro to create affinity maps with your research data and develop user personas based on synthesized insights. This collaborative exercise mimics real-world UX team workflows and helps cement the research-to-decision process.",
-          "time_estimate_m": 90,
-          "type": "lab",
-          "rationale": "By practicing synthesis and using collaborative tools, this lab addresses both research methodology skills and the client’s priority for cross-team collaboration.",
-          "tools_and_technologies": ["Miro"]
-        },
-        {
-          "title": "Presenting Research Findings",
-          "overview": "Learn how to communicate your research outcomes effectively to technical and non-technical teams. This module covers presentation best practices, storytelling with data, and adapting findings for different audiences.",
-          "time_estimate_m": 45,
-          "type": "lecture",
-          "rationale": "Clear communication of research findings is critical for project alignment and fulfills the outcome of effective cross-disciplinary advocacy.",
-          "tools_and_technologies": []
-        }
-      ]
-    },
-    {
-      "competency": "Develop wireframes using industry-standard practices to communicate design concepts",
+      "competency": "Implement user research methodologies for informed design decisions",
       "time_estimate_m": 270,
-      "rationale": "Focused on engineers' ability to visually express design ideas, this competency directly supports client priorities around using tools (such as Miro) for wireframing and enhances the developer’s skill in bridging communication with UX teams.",
+      "rationale": "This competency ensures developers can apply foundational UX research techniques and methodologies, meeting business outcomes like equipping the tech team with research practices and enabling informed, user-centered design. The dedicated time reflects the need for hands-on activity, practice, and debrief to cement these new skills, as these methods may be unfamiliar to software engineers.",
       "modules": [
         {
-          "title": "Wireframing Basics and Best Practices",
-          "overview": "We’ll dive into what makes an effective wireframe and why it’s a powerful tool for communication. You’ll learn about wireframe fidelity, common UI patterns, and the iterative nature of design sketching.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "Engineers need to understand wireframing conventions and goals, setting the stage for hands-on tool use and collaborative ideation.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Miro Wireframing Lab",
-          "overview": "Now it’s your turn. In this session, we’ll use Miro to create interactive wireframes for a sample web application. You’ll learn practical shortcuts, how to collaborate in real time, and gain feedback from peers.",
+          "title": "UX Research Approaches & Methods",
+          "overview": "In this session, we’ll explore core UX research techniques, including qualitative and quantitative approaches. We’ll cover how to define research goals, select participants, and choose appropriate methods. You’ll see examples of successful studies and learn how research informs design decisions.",
           "time_estimate_m": 90,
-          "type": "lab",
-          "rationale": "This lab ensures engineers can use industry tools (Miro) to build and communicate visual concepts, directly supporting the client goal of better cross-team collaboration.",
-          "tools_and_technologies": ["Miro"]
+          "type": "lecture",
+          "rationale": "Provides the theoretical foundation and context for all subsequent research activities and ensures learners understand when and why to apply each method.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
         },
         {
-          "title": "Wireframe Critiques and Iteration",
-          "overview": "We’ll review and discuss your wireframes in small groups, focusing on usability, clarity, and opportunity for improvement. Learn to give and receive meaningful feedback to strengthen your design.",
+          "title": "User Interview Lab",
+          "overview": "You’ll plan and conduct user interviews in small groups, from writing effective interview scripts to managing conversation flow. After each interview, you’ll capture insights and discuss patterns. This hands-on practice builds confidence and sharpens questioning skills.",
           "time_estimate_m": 60,
           "type": "lab",
-          "rationale": "This module builds iteration skills and fosters collaborative critique, both vital for refining ideas and communicating effectively with UX teams.",
-          "tools_and_technologies": ["Miro"]
+          "rationale": "Gives practical experience running interviews, a core UX research method that supports user-centered design.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
         },
         {
-          "title": "Documenting Wireframe Decisions",
-          "overview": "Discover how to annotate your wireframes and document design decisions for your team. We’ll cover industry-standard approaches to wireframe documentation, including callouts, simple flows, and key rationale.",
+          "title": "Usability Testing Lab",
+          "overview": "In this lab, you’ll set up and run quick usability tests on a sample interface. You’ll learn to create task scenarios, observe participant behavior, and note usability issues. We’ll debrief findings and discuss how to translate results into actionable design improvements.",
+          "time_estimate_m": 60,
+          "type": "lab",
+          "rationale": "Allows learners to apply testing methodologies hands-on, reinforcing their ability to find and prioritize usability issues.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
+        },
+        {
+          "title": "Research Synthesis & Analysis",
+          "overview": "This module covers techniques for organizing and making sense of research data through affinity mapping and thematic analysis. You’ll group insights visually and identify key user needs or pain points. By the end, you’ll know how to turn raw data into clear design recommendations.",
           "time_estimate_m": 60,
           "type": "lecture",
-          "rationale": "This ensures participants can capture their reasoning and communicate it clearly, serving the learning outcome of clear design articulation.",
-          "tools_and_technologies": ["Miro"]
+          "rationale": "Teaches the critical step of synthesizing research outputs, ensuring insights drive informed design decisions.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
         }
       ]
     },
     {
-      "competency": "Construct information architecture to logically organize digital product navigation",
-      "time_estimate_m": 240,
-      "rationale": "This addresses both the course’s learning outcome to design product interactions with easy-to-use navigation and the client’s interest in engineers understanding end-to-end design, enabling more user-centered and technically feasible designs.",
-      "modules": [
-        {
-          "title": "Introduction to Information Architecture",
-          "overview": "This module introduces the core principles of information architecture (IA), including hierarchy, labeling, and navigation models. You’ll see how IA impacts product usability and navigation in web apps.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "Engineers are introduced to IA as a backbone for structuring content and ensuring intuitive product interaction, satisfying the client priority for end-to-end design knowledge.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Navigation Patterns in Web Apps",
-          "overview": "Explore best-in-class navigation patterns for modern web apps. We’ll analyze real-world examples and discuss trade-offs between common UI navigation components.",
-          "time_estimate_m": 45,
-          "type": "lecture",
-          "rationale": "Practically connects IA theory to frameworks engineers are familiar with, bridging knowledge to implementation.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Card Sorting Lab with Miro",
-          "overview": "Let’s practice structuring information using card sorting in Miro. As a team, you’ll organize sample content and design a logical navigation flow for a prototype app.",
-          "time_estimate_m": 60,
-          "type": "lab",
-          "rationale": "This lab brings IA concepts into practice via team-based exercises, reinforcing collaboration and effective structure design.",
-          "tools_and_technologies": ["Miro"]
-        },
-        {
-          "title": "Prototyping Navigation Flows",
-          "overview": "Build navigation wireframes based on your IA map. You’ll use Miro to visualize user flows and demonstrate decision-making around content hierarchy and access.",
-          "time_estimate_m": 75,
-          "type": "lab",
-          "rationale": "This module merges IA with practical wireframing, giving engineers hands-on experience to improve product navigation and usability.",
-          "tools_and_technologies": ["Miro"]
-        }
-      ]
-    },
-    {
-      "competency": "Build high-fidelity prototypes incorporating feedback and design system standards",
-      "time_estimate_m": 360,
-      "rationale": "This competency focuses on the business objective of demonstrating the ability to develop high-fidelity designs and supports client interest in efficient, cohesive product design through the use of shared design systems (e.g., Primer Design System).",
-      "modules": [
-        {
-          "title": "High-Fidelity Prototyping Principles",
-          "overview": "Step up your skills by learning what makes a prototype high fidelity. We’ll discuss visual detail, interactivity, and when to use hi-fi prototypes versus lower fidelity versions in development.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "Establishes clear expectations and criteria for hi-fi prototyping, supporting the business goal of professional, polished deliverables.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Primer Design System Introduction",
-          "overview": "Get to know the Primer Design System. We’ll cover its core principles, components, and how using a common design language streamlines both design handoff and development.",
-          "time_estimate_m": 45,
-          "type": "lecture",
-          "rationale": "Familiarizes engineers with the design system standards the client uses, supporting cohesive product design and improving workflow efficiency.",
-          "tools_and_technologies": ["Primer Design System"]
-        },
-        {
-          "title": "Primer Design System Lab",
-          "overview": "Put the Primer Design System in practice. You’ll build high-fidelity UI screens and use consistent components in your prototype, collaborating with your peers to maintain visual cohesion.",
-          "time_estimate_m": 90,
-          "type": "lab",
-          "rationale": "This lab ensures direct, practical experience applying design systems, cementing learning outcomes around efficient and reusable design.",
-          "tools_and_technologies": ["Primer Design System", "Miro"]
-        },
-        {
-          "title": "Iterative Prototyping Workshop",
-          "overview": "We’ll refine prototypes based on user and peer feedback, focusing on incorporating comments and suggested improvements. Learn iteration cycles that align with agile product development.",
-          "time_estimate_m": 60,
-          "type": "lab",
-          "rationale": "This module supports rapid improvement cycles and integration of feedback, aligning with business needs for fast collaboration.",
-          "tools_and_technologies": ["Miro", "Primer Design System"]
-        },
-        {
-          "title": "Prototyping for Developers in VS Code",
-          "overview": "Bridge the gap between design and code by bringing your prototype screens into Visual Studio Code. Learn how hi-fi prototypes guide front-end development and ensure design fidelity.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "Links prototyping with the learner’s development workflow, ensuring design concepts translate smoothly into real products.",
-          "tools_and_technologies": ["Visual Studio Code"]
-        },
-        {
-          "title": "Accessibility Enhancement Lab",
-          "overview": "Ensure your high-fidelity prototypes are inclusive. Apply foundational accessibility checks and integrate feedback that makes your designs usable by more people.",
-          "time_estimate_m": 45,
-          "type": "lab",
-          "rationale": "Addresses the outcome of building professional, production-ready designs that meet real-world standards for inclusivity.",
-          "tools_and_technologies": ["Miro", "Primer Design System"]
-        }
-      ]
-    },
-    {
-      "competency": "Iterate on design solutions using stakeholder feedback and product management techniques",
+      "competency": "Create wireframes to communicate UX concepts and workflows",
       "time_estimate_m": 210,
-      "rationale": "Aligned with the learning outcome of evaluating business requirements and constraints, this competency ensures developers can adapt designs based on technical, business, and user feedback, promoting better decision-making and faster design-development iteration cycles.",
+      "rationale": "Wireframing is essential for developers to express and test ideas visually and collaborate with UX teams, aligning with the client’s priority on effective idea communication using tools like Miro. The time allocated allows for guided instruction, individual wireframe creation, feedback, and iteration to ensure mastery.",
       "modules": [
         {
-          "title": "Stakeholder Feedback Essentials",
-          "overview": "Explore the value of gathering feedback from stakeholders, including product managers and users. We’ll define effective approaches to soliciting, organizing, and incorporating feedback.",
-          "time_estimate_m": 45,
-          "type": "lecture",
-          "rationale": "Ensures engineers understand the sources and methods of collecting feedback, foundational to iteration success.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Feedback Integration Lab",
-          "overview": "Practice turning diverse feedback into actionable changes using Miro and the Primer Design System. Work on revising an existing design based on supplied stakeholder comments and discuss your decision-making process.",
-          "time_estimate_m": 60,
-          "type": "lab",
-          "rationale": "Hands-on activity builds iterative design skills and supports adapting work to meet business and user needs.",
-          "tools_and_technologies": ["Miro", "Primer Design System"]
-        },
-        {
-          "title": "Applying Product Management Techniques",
-          "overview": "Learn essential product management concepts that help engineers prioritize and balance conflicting requirements. We’ll cover roadmap planning, trade-off analysis, and communicating decisions to your team.",
+          "title": "Wireframing Principles",
+          "overview": "We’ll introduce low-fidelity wireframes and explore when and why to use them. You’ll learn layout best practices, grid usage, and how to represent interactions simply. This session sets the stage for rapid idea visualization.",
           "time_estimate_m": 60,
           "type": "lecture",
-          "rationale": "Gives engineers tools to evaluate feasibility and business alignment in their iterative process.",
-          "tools_and_technologies": []
+          "rationale": "Establishes the foundational concepts and standards for creating effective wireframes.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
         },
         {
-          "title": "Continuous Iteration Lab",
-          "overview": "Simulate a mini sprint. You’ll cycle through gathering feedback, revising your design in Miro or Primer, and reporting back to a small group. Experience the pace and benefits of continuous iteration.",
-          "time_estimate_m": 45,
+          "title": "Wireframe Creation Lab",
+          "overview": "Using Miro, you’ll build wireframes for a sample user flow, focusing on clarity and structure. You’ll iterate based on peer feedback and refine your layouts. This lab reinforces rapid prototyping and visual communication skills.",
+          "time_estimate_m": 90,
           "type": "lab",
-          "rationale": "This capstone lab builds workflow fluency by giving participants repeated practice in applying feedback loops, matching the business goal of development velocity.",
-          "tools_and_technologies": ["Miro", "Primer Design System"]
+          "rationale": "Provides hands-on practice in a collaborative environment, solidifying wireframing techniques and tool proficiency.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
+        },
+        {
+          "title": "Feedback & Iteration Strategies",
+          "overview": "This session examines effective methods for gathering and applying feedback. You’ll learn to run quick critique sessions and prioritize changes. By the end, you’ll have a repeatable process for iterative wireframe improvement.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Teaches learners how to refine wireframes based on stakeholder input, a key step in collaborative design workflows.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
         }
       ]
     },
     {
-      "competency": "Document and articulate design decisions to technical and non-technical team members",
+      "competency": "Apply information architecture principles to organize digital products",
       "time_estimate_m": 180,
-      "rationale": "By focusing on communication of design rationale, this competency delivers on the outcome requiring learners to articulate design decisions—key for cross-disciplinary alignment and for developers to effectively advocate for UX best practices within the team.",
+      "rationale": "Understanding and applying information architecture enables developers to create logical navigation and clear structures, supporting the learning outcome of designing easy-to-use navigation and aligning with client priorities about incorporating foundational UX processes into engineering workflows.",
       "modules": [
         {
-          "title": "Documenting Design Decisions",
-          "overview": "Learn the essentials of capturing your design rationale, annotations on wireframes, and documenting key choices for transparency and alignment. We’ll look at examples of good documentation and templates you can use.",
-          "time_estimate_m": 45,
+          "title": "Information Architecture Fundamentals",
+          "overview": "We’ll cover core IA concepts like hierarchy, labeling, and sitemap creation. You’ll see how good IA supports usability and findability. This lecture offers guidelines for structuring content effectively.",
+          "time_estimate_m": 60,
           "type": "lecture",
-          "rationale": "Provides a framework and examples for clear design documentation, essential for sharing decisions with broader teams.",
-          "tools_and_technologies": ["Miro"]
+          "rationale": "Gives learners the theoretical framework needed to organize digital content logically.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
         },
         {
-          "title": "Design Handoff in VS Code Lab",
-          "overview": "Practice a real-world design handoff from Miro to front-end code in Visual Studio Code. You’ll create spec documents and communicate your rationale for UI decisions, supporting both designers and other engineers.",
+          "title": "Card Sorting Lab",
+          "overview": "In small teams, you’ll run an open card sort to determine how users group content items. You’ll analyze the results and propose a menu structure. This activity builds empathy and data-driven IA skills.",
           "time_estimate_m": 60,
           "type": "lab",
-          "rationale": "Builds practical handoff skills to improve collaboration and technical team alignment.",
-          "tools_and_technologies": ["Visual Studio Code", "Miro"]
+          "rationale": "Provides direct experience with user-centered IA techniques for informed structural decisions.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
         },
         {
-          "title": "Presenting Design Decisions",
-          "overview": "We’ll discuss strategies for pitching your designs within a technical context. Learn what to emphasize for technical versus non-technical audiences and practice articulating your choices with clarity.",
-          "time_estimate_m": 45,
+          "title": "Navigation Design Techniques",
+          "overview": "This module explores patterns for menus, breadcrumbs, and search. You’ll learn when to apply each pattern and how to test navigation flows. Examples will show real-world trade-offs and best practices.",
+          "time_estimate_m": 60,
           "type": "lecture",
-          "rationale": "Supports effective communication and advocacy for UX best practices, ensuring consistent cross-discipline alignment.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Feedback and Reflection Lab",
-          "overview": "Practice presenting your design decisions to your peers, incorporating their questions and feedback. Reflect on your strengths and opportunities for clearer communication.",
-          "time_estimate_m": 30,
-          "type": "lab",
-          "rationale": "Reinforces confidence and skill in live articulation, which is critical for long-term team success and transparent processes.",
-          "tools_and_technologies": []
+          "rationale": "Teaches practical methods to translate IA theory into tangible navigation solutions.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
         }
       ]
     },
     {
-      "competency": "Implement visual design enhancements using foundational techniques for polished UI",
-      "time_estimate_m": 180,
-      "rationale": "This is essential for enabling developers to improve the visual impact of digital products, aligning with the outcome to create polished, professional designs that meet both user and business expectations.",
+      "competency": "Utilize visual design techniques to enhance user interfaces",
+      "time_estimate_m": 270,
+      "rationale": "This competency is critical for enabling developers to create polished, professional designs, supporting business goals around self-reliance and higher collaboration efficiency. Extra time is required for iterative design activities, critique, and feedback cycles as these skills require practice and review for development beyond basic HTML/CSS knowledge.",
       "modules": [
         {
-          "title": "Visual Design Principles for Engineers",
-          "overview": "We’ll review essential visual design principles such as layout, color, typography, and spacing. You’ll see how small changes in these areas can elevate the look and feel of your interfaces.",
-          "time_estimate_m": 45,
+          "title": "Visual Design Principles",
+          "overview": "We’ll dive into color theory, typography, spacing, and layout principles. You’ll see how these elements combine to create a cohesive look and feel. This session establishes a shared design vocabulary.",
+          "time_estimate_m": 60,
           "type": "lecture",
-          "rationale": "Gives engineers the baseline design vocabulary to apply visual enhancements and align with UX/UI best practices.",
-          "tools_and_technologies": []
+          "rationale": "Introduces the visual grammar needed to craft professional interfaces and aligns on terminology.",
+          "tools_and_technologies": [
+            "Primer Design System"
+          ]
         },
         {
-          "title": "UI Enhancement Lab with Primer",
-          "overview": "Dive deep into practical improvements. Using the Primer Design System, you’ll iterate on a basic interface, applying visual tweaks to make it more polished and engaging.",
+          "title": "Visual Design Lab with VS Code",
+          "overview": "Using Visual Studio Code and the Primer Design System, you’ll build a UI component from scratch. You’ll apply color styles, typography settings, and layout rules. This hands-on lab reinforces design-to-code workflows.",
+          "time_estimate_m": 90,
+          "type": "lab",
+          "rationale": "Bridges visual design theory to implementation, increasing developers’ self-reliance in styling interfaces.",
+          "tools_and_technologies": [
+            "Visual Studio Code",
+            "Primer Design System"
+          ]
+        },
+        {
+          "title": "Color & Typography Lab",
+          "overview": "In this lab, you’ll refine a design mockup by selecting accessible color palettes and typographic scales. You’ll test contrast ratios and adjust styles for legibility. By the end, you’ll have a polished UI segment.",
           "time_estimate_m": 60,
           "type": "lab",
-          "rationale": "Transforms theory into practice, helping participants internalize design enhancements and utilize shared systems.",
-          "tools_and_technologies": ["Primer Design System"]
+          "rationale": "Offers focused practice on critical visual design details that impact usability and brand consistency.",
+          "tools_and_technologies": [
+            "Visual Studio Code"
+          ]
         },
         {
-          "title": "Accessibility Fundamentals",
-          "overview": "Learn core accessibility concepts like contrast, alt text, and structure. We’ll explore how small design tweaks can make web apps more usable for everyone.",
-          "time_estimate_m": 45,
+          "title": "Design Critique Strategies",
+          "overview": "We’ll explore how to facilitate and participate in constructive design critiques. You’ll learn frameworks for giving balanced feedback and iterating on visual work. This session helps you lead reviews that elevate quality.",
+          "time_estimate_m": 60,
           "type": "lecture",
-          "rationale": "Ensures final designs add value for all users and reinforces the goal of building professional, user-centered solutions.",
-          "tools_and_technologies": []
+          "rationale": "Equips learners with soft-skill approaches to support collaborative refinement of visual designs.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
+        }
+      ]
+    },
+    {
+      "competency": "Build high-fidelity prototypes to demonstrate complete design solutions",
+      "time_estimate_m": 240,
+      "rationale": "High-fidelity prototyping directly addresses the business outcome to demonstrate the ability to develop a complete, professional design. The time estimate supports in-depth engagement with prototyping tools, preparing the learner to articulate their design intent and receive actionable feedback.",
+      "modules": [
+        {
+          "title": "Intro to High-Fidelity Prototyping",
+          "overview": "This lecture covers when to use high-fidelity prototypes, tool selection, and best practices for interaction design. You’ll see examples of clickable prototypes and learn how fidelity impacts feedback. We’ll discuss handoff to development.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Sets expectations for fidelity, scope, and the role of prototypes in the design process.",
+          "tools_and_technologies": [
+            "Primer Design System"
+          ]
         },
         {
-          "title": "Accessibility Design Lab",
-          "overview": "Get hands-on with practicing the application of accessibility techniques using the Primer Design System. Improve interactive elements and color choices to support different user needs.",
-          "time_estimate_m": 30,
+          "title": "High-Fidelity Prototype Lab",
+          "overview": "In this extended lab, you’ll build a multi-screen prototype using Visual Studio Code and Primer components. You’ll define interactive states and simulate real user flows. This hands-on work solidifies your ability to craft complete designs.",
+          "time_estimate_m": 120,
           "type": "lab",
-          "rationale": "Provides essential practice in applying visual and accessibility principles for polished, inclusive design.",
-          "tools_and_technologies": ["Primer Design System"]
+          "rationale": "Allows deep engagement with prototyping workflows and tool integration to produce a showcase-ready design.",
+          "tools_and_technologies": [
+            "Visual Studio Code",
+            "Primer Design System"
+          ]
+        },
+        {
+          "title": "Prototype Testing & Feedback",
+          "overview": "You’ll present your prototype in small groups and conduct quick usability checks. We’ll capture feedback and discuss iteration priorities. This session emphasizes the importance of prototype review before development.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Reinforces the feedback loop and readies learners to iterate prototypes based on real user input.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
+        }
+      ]
+    },
+    {
+      "competency": "Integrate design system components into product development",
+      "time_estimate_m": 210,
+      "rationale": "Using a company-standard design system ensures product cohesion and efficiency—core client priorities for reinforcing cohesive designs and improving delivery velocity. The time allows for hands-on practice with usage guidelines and component integration.",
+      "modules": [
+        {
+          "title": "Design System Overview",
+          "overview": "We’ll introduce the Primer Design System, its purpose, structure, and guiding principles. You’ll see how tokens, components, and patterns fit together. This lecture clarifies how a system supports consistency and speeds up development.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Provides the conceptual understanding needed before working hands-on with system components.",
+          "tools_and_technologies": [
+            "Primer Design System"
+          ]
+        },
+        {
+          "title": "Primer Integration Lab",
+          "overview": "In this lab, you’ll embed Primer components into a sample codebase using Visual Studio Code. You’ll customize token values and extend component variants. By the end, you’ll integrate a cohesive UI section.",
+          "time_estimate_m": 90,
+          "type": "lab",
+          "rationale": "Delivers practical experience using the design system in real code, improving delivery velocity.",
+          "tools_and_technologies": [
+            "Visual Studio Code",
+            "Primer Design System"
+          ]
+        },
+        {
+          "title": "Component Customization Strategies",
+          "overview": "This module explores best practices for modifying and extending system components safely. You’ll learn when to override defaults or contribute updates back to the design system. We’ll review trade-offs and governance processes.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Teaches learners how to adapt design system components for unique needs without sacrificing cohesion.",
+          "tools_and_technologies": [
+            "Primer Design System"
+          ]
+        }
+      ]
+    },
+    {
+      "competency": "Evaluate technical constraints and stakeholder requirements in the design process",
+      "time_estimate_m": 180,
+      "rationale": "Software engineers must consider business and technical constraints when designing, aligning with the high-level learning outcome of evaluating requirements and metrics. The allotted time includes discussion of real-world scenarios, group critique, and applied exercises.",
+      "modules": [
+        {
+          "title": "Stakeholder & Constraint Analysis",
+          "overview": "We’ll discuss how to gather and interpret stakeholder requirements, business goals, and technical limitations. You’ll see frameworks for mapping constraints to design choices. This session sets up informed decision-making.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Equips learners with methods to collect and prioritize requirements before diving into design work.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
+        },
+        {
+          "title": "Constraint Evaluation Lab",
+          "overview": "In small teams, you’ll apply constraint mapping to a design scenario, balancing performance, accessibility, and feature scope. You’ll propose designs that respect technical boundaries. This lab bridges theory and real-world trade-offs.",
+          "time_estimate_m": 60,
+          "type": "lab",
+          "rationale": "Provides hands-on practice evaluating and negotiating constraints within design processes.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
+        },
+        {
+          "title": "Prioritization & Trade-off Techniques",
+          "overview": "This session covers methods like MoSCoW and impact-effort matrices to prioritize features and design tasks. You’ll learn to facilitate stakeholder alignment and make transparent trade-offs. By the end, you’ll have a repeatable prioritization framework.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Teaches systematic approaches to balance competing requirements and communicate decisions clearly.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
+        }
+      ]
+    },
+    {
+      "competency": "Document and articulate design decisions for stakeholder review",
+      "time_estimate_m": 240,
+      "rationale": "Developers must clearly document and justify their design choices to UX peers and broader teams. Mastering this competency addresses the learning outcome of articulating design decisions and supports improved cross-discipline collaboration. The time provides opportunity for practice, feedback, and revision, essential for developing this hard skill at a professional level.",
+      "modules": [
+        {
+          "title": "Design Documentation Best Practices",
+          "overview": "We’ll review templates and standards for clear, concise design documentation. You’ll learn how to structure rationale, annotate components, and maintain version control. This session ensures your documentation communicates intent effectively.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Sets up consistent approaches and formats for documenting design work.",
+          "tools_and_technologies": [
+            "Visual Studio Code"
+          ]
+        },
+        {
+          "title": "Design Presentation Skills",
+          "overview": "This lecture covers techniques for clear, engaging stakeholder presentations. You’ll practice storytelling, using visuals, and handling questions. By the end, you’ll know how to tailor your delivery to varied audiences.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Develops the communication skills needed to effectively share and defend design decisions.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
+        },
+        {
+          "title": "Decision Rationale Lab",
+          "overview": "You’ll document the reasoning behind a chosen design, linking research findings, constraints, and design principles. You’ll receive peer feedback and iterate your write-up. This practice cultivates transparent decision logs.",
+          "time_estimate_m": 60,
+          "type": "lab",
+          "rationale": "Offers direct writing practice to articulate design choices clearly and concisely.",
+          "tools_and_technologies": [
+            "Visual Studio Code"
+          ]
+        },
+        {
+          "title": "Stakeholder Review Lab",
+          "overview": "In a simulated review session, you’ll present your documented design to peers acting as stakeholders. You’ll field questions, gather feedback, and note revision areas. This lab prepares you for real-world design reviews.",
+          "time_estimate_m": 60,
+          "type": "lab",
+          "rationale": "Recreates a stakeholder feedback environment, reinforcing presentation and response skills.",
+          "tools_and_technologies": [
+            "Miro"
+          ]
         }
       ]
     }
