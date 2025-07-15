@@ -31,8 +31,8 @@ class CompetenciesCrew:
         return Agent(
             config=self.agents_config["led"],
             llm = LLM(
-                model="openai/gpt-4.1"
-                # model="perplexity/sonar-pro"
+                # model="openai/gpt-4.1"
+                model="perplexity/sonar-pro"
             )
         )
 
