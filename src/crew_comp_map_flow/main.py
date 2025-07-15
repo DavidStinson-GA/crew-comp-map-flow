@@ -9,7 +9,10 @@ from crewai.flow import Flow, listen, start
 from crew_comp_map_flow.crews.competencies_crew.competencies_crew import CompetenciesCrew
 from crew_comp_map_flow.crews.modules_crew.modules_crew import ModulesCrew
 
+from crew_comp_map_flow.data import documentation
+
 class CompMapState(BaseModel):
+    ### UX for Engineers for M&T Bank ###
     competencies: list[str] = []
     product_title: str = 'UX for Engineers'
     client_name: str ='M&T Bank'
@@ -50,6 +53,125 @@ class CompMapState(BaseModel):
         'Miro',
         'Currency Design System',
     ]
+
+    doc_voice: str = documentation["voice"]
+
+# class CompMapState(BaseModel):
+#     ### Gen AI Champions Workshop for TAG Heuer ###
+#     competencies: list[str] = []
+#     product_title: str = 'Gen AI Champions Workshop'
+#     client_name: str ='TAG Heuer'
+#     course_delivery_method: str = 'Instructor-led'
+#     course_delivery_modality: str = 'remote'
+#     course_duration_m: int = 420
+#     course_description: str = """This intensive one-day programme develops internal AI Champions who will support Gen AI adoption across TAG Heuer's global operations. Participants will master advanced MaIA capabilities, identify high-impact use cases, and develop advocacy skills to drive Gen AI adoption across the nine different job families:
+
+#         - General Management
+#         - Tech: Connected Watch
+#         - Tech: IS&T
+#         - HR
+#         - Operations
+#         - Commercial
+#         - Finance & Legal
+#         - Product
+#         - Marketing
+#         """
+#     course_business_outcomes: list[str] =[
+#         'Confidently identify high-value Gen AI opportunities',
+#         'Support workflow transformations with MaIA',
+#         'Identify use cases for MaIA with cross-functional alignment',
+#         'Coach peers through AI adoption challenges'
+#     ]
+#     client_priorities: list[str] = [
+#         'Master advanced prompt engineering: system instructions, memory settings, structured prompt frameworks.',
+#         'Coordinate across multiple Gen AI tools and models  (e.g., summarizing, forecasting, visual prototyping).',
+#         'Lead Gen AI-focused workshops for peers: teach prompting, manage change, and address ethical concerns.',
+#         'Explore the use of  effective prompts, visuals, and data templates for job family enablement.'
+#     ]
+#     primary_persona_job_role: str = 'Software Engineer'
+#     learner_persona_description: str = 'TAG Heuer employees who are interested in learning about Gen AI, MaIA, and how to use them ethically, securely, and effectively to improve their workflows.'
+#     learner_persona_attributes_and_background: list[str] = [
+#         'Strong foundation in JavaScript, React, and Node.js.'
+#         'Experience building web applications.'
+#         'Familiar with modern web development practices and tools.'
+#         'Strong interest in learning new technologies and approaches.'
+#     ]
+#     learner_persona_existing_knowledge: list[str] = [
+#         'Familiar with the TAG Heuer brand and its values.'
+#     ]
+#     course_learning_outcomes: list[str] = [
+#         'Explore Gen AI technologies that can drive innovation across business operations at TAG Heuer.',
+#         "Identify high-impact Gen AI use cases tailored to TAG Heuer's diverse functions.",
+#         'Map functional pain points to practical MaIA-powered applications that improve decision-making and efficiency.',
+#         'Exam how different prompt structures and MaIA model types influence the quality, relevance, and speed of Gen AI outputs.',
+#         'Develop and iterate prompting strategies like role-based context and tone specifications to optimize outputs for TAG Heuer workflows.',
+#         'Apply advanced techniques like chain-of-thought prompting and formatting to create polished, on-brand digital artifacts.',
+#         'Use MaIA to analyze long-form documents quickly and extract relevant summaries, risks, or action points across job functions.',
+#         'Apply explainability features in MaIA to trace Gen AI responses back to original document sources and assess for tone, bias, and hallucinations.',
+#         'Identify potential project scopes by job family, that clearly define objectives, outputs, guardrails, and success criteria using MaIA as a co-pilot.',
+#         'Identify and address Gen AI risks related to hallucination, data integrity, regulatory compliance, brand consistency and environmental impact through structured prompts and checklists.',
+#         'Apply practical techniques to accelerate Gen AI adoption and build internal momentum through MaIA use cases and workshops.',
+#         'Coach colleagues through potential change resistance or digital discomfort using accessible prompt-based tools.'
+#     ]
+#     course_software_and_tools: list[str] = [
+#         'MaIA',
+#     ]
+
+#     doc_voice: str = documentation["voice"]
+
+# class CompMapState(BaseModel):
+#     ### Software Engineering Bootcamp for General Assembly ###
+#     competencies: list[str] = []
+#     product_title: str = 'Software Engineering Bootcamp'
+#     client_name: str = ''
+#     course_delivery_method: str = 'Instructor-led'
+#     course_delivery_modality: str = 'remote'
+#     course_duration_m: int = 25200
+#     course_description: str = "Reskill non-technical talent into full-stack web engineering roles to immediately contribute to software projects. Participants will gain in-demand fundamental programming skills, computer science knowledge, and experience with multiple languages."
+#     course_business_outcomes: list[str] =[
+#         'Junior Engineer Development: Equip junior engineers with essential skills for efficient project contribution.',
+#         'Non-Technical to Technical Transition: Transform non-technical staff into competent, job-ready software engineers.',
+#         'Real-World Problem Solving: Empower teams to solve actual engineering challenges through hands-on projects.'
+#     ]
+#     client_priorities: list[str] = [
+#         'Learn the fundamentals of front-end development to create interactive web experiences. Gain practical skills in key programming concepts and insights into the daily work life of a professional engineer.',
+#         'Learn to build full-stack web applications, deepening your knowledge of client-facing and server-side development. Create complex applications by utilizing libraries and frameworks.,
+#         'Learn to use React, a highly sought-after library in contemporary software engineering. By creating a full-stack MERN application, you'll concentrate on utilizing React to craft interactive user interfaces.',
+#         'Rapidly learn a second language and gain experience working with new frameworks and database technologies. Develop a deeper understanding of software engineering fundamentals'
+#     ]
+#     primary_persona_job_role: str = 'Aspiring Software Engineer'
+#     learner_persona_description: str = 'Students who are interested in entering the tech industry and want to learn the fundamentals of software engineering through web development and gain practical skills in key programming concepts.'
+#     learner_persona_attributes_and_background: list[str] = [
+#         'Generally interested in learning about software engineering and web development, but have no prior experience in the field.'
+#         'No prior experience in software engineering or web development.'
+#         'No prior experience in programming.'
+#     ]
+#     learner_persona_existing_knowledge: list[str] = [
+#         'Able to use a computer, navigate the internet, and download and install software.'
+#     ]
+#     course_learning_outcomes: list[str] = [
+#         'Create a front-end game with distinct win or loss conditions, using JavaScript, HTML, and CSS. Learn fundamental project design, planning, and management skills, including creating wireframes, and developing user stories. Deploy the project to the internet.',
+#         "Plan and create a full-stack Node.js/Express application that implements authentication and authorization. The application will interact with a MongoDB database to create, read, update, and delete data related to a user. The application will be deployed to the internet. As part of planning for this project, you will build an ERD, write user stories, and design wireframes.",
+#         'Develop a full-stack web application using React for the front-end and Node.js/Express for the backend and implements authentication and authorization. This project combines front-end interactivity with server-side functionality in the MERN stack. The back-end application will interact with a MongoDB database to create, read, update, and delete data related to a user. The application will be deployed to the internet. As part of planning for this project, you will build an ERD, write user stories, and design wireframes.',
+#         'Develop a full-stack application using an additional programming language and framework. The application will be deployed to the internet. As part of planning for this project, you will build an ERD, write user stories, and design wireframes.',
+#     ]
+#     course_software_and_tools: list[str] = [
+#         'Visual Studio Code',
+#         'Git',
+#         'GitHub',
+#         'Python',
+#         'Nmap',
+#         'VirtualBox',
+#         'Docker',
+#         'Node.js',
+#         'Express',
+#         'React',
+#         'MongoDB',
+#         'Mongoose',
+#         'PostgreSQL',
+#     ]
+
+#     doc_voice: str = documentation["voice"]
 
 class CompetencyFlow(Flow[CompMapState]):
 

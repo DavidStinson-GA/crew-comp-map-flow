@@ -52,6 +52,7 @@ generate_competencies:
     - Keep each competency succinct - typically 12 words or less.
     - Do not include details about the specific tooling or software. Any competency that is aligned with or informed by specific software or tooling can still be included - just don't include it in the competency. If a competency is informed or aligned with a specific software or tooling, ensure you explain that in the rationale - you should include the name there.
     - Create discreet competencies. Avoid bundling multiple competencies together - for example - do not create a generic "tooling" competency that acts as a catch-all for all the specific tooling and software that will be used in the course.
+    - Exclusively create hard-skills competencies. It is expected that if soft-skills are necessary, they will be included as part of a module, but never as a focused competency. Sometimes your inputs may include soft-skills (like collaboration, communication, etc.), but you should not create competencies for them - our courses naturally integrate soft-skills into the learning experience. Never create a competency including collaboration.
 
     ## Developing time estimates
 

@@ -42,6 +42,7 @@ class CompetenciesCrew:
     @task
     def generate_competencies(self) -> Task:
         return Task(
+            name="Generate Competencies",
             config=self.tasks_config["generate_competencies"],
             output_json=CompetenciesResponse
         )
@@ -53,6 +54,7 @@ class CompetenciesCrew:
         # https://docs.crewai.com/concepts/knowledge#what-is-knowledge
 
         return Crew(
+            name="Competencies Crew",
             agents=self.agents,  # Automatically created by the @agent decorator
             tasks=self.tasks,  # Automatically created by the @task decorator
             process=Process.sequential,

@@ -1,0 +1,44 @@
+{
+  "competencies": [
+    {
+      "competency": "Conduct user research using foundational methodologies",
+      "time_estimate_m": 270,
+      "rationale": "Developers must understand and apply baseline research techniques to effectively incorporate user needs into design decisions, fulfilling client priorities and supporting business outcomes of integrating UX research into the tech team’s workflow."
+    },
+    {
+      "competency": "Define and prioritize key user requirements and business constraints",
+      "time_estimate_m": 180,
+      "rationale": "Enables engineers to evaluate business requirements, stakeholder needs, and technical constraints, aligning with the high-level outcome of employing product management techniques in the UX process."
+    },
+    {
+      "competency": "Create low-fidelity technical designs to communicate core concepts",
+      "time_estimate_m": 270,
+      "rationale": "Hands-on practice with low-fidelity design equips learners with the ability to quickly ideate and communicate ideas, supporting the priority of expanding technical design skills and using real-world applications."
+    },
+    {
+      "competency": "Construct high-fidelity prototypes that reflect design decisions",
+      "time_estimate_m": 270,
+      "rationale": "Building polished prototypes aligns with the outcome of creating professional, complete designs and prepares engineers to clearly articulate their design decisions to peers, elevating their technical design proficiency."
+    },
+    {
+      "competency": "Apply foundational visual design principles to digital interfaces",
+      "time_estimate_m": 180,
+      "rationale": "Ensures engineers understand and implement visual design concepts, directly supporting learning outcomes related to enhancing the design of digital products."
+    },
+    {
+      "competency": "Structure information architecture for intuitive navigation",
+      "time_estimate_m": 180,
+      "rationale": "This competency enables learners to design product interactions with logical navigation, addressing the need for sound information architecture in modern development work."
+    },
+    {
+      "competency": "Evaluate designs against product metrics and feedback",
+      "time_estimate_m": 180,
+      "rationale": "Critical for self-reliance and continuous improvement, this competency teaches learners how to assess designs through business metrics and user feedback, supporting both business outcomes and client priorities."
+    },
+    {
+      "competency": "Utilize design systems to enforce consistency and velocity",
+      "time_estimate_m": 270,
+      "rationale": "Exposure and use of design systems such as the Currency Design System are prioritized to improve efficiency, reinforce cohesive product design, and enhance cross-discipline collaboration."
+    }
+  ]
+}
