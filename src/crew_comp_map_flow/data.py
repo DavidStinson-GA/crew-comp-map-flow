@@ -59,6 +59,69 @@ If a topic is important enough that the content is incomplete without it, always
 Assume that learners are intelligent and capable of learning, but be careful making any further assumptions. Don't assume they are familiar with technical or business jargon - when using these terms, you should define them.
 """
 
+writing_learning_objectives = """
+# Writing Learning Objectives
+
+Bloom's Taxonomy is a widely adopted instructional design model that scaffolds learning objectives from "low level learning" objectives (knowledge, comprehension) through to "high level learning" objectives (evaluation, synthesis).
+
+It is important to remember that we work with busy, professional, adult learners, often high achievers. We aim to teach through stories and through action, and should avoid entire lectures that are completely lower level whenever possible.
+
+Remember, our learners' end goals is almost always being able to use this information in their jobs.
+
+Do not use Bloom's verbs that are not measurable.
+
+## Good Learning Objectives
+
+At General Assembly, we define a good learning objective as:
+
+SIMPLE. Clearly and plainly phrased. Don't make me think! Not yet! 
+CLEAR. Someone who hasn't taken the lesson yet can understand it. 
+VALUABLE. A user or client would "pay" for it (with time and/or money). 
+REALISTIC. Reflects an action that someone is likely to take in real life. 
+MEASURABLE. Can be evaluated. 
+
+To further expand on the above, here are some examples of weak learning objectives, and how they can be improved and made stronger:
+
+| Objectives are ... | Weak example | Strong example | How it was improved |
+| ------------------ | ------------ | -------------- | ------------------- |
+| SIMPLE. Plainly Phrased: (Avoid Double Barrelled LOs) | Choose graphics and illustrations that best illuminate various types of data. | Choose the most appropriate graphics to communicate your data story. | Refine language to be more direct and clear. |
+| CLEAR. Written for the "before" user, who presumably does not yet know the topic. | Identify the stages of the customer decision journey. | Describe six distinct phases a person goes through when making a purchase, known as the "customer decision journey". | Put yourself in the shoes of someone who has no familiarity with the subject and what they might think it means. |
+| VALUABLE. Worth a learner / client's time and $$$. | Describe how beacon technology works. | Identify opportunities to use beacons to drive consumer engagement and sales. | 1. Start with a real problem the audience has. 2. If you don't know what this is as related to this lesson, get clarity from the EPM. 3. If the answer is 1-2 googles away, it's probably not worth a buyer's $$$. Dig deeper. |
+| REALISTIC. Reflects the actions learners need to take in real life. | Examine how data visualizations can help validate data sets and help explore relationships. | Use data visualizations to validate and explore your data. | Practice the "five whys" - why would anyone need to know this? Keep asking why until you get to what knowing it will actually enable them to do. |
+| MEASURABLE. Can be evaluated. | Give viewability to the appropriate emphasis in your strategy and measurement. | Identify campaign conditions in which viewability is a critical metric. | Consider: Can you visualize a knowledge check or assessment question that effectively tests this?  If for in person classes, can you imagine an exercise or project? Then ask yourself, is that assessment question or project useful? |
+
+## Goals vs. Learning Objectives
+
+It's important to understand the difference between a goal and a learning objective.
+
+## Goals
+
+Why someone purchases a learning program - what they are hoping to achieve.
+
+Met through the fulfillment of learning objectives AND action by the learner. 
+
+In a corporate context, typically requires change management led by leadership.
+
+May require organizational design, technology purchases, etc. to achieve.
+
+In a campus context, the most common end goal is a career change or advancement.
+
+Goals should be defined by CPMs. (Commercial Product Managers)
+
+## Learning Objectives
+
+This learning, in combination with learner action, enables people to achieve their goals.
+
+These are defined/summarized at each level of the program - a unit, a module, etc.
+
+Owned and drafted by the Learning team, in conjunction/partnership with SMEs.
+
+GA is responsible for learners achieving these through the design and instruction of the course - these are our commitments to the learner.
+
+Learners/clients may meet LOs but still dislike the learning experience or fail to meet their goals if they either had unclear goals, chose/were guided toward the wrong program for their goals, or did not take the actions required to use the learning to fulfill their goals.
+"""
+
 documentation = {
-  "voice": voice
+  "voice": voice,
+  "writing_learning_objectives": writing_learning_objectives
 }

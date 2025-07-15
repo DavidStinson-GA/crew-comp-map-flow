@@ -245,3 +245,94 @@ qa_modules:
 
     You should only output a JSON object. Never output markdown. NO MARKDOWN.
   agent: led_qa
+
+generate_learning_objectives:
+  output_file: output/crew_learning_objectives_output.txt
+  description: >
+    # Objectives
+
+    As a Learning Experience Designer at General Assembly you develop courses using competency-based learning.
+
+    Your task is to review the generated modules and come up with learning objectives for them based on the inputs you were provided.
+
+    A learning objective (LO) is: 
+
+    - SIMPLE. Clearly and plainly phrased. Don’t make me think! Not yet! 
+    - CLEAR. Someone who hasn’t taken the lesson yet can understand it. 
+    - VALUABLE. A user or client would “pay” for it (with time and/or money). 
+    - REALISTIC. Reflects an action that someone is likely to take in real life. 
+    - MEASURABLE. Can be evaluated. 
+
+    You must use the following inputs (denoted by the <inputs> tag) to develop the modules:
+
+    <inputs>
+    The competencies: {competencies}
+
+    The course description: {course_description}
+
+    The primary learner persona job role: {primary_persona_job_role}
+
+    The learner persona description: {learner_persona_description}
+
+    The learner persona attributes and background: {learner_persona_attributes_and_background}
+
+    The learner persona's existing foundational knowledge related to the course topic (to be used as pre-requisites for the course): {learner_persona_existing_knowledge}
+
+    </inputs>
+
+    ## Developing Learning Objectives
+    
+    When it comes to developing of effective learning objectives, we use the Bloom's Taxonomy, a widely adopted instructional design model.
+
+    Bloom’s Taxonomy scaffolds learning objectives from "low level learning" objectives (knowledge, comprehension) through to "high level learning" objectives (evaluation, synthesis). 
+    It is important to remember that we work with busy, professional, adult learners, often high achievers. We aim to teach through stories and through action, and should avoid lessons that are completely lower level whenever possible. 
+    
+    ## Example Learning Objectives
+
+    Here are a few examples:
+
+    - Create and manage pull requests on GitHub, using them to review and merge changes collaboratively.
+    - Identify common cybersecurity risks associated with NFC, including methods attackers might use to intercept or steal card data.
+    - Apply effective communication and technical writing skills to address customer concerns clearly and professionally.
+    - Update existing array elements and utilize methods like `push()` and `pop()` to add or remove elements at the start or end of an array.
+    - Implement a mobile-first design approach and use the viewport meta tag to optimize web pages for mobile devices.
+
+    ## Context
+
+    When writing learning objectives for each module, you should use the following context:
+
+    <writing_learning_objectives id=1 title="Writing Learning Objectives" purpose="This critical document outlines the philosophy behind creating effective learning objectives.">
+    {doc_writing_learning_objectives}
+    </writing_learning_objectives>
+
+  expected_output: >
+    A set of competencies for the crew to use in developing a competency map complete with corresponding modules and learning objectives
+    formatted in JSON with the following structure:
+
+    {
+      "competencies": [
+        {
+          "competency": "A single competency - matching the input data",
+          "time_estimate_m": An integer representing the time it will take to deliver the competency in minutes. This should match the time estimate for the competency in the input data.
+          "rationale": "Explain the purpose of including this competency in relation to the input you were provided. Again, this should match the rationale for the competency in the input data."
+          "modules": [
+            {
+              "title": "",
+              "overview": "",
+              "time_estimate_m": ""
+              "type": "lecture" | "lab"
+              "rationale": "Explain the purpose of including this module in relation to the input you were provided."
+              "tools_and_technologies": [
+                "A list of tools and technologies used in the module. Only include tools and technologies that are relevant to the module's content. Do not include any tools or software that are not present in the input data."
+              ],
+              "learning_objectives": [
+                "A list of learning objectives for each module."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+
+    You should only output a JSON object. Never output markdown. NO MARKDOWN.
+  agent: led

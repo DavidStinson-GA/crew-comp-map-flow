@@ -59,6 +59,12 @@ class ModulesCrew():
             config=self.tasks_config['qa_modules'],
         )
 
+    @task
+    def generate_learning_objectives(self) -> Task:
+        return Task(
+            name="Generate Learning Objectives",
+            config=self.tasks_config['generate_learning_objectives'],
+        )
     @crew
     def crew(self) -> Crew:
         """Creates the ModulesCrew crew"""

@@ -1,282 +1,337 @@
 {
   "competencies": [
     {
-      "competency": "Conduct user research using foundational methodologies",
+      "competency": "Conduct foundational user research using established methodologies",
       "time_estimate_m": 270,
-      "rationale": "Developers must understand and apply baseline research techniques to effectively incorporate user needs into design decisions, fulfilling client priorities and supporting business outcomes of integrating UX research into the tech team’s workflow.",
+      "rationale": "This competency addresses the business outcome of equipping the tech team with research methodologies and aligns with the client's priority to ensure engineers understand baseline research techniques and best practices. It prepares learners to gather user insights to inform design and collaboration work.",
       "modules": [
         {
-          "title": "Intro to User Research for Developers",
-          "overview": "Let's dive into the basics of user research, exploring why it matters for software engineers. We'll discuss foundational research methodologies and best practices, focusing on how user input shapes stronger, more relevant digital products. At the end of this module, you'll know how to identify the types of user research that fit different project contexts.",
+          "title": "User Research Fundamentals",
+          "overview": "Explore the core concepts and foundational principles of user research. We'll cover why user research matters, how it fits into the product development process, and introduce you to common research methods. By the end of this module, you'll know how to think like a UX researcher and understand the value of user insights.",
           "time_estimate_m": 60,
           "type": "lecture",
-          "rationale": "This module introduces user research fundamentals, ensuring learners understand why user research matters and how it's an essential part of the UX process for developers. It supports client priorities to provide an understanding of baseline research techniques and their application.",
+          "rationale": "Introduces user research concepts, emphasizing their importance for developers who are new to these methods, ensuring foundational understanding for subsequent practical labs.",
           "tools_and_technologies": []
         },
         {
-          "title": "User Research Planning and Execution",
-          "overview": "In this module, we’ll create practical plans for conducting user interviews, surveys, and usability testing. We’ll talk through what makes a good research question and how to actually run a session with real users or stakeholders. You’ll get frameworks to structure research efforts, ensuring every project starts with actionable insight.",
+          "title": "User Interviews and Surveys",
+          "overview": "Dive into the most common research methods: interviews and surveys. We'll discuss when to use each, best practices for preparing questions, and strategies for gathering unbiased, actionable feedback from users. You will also see how research findings can influence design decisions.",
           "time_estimate_m": 60,
           "type": "lecture",
-          "rationale": "By focusing on planning and execution, this module builds on the basics, equipping developers with actionable steps to lead research activities—directly addressing the need for baseline research best practices.",
+          "rationale": "Details specific user research methodologies and practical approaches, giving developers concrete, actionable methods to conduct real research as required by the client.",
           "tools_and_technologies": []
         },
         {
-          "title": "User Research Lab",
-          "overview": "It’s time to put your research skills into action. We’ll run a hands-on session where you’ll collaboratively plan and conduct a small-scale user research activity, such as stakeholder interviews or usability testing. Reflect on your process and discuss what you learned with your peers.",
+          "title": "Planning and Conducting Research Lab",
+          "overview": "Get hands-on experience planning and conducting a short user research session. You'll work in groups to select a method, develop a plan, prepare research scripts, and run a mock research session. This practical exercise will prepare you to gather valid user insights for application in later modules.",
           "time_estimate_m": 90,
           "type": "lab",
-          "rationale": "This lab allows learners to contextualize theory through practical activities, deepening their confidence and self-reliance in user research workflows—a key business outcome and client priority.",
+          "rationale": "Encourages experiential learning and immediate application of user research methods, building confidence and skill central to the competency and aligning with the client's demand for practical, hands-on exposure.",
           "tools_and_technologies": []
         },
         {
-          "title": "Synthesizing User Research Findings",
-          "overview": "Learn how to analyze the data you’ve gathered from user research. This module covers essential synthesis methods, such as affinity mapping and user insights extraction, helping you turn raw feedback into valuable, actionable design direction.",
+          "title": "Synthesizing User Insights",
+          "overview": "Learn how to transform raw research data into meaningful insights that can drive product and design decisions. We'll walk through simple frameworks and tools to organize, categorize, and prioritize what you learn from users.",
           "time_estimate_m": 60,
           "type": "lecture",
-          "rationale": "Synthesizing research is critical for integrating user feedback into technical decisions. This module ensures engineers can confidently identify patterns and inform design actions, supporting client priorities and the course’s learning outcomes.",
-          "tools_and_technologies": ["Miro"]
+          "rationale": "Equips learners with frameworks for processing and understanding research data, so they can make sense of what they've gathered in a developer-friendly way.",
+          "tools_and_technologies": []
         }
       ]
     },
     {
-      "competency": "Define and prioritize key user requirements and business constraints",
+      "competency": "Analyze user research data to identify actionable design opportunities",
       "time_estimate_m": 180,
-      "rationale": "Enables engineers to evaluate business requirements, stakeholder needs, and technical constraints, aligning with the high-level outcome of employing product management techniques in the UX process.",
+      "rationale": "Synthesizing research findings into actionable insights supports making developers more self-reliant, allowing them to base technical decisions on real user needs. This fulfills the learning outcome of evaluating business requirements and technical constraints.",
       "modules": [
         {
-          "title": "Understanding Business and User Needs",
-          "overview": "Let’s unpack how business goals intersect with user needs and technical realities. We’ll review product management techniques for surfacing business priorities and translate them into clear, actionable requirements for engineering stakeholders.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "This module ensures developers see the ‘big picture’ by teaching them to evaluate both business and user requirements, helping them bridge gaps between engineering and product teams as outlined in the client priorities.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "User Stories and Prioritization Lab",
-          "overview": "Roll up your sleeves as we practice transforming research findings into actionable user stories and requirements. You’ll work in small groups to prioritize features and constraints using frameworks like MoSCoW and effort-impact mapping.",
-          "time_estimate_m": 60,
-          "type": "lab",
-          "rationale": "This hands-on module teaches prioritization—a critical technical skill for delivering results aligned with both user and business goals. It directly feeds self-reliance and improves collaborative process speed.",
-          "tools_and_technologies": ["Miro"]
-        },
-        {
-          "title": "Documenting and Communicating Requirements",
-          "overview": "In this module, we’ll cover practical documentation practices for capturing and communicating requirements to stakeholders, including UX and engineering teams. We’ll connect these skills to your day-to-day work managing product constraints and tradeoffs.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "Effective communication of requirements ensures engineers can confidently navigate competing business, user, and technical needs. This aligns with the outcome of improved cross-discipline collaboration.",
-          "tools_and_technologies": []
-        }
-      ]
-    },
-    {
-      "competency": "Create low-fidelity technical designs to communicate core concepts",
-      "time_estimate_m": 270,
-      "rationale": "Hands-on practice with low-fidelity design equips learners with the ability to quickly ideate and communicate ideas, supporting the priority of expanding technical design skills and using real-world applications.",
-      "modules": [
-        {
-          "title": "Intro to Low-Fidelity Design",
-          "overview": "Explore what low-fidelity design is and why it’s key to fast, focused iterations of product ideas. We’ll look at what wireframes and sketches communicate, and how they fit into the broader UX process for developers.",
+          "title": "Affinity Mapping With Miro",
+          "overview": "Explore the process of affinity mapping using Miro. You'll learn how to cluster research findings to spot patterns and interpret user feedback. This module will set you up to identify problems worth solving.",
           "time_estimate_m": 45,
           "type": "lecture",
-          "rationale": "This lecture sets the stage for hands-on technical design work by grounding learners in the purposes and outcomes of low-fidelity techniques, as prioritized by the client.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Sketching Wireframes Lab",
-          "overview": "Get hands-on with analog and digital sketching techniques to create effective wireframes that communicate structure and flow. You’ll work with fellow engineers, using everyday scenarios to rapidly explore and capture design ideas.",
-          "time_estimate_m": 90,
-          "type": "lab",
-          "rationale": "This lab brings concepts to life through practical activity, enforcing the skills of ideation and rapid communication. Using sketching and low-fidelity tools streamlines design handoff and speeds collaboration.",
+          "rationale": "Introduces affinity mapping as a collaborative analytical method and demonstrates Miro as a practical tool, directly supporting the client’s priority for engineers to work visually and collaboratively.",
           "tools_and_technologies": ["Miro"]
         },
         {
-          "title": "Technical Wireframes Using Miro",
-          "overview": "Learn to leverage Miro for collaborative, low-fidelity prototyping and technical wireframing. You’ll use Miro’s whiteboard features to co-create wireframes, leaving you fluent in a common tool for cross-functional tech and design teams.",
+          "title": "Synthesizing Research Data Lab",
+          "overview": "Work with real or simulated research data to synthesize key findings. You'll use Miro to cluster information, identify recurring themes, and formulate user needs or pain points, bridging research to actionable next steps.",
+          "time_estimate_m": 60,
+          "type": "lab",
+          "rationale": "Provides hands-on experience applying analytical techniques and Miro, so developers internalize how to go from data to insights, reflecting a key client goal.",
+          "tools_and_technologies": ["Miro"]
+        },
+        {
+          "title": "Turning Insights Into Opportunities",
+          "overview": "Learn techniques for framing actionable problem statements from synthesized research. You'll see how to prioritize findings, define clear opportunities for design, and make evidence-based decisions to guide product improvements.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Guides learners from analysis to strategic action, cementing the developer's role in identifying opportunities that align with both user needs and business context.",
+          "tools_and_technologies": []
+        },
+        {
+          "title": "Opportunity Mapping Lab",
+          "overview": "Turn research insights into a prioritized list of design opportunities using Miro. You'll work through mapping exercises that help translate findings into concrete next steps for the product.",
+          "time_estimate_m": 30,
+          "type": "lab",
+          "rationale": "Directly practices actionable opportunity identification in a collaborative tool, ensuring skills stick and match workplace expectations.",
+          "tools_and_technologies": ["Miro"]
+        }
+      ]
+    },
+    {
+      "competency": "Create information architectures for logically structured digital products",
+      "time_estimate_m": 180,
+      "rationale": "This supports the learning outcome of designing product interactions and navigation, reinforcing the need for developers to understand and apply information architecture methodologies in their projects.",
+      "modules": [
+        {
+          "title": "Introduction to Information Architecture",
+          "overview": "Gain an understanding of what information architecture (IA) is and why it matters in web and application development. We'll explore common IA principles, help you recognize poor IA, and introduce vocabulary used across design and development teams.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Builds foundational knowledge of IA, preparing learners to apply IA principles in real project contexts. Focuses on a shared language between developers and UX professionals.",
+          "tools_and_technologies": []
+        },
+        {
+          "title": "Site Mapping With Miro",
+          "overview": "See how to map out the structure of a digital product using Miro. This module covers how to create site maps and other diagrams to effectively visualize and communicate information architecture in collaborative environments.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Introduces Miro as a hands-on, collaborative tool for structuring site maps, fostering the visual collaboration prioritized by the client.",
+          "tools_and_technologies": ["Miro"]
+        },
+        {
+          "title": "Site Mapping Lab",
+          "overview": "Take what you've learned and build a site map in Miro for a sample web application, focusing on logical grouping, labeling, and navigation flow. This lab lets you experiment and get feedback while working in teams.",
+          "time_estimate_m": 60,
+          "type": "lab",
+          "rationale": "Offers practical experience with IA concepts and reinforces collaboration on visual design artifacts to support both development clarity and stakeholder communication.",
+          "tools_and_technologies": ["Miro"]
+        },
+        {
+          "title": "Navigation Patterns and Best Practices",
+          "overview": "Explore different types of navigation structures and when to use them. You’ll learn about best practices for making navigation intuitive and user-friendly, with examples from real products.",
+          "time_estimate_m": 30,
+          "type": "lecture",
+          "rationale": "Links information architecture to practical navigation decisions in applications, supporting the learning outcome of building logical, easy-to-use product structures.",
+          "tools_and_technologies": []
+        }
+      ]
+    },
+    {
+      "competency": "Design wireframes to communicate ideas for new features or products",
+      "time_estimate_m": 210,
+      "rationale": "Wireframing is crucial for iterative design and collaboration; this meets the client's priority for engineers to visually communicate ideas and collaborate with the broader team, particularly using tools like Miro (integrated into the course delivery).",
+      "modules": [
+        {
+          "title": "Wireframing Basics",
+          "overview": "Get familiar with the purpose and process of wireframing. This module covers low- and mid-fidelity wireframes, common conventions, and why they’re essential for sharing and refining ideas early in the design process.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Sets a foundation for effective idea communication and collaboration, supported by visual artifacts, and aligns with both competency and client collaboration priorities.",
+          "tools_and_technologies": []
+        },
+        {
+          "title": "Wireframing With Miro",
+          "overview": "Learn how to build wireframes in a collaborative environment using Miro. We'll discuss tips for creating clear, effective wireframes and walk through creating a basic user interface in a shared Miro board.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Directly integrates Miro as a collaborative design tool, empowering learners to work in a way that mirrors real-world UX team processes.",
+          "tools_and_technologies": ["Miro"]
+        },
+        {
+          "title": "Wireframing Lab",
+          "overview": "Try your hand at building wireframes for a new or existing feature using Miro. You'll present your wireframes for feedback and iterate with your team, gaining real-world practice in the UX design process.",
+          "time_estimate_m": 60,
+          "type": "lab",
+          "rationale": "Encourages hands-on, iterative, and collaborative skills development, supporting confidence in conveying ideas visually with feedback loops.",
+          "tools_and_technologies": ["Miro"]
+        },
+        {
+          "title": "Wireframe Critique and Iteration",
+          "overview": "Learn and apply techniques for giving and receiving feedback on wireframes. We’ll focus on constructive critique and the importance of iteration in evolving your designs.",
+          "time_estimate_m": 60,
+          "type": "lab",
+          "rationale": "Focuses on the iterative nature of design, which is highlighted as essential in both the competency and business outcomes.",
+          "tools_and_technologies": ["Miro"]
+        }
+      ]
+    },
+    {
+      "competency": "Develop high-fidelity digital product prototypes using design system components",
+      "time_estimate_m": 240,
+      "rationale": "This competency enables learners to meet business outcomes around producing professional, polished designs and incorporates exposure to tools like the Primer Design System, making designs consistent and ready for real-world implementation.",
+      "modules": [
+        {
+          "title": "High-Fidelity Prototyping Principles",
+          "overview": "Learn what makes a high-fidelity prototype and why it’s critical in bridging the gap between design and development. We’ll cover conventions for fidelity, interactivity, and best practices that align designs with development.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Lays the groundwork for producing high-fidelity prototypes that look and feel real, supporting a smoother developer handoff.",
+          "tools_and_technologies": []
+        },
+        {
+          "title": "Introduction to Primer Design System",
+          "overview": "Get to know the Primer Design System, its core components, and how to use them to maintain consistency in your prototypes. We’ll explore how using a design system speeds up workflows and improves product quality.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Introduces key collaborative technology and process, making learners comfortable with tools that are vital for real-world development and design integration.",
+          "tools_and_technologies": ["Primer Design System"]
+        },
+        {
+          "title": "Prototyping Lab With Primer",
+          "overview": "Apply what you’ve learned by building an interactive prototype using components from the Primer Design System. You’ll use real content and design conventions to create screens that are ready for development.",
+          "time_estimate_m": 90,
+          "type": "lab",
+          "rationale": "Promotes hands-on practice with the actual design system, mirroring the client’s product environment to boost transferability of learning.",
+          "tools_and_technologies": ["Primer Design System"]
+        },
+        {
+          "title": "Prototyping for Developer Handoff",
+          "overview": "Focus on preparing high-fidelity prototypes for a development handoff, including design documentation, annotations, and communicating component usage. You’ll learn best practices for bridging the gap between design and code.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Ensures finished prototypes are not only polished but also actionable and easy for developers to implement, a key business and learning outcome.",
+          "tools_and_technologies": ["Primer Design System"]
+        }
+      ]
+    },
+    {
+      "competency": "Articulate design decisions based on user research and business goals",
+      "time_estimate_m": 180,
+      "rationale": "Justifying design decisions aligns with the learning outcome of communicating with peers and UX professionals, bridging developers’ work with wider product and business objectives.",
+      "modules": [
+        {
+          "title": "Communicating Design Decisions",
+          "overview": "Explore frameworks and strategies for explaining the thought process behind your design choices, tying decisions back to user needs and business objectives. We’ll break down what makes for clear, effective communication with stakeholders.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Helps learners develop a structured approach for communicating their work, making collaboration and buy-in easier.",
+          "tools_and_technologies": []
+        },
+        {
+          "title": "Design Rationale Storytelling Lab",
+          "overview": "Practice telling the story of your design—how research, constraints, and product goals shaped your choices—using examples from previous labs. You’ll get immediate feedback from your peers in small groups.",
+          "time_estimate_m": 60,
+          "type": "lab",
+          "rationale": "Reinforces the skill of verbalizing design thinking, making learners more effective communicators and collaborators on real projects.",
+          "tools_and_technologies": []
+        },
+        {
+          "title": "Design Decisions in Cross-Functional Teams",
+          "overview": "See what it means to articulate decisions in contexts where technical and business stakeholders may not be design experts. We'll practice adapting your communication style to different audiences for impactful presentations.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Prepares learners for real-world situations, matching business and client priorities of improved, interdisciplinary collaboration.",
+          "tools_and_technologies": []
+        }
+      ]
+    },
+    {
+      "competency": "Iterate product designs based on usability feedback and testing results",
+      "time_estimate_m": 180,
+      "rationale": "Iteration based on feedback is vital for speeding up collaboration and improving design outcomes, directly supporting business goals for efficient processes and reinforcing developers’ ability to self-refine solutions.",
+      "modules": [
+        {
+          "title": "Usability Testing Methods",
+          "overview": "Discover different usability testing techniques, from informal hallway tests to structured remote sessions. We'll focus on selecting the best method for your project and understanding what makes usability testing valuable in an agile process.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Lays the foundation for critical analysis of user experience, providing knowledge developers need to conduct meaningful tests with minimal overhead.",
+          "tools_and_technologies": []
+        },
+        {
+          "title": "Conducting a Usability Test Lab",
+          "overview": "Put theory into practice by running a usability test on your wireframes or prototypes. You’ll plan test scenarios, invite users, and collect feedback that will inform the next iteration of your design.",
+          "time_estimate_m": 60,
+          "type": "lab",
+          "rationale": "Enables learners to experience the feedback loop firsthand—essential for developing confidence in iteration, which the business outcome and client both prioritize.",
+          "tools_and_technologies": []
+        },
+        {
+          "title": "Prioritizing and Applying Feedback",
+          "overview": "Learn how to assess, sort, and act on usability feedback using simple prioritization frameworks. You'll practice implementing high-impact changes and understand how to document what you change and why.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Gives practical techniques for filtering feedback and iterating effectively, ensuring the focus remains on outcomes—not just process.",
+          "tools_and_technologies": []
+        },
+        {
+          "title": "Design Iteration Lab",
+          "overview": "Use feedback from usability tests to iterate your design in Miro or your prototyping tool. You'll update wireframes or prototypes, document your changes, and share your updates with the team for one more round of input.",
+          "time_estimate_m": 30,
+          "type": "lab",
+          "rationale": "Applies iteration in real time, embedding rapid improvements and stakeholder engagement in the developer’s workflow.",
+          "tools_and_technologies": ["Miro"]
+        }
+      ]
+    },
+    {
+      "competency": "Integrate design system guidelines into development workflows",
+      "time_estimate_m": 180,
+      "rationale": "Applying design system principles ensures consistency and velocity in product development, addressing the client's focus on the Currency Design System and its benefits for developer efficiency and product quality.",
+      "modules": [
+        {
+          "title": "Design Systems and Developer Workflows",
+          "overview": "Understand what a design system is and how it fits into development processes. We'll look at why companies use systems like Primer, and how following standards makes both design and coding more efficient.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Builds the foundational understanding needed to use design systems effectively, matching business outcomes focused on efficiency and quality.",
+          "tools_and_technologies": ["Primer Design System"]
+        },
+        {
+          "title": "Hands-On With Primer in Development",
+          "overview": "Work through practical exercises using the Primer Design System alongside your development tools. You'll implement design tokens and components and see how standards translate into code.",
+          "time_estimate_m": 60,
+          "type": "lab",
+          "rationale": "Makes the connection between design and code concrete, directly supporting the priority for developer familiarity with the actual tools they’ll use.",
+          "tools_and_technologies": ["Primer Design System", "Visual Studio Code"]
+        },
+        {
+          "title": "Ensuring Design Consistency",
+          "overview": "Learn strategies for maintaining consistency and quality as your product grows. We'll share techniques for auditing your implementations and communicating with your team about design debt.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Ensures developers maintain design standards, catching issues early and optimizing for scalable, high-quality code and design.",
+          "tools_and_technologies": ["Primer Design System"]
+        },
+        {
+          "title": "Design System Integration Lab",
+          "overview": "Integrate Primer Design System components into a sample web project using Visual Studio Code. You'll practice using documentation for components, customizing safely within guidelines, and delivering fully aligned UIs.",
+          "time_estimate_m": 30,
+          "type": "lab",
+          "rationale": "Locks in hands-on skills needed to translate design system guidance into reliable, real-world products.",
+          "tools_and_technologies": ["Primer Design System", "Visual Studio Code"]
+        }
+      ]
+    },
+    {
+      "competency": "Evaluate product designs for alignment with stakeholder requirements and technical constraints",
+      "time_estimate_m": 180,
+      "rationale": "This competency helps learners practice balancing business needs, stakeholder input, and feasibility, tying directly into high-level learning outcomes about evaluating business requirements and collaborating with multiple disciplines.",
+      "modules": [
+        {
+          "title": "Understanding Stakeholder Needs",
+          "overview": "Learn how to identify and collect requirements from different stakeholders, including business, design, and engineering teams. We'll cover communication strategies for clarifying needs and managing expectations.",
+          "time_estimate_m": 60,
+          "type": "lecture",
+          "rationale": "Emphasizes the necessity for developers to engage stakeholders actively, ensuring everyone’s needs are considered in product decisions.",
+          "tools_and_technologies": []
+        },
+        {
+          "title": "Technical Constraints in Product Design",
+          "overview": "Explore ways to determine and articulate what’s technically feasible during the design process. We’ll go through examples of how technology limits or enables product features, using relatable scenarios from web development.",
+          "time_estimate_m": 45,
+          "type": "lecture",
+          "rationale": "Arms developers with practical knowledge on how technical realities affect design choices and business priorities.",
+          "tools_and_technologies": []
+        },
+        {
+          "title": "Requirements and Constraints Workshop",
+          "overview": "Collaborate in teams to evaluate sample product requirements and identify technical constraints. Together, you'll discuss trade-offs, propose alternatives, and present your findings to the group.",
           "time_estimate_m": 75,
           "type": "lab",
-          "rationale": "Mastery of Miro directly answers the client’s needs for effective wireframing and communication, improving both the speed and quality of design-team interactions.",
-          "tools_and_technologies": ["Miro"]
-        },
-        {
-          "title": "Presenting Low-Fidelity Designs",
-          "overview": "Develop skills in presenting and receiving feedback on low-fidelity designs—an essential step for cross-discipline collaboration. We’ll discuss best practices for framing feedback and refine your approach in small group sessions.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "Presentation is a hard skill that strengthens communication and the ability to justify design choices to peer and UX professionals, increasing team efficiency.",
+          "rationale": "Solidifies the skill of evaluating and reconciling stakeholder needs and technical feasibility, supporting the need for cross-disciplinary decision-making.",
           "tools_and_technologies": []
-        }
-      ]
-    },
-    {
-      "competency": "Construct high-fidelity prototypes that reflect design decisions",
-      "time_estimate_m": 270,
-      "rationale": "Building polished prototypes aligns with the outcome of creating professional, complete designs and prepares engineers to clearly articulate their design decisions to peers, elevating their technical design proficiency.",
-      "modules": [
-        {
-          "title": "High-Fidelity Prototyping Foundations",
-          "overview": "We’ll introduce the key concepts behind high-fidelity prototyping, focusing on the shift from wireframes to fully realized interfaces. Explore typical deliverables, what makes a prototype ‘high fidelity,’ and the value for developer–designer collaboration.",
-          "time_estimate_m": 45,
-          "type": "lecture",
-          "rationale": "Grounds students in what sets high-fidelity prototyping apart, addressing the need for professional, complete designs and boosting communication with UX teams.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Building Interactive Prototypes Lab",
-          "overview": "Get hands-on by building interactive, high-fidelity prototypes for key application flows. Use features like clickable elements and realistic transitions so your peers and stakeholders can experience your designs in action.",
-          "time_estimate_m": 90,
-          "type": "lab",
-          "rationale": "Provides crucial practical experience in making designs testable and interactive, matching the business outcome of developing advanced technical design skills.",
-          "tools_and_technologies": ["Miro"]
-        },
-        {
-          "title": "Applying the Currency Design System",
-          "overview": "Learn how to use an existing design system—the Currency Design System—to enhance your prototypes. Practice incorporating reusable UI components for increased consistency, efficiency, and polish in your projects.",
-          "time_estimate_m": 90,
-          "type": "lab",
-          "rationale": "Hands-on exposure with a collaborative design system (direct client request) empowers learners to accelerate development and foster a collaborative culture.",
-          "tools_and_technologies": ["Currency Design System"]
-        },
-        {
-          "title": "Articulating Design Decisions",
-          "overview": "In this module, you’ll develop techniques for talking through your high-fidelity prototypes, highlighting the design decisions and technical trade-offs made. Practice giving and receiving technical feedback in a collaborative setting.",
-          "time_estimate_m": 45,
-          "type": "lecture",
-          "rationale": "Empowers engineers to explain their design process and defend decisions with peers, addressing core course and client outcomes.",
-          "tools_and_technologies": []
-        }
-      ]
-    },
-    {
-      "competency": "Apply foundational visual design principles to digital interfaces",
-      "time_estimate_m": 180,
-      "rationale": "Ensures engineers understand and implement visual design concepts, directly supporting learning outcomes related to enhancing the design of digital products.",
-      "modules": [
-        {
-          "title": "Principles of Visual Design",
-          "overview": "We’ll explore key visual design principles—like hierarchy, contrast, and alignment—tailored for digital product development. This module helps ensure your interfaces don’t just function well, but look great too.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "Directly supports the outcome of utilizing foundational visual techniques to enhance digital products, ensuring developers can build attractive and effective user interfaces.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Visual Design in Practice Lab",
-          "overview": "In this hands-on session, you’ll apply what you’ve learned to real page layouts and components. Work with peers to review, revise, and polish digital interface examples using proven design principles.",
-          "time_estimate_m": 60,
-          "type": "lab",
-          "rationale": "Practical application ensures the visual design concepts are internalized and directly applied to development projects.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Design System Components and Visual Consistency",
-          "overview": "Learn how pre-built design system components support visual consistency in your apps. We’ll use the Currency Design System to explore how accessible, branded, and visually cohesive interfaces are built.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "Reinforces the client priority of leveraging shared systems and real-world tools to maintain quality and velocity in digital design.",
-          "tools_and_technologies": ["Currency Design System"]
-        }
-      ]
-    },
-    {
-      "competency": "Structure information architecture for intuitive navigation",
-      "time_estimate_m": 180,
-      "rationale": "This competency enables learners to design product interactions with logical navigation, addressing the need for sound information architecture in modern development work.",
-      "modules": [
-        {
-          "title": "Information Architecture Basics",
-          "overview": "We’ll unpack the core concepts behind structuring information for web apps. You’ll learn about hierarchy, categories, and labeling, plus why intuitive navigation is critical for users.",
-          "time_estimate_m": 45,
-          "type": "lecture",
-          "rationale": "Introduces foundational information architecture concepts so developers can structure and label content appropriately—a skill directly supporting business outcomes and client priorities.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Navigation Patterns and User Flows",
-          "overview": "Examine common navigation patterns and how to plan user flows using industry standards. We’ll look at examples in modern JavaScript frameworks and discuss best practices for seamless user experience.",
-          "time_estimate_m": 45,
-          "type": "lecture",
-          "rationale": "Supports learners in connecting theoretical structure with day-to-day development, aligning with their core proficiencies as JavaScript and React developers.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Miro IA Mapping Lab",
-          "overview": "Let’s use Miro to diagram site maps and user flows together. You’ll build, review, and iterate on your architecture with your peers, gaining immediate feedback on your structure and logic.",
-          "time_estimate_m": 90,
-          "type": "lab",
-          "rationale": "Hands-on mapping with Miro aligns with the need for real-world collaboration skills, fulfilling course and client goals for intuitive navigation.",
-          "tools_and_technologies": ["Miro"]
-        }
-      ]
-    },
-    {
-      "competency": "Evaluate designs against product metrics and feedback",
-      "time_estimate_m": 180,
-      "rationale": "Critical for self-reliance and continuous improvement, this competency teaches learners how to assess designs through business metrics and user feedback, supporting both business outcomes and client priorities.",
-      "modules": [
-        {
-          "title": "Product Metrics 101",
-          "overview": "Understand what metrics matter when evaluating product design success. We’ll introduce key performance indicators (KPIs), explain why they’re important, and discuss how to set measurement goals in real projects.",
-          "time_estimate_m": 45,
-          "type": "lecture",
-          "rationale": "Lays the groundwork for understanding quantitative and qualitative measures of success, linking design work to business outcomes.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Collecting and Synthesizing Feedback",
-          "overview": "Explore different ways to gather and synthesize feedback from users and stakeholders, including surveys and usability tests. Learn how to prioritize and implement this feedback to improve your designs.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "Bridges technical and research skills by giving engineers the ability to meaningfully interpret and act on feedback, supporting self-reliance and process improvement.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Iterative Evaluation Lab",
-          "overview": "Put theory into practice as you review a design, map relevant metrics, and refine based on targeted feedback. You’ll simulate the evaluation process, collaborating to identify and implement meaningful design updates.",
-          "time_estimate_m": 75,
-          "type": "lab",
-          "rationale": "Active evaluation and revision is central to the UX process. This lab cements learners' abilities to close the feedback loop and iterate toward stronger product outcomes.",
-          "tools_and_technologies": []
-        }
-      ]
-    },
-    {
-      "competency": "Utilize design systems to enforce consistency and velocity",
-      "time_estimate_m": 270,
-      "rationale": "Exposure and use of design systems such as the Currency Design System are prioritized to improve efficiency, reinforce cohesive product design, and enhance cross-discipline collaboration.",
-      "modules": [
-        {
-          "title": "Intro to Design Systems",
-          "overview": "We’ll explore what design systems are, why they matter, and how they change the way teams build products. See the impact of design systems on efficiency and cross-team communication.",
-          "time_estimate_m": 45,
-          "type": "lecture",
-          "rationale": "Provides context and purpose for design systems in a developer’s workflow, directly supporting client priorities around communication and velocity.",
-          "tools_and_technologies": []
-        },
-        {
-          "title": "Currency Design System in Action",
-          "overview": "Jump into the Currency Design System (CDS) and learn how to identify, choose, and implement reusable components in your projects. Practice navigating CDS resources and incorporating them into design and code.",
-          "time_estimate_m": 90,
-          "type": "lab",
-          "rationale": "Direct, practical experience with CDS supports all stated business outcomes and client goals for shared tooling and best practices.",
-          "tools_and_technologies": ["Currency Design System"]
-        },
-        {
-          "title": "Maintaining Consistency Across Teams",
-          "overview": "Learn strategies for keeping design and implementation consistent as teams grow and change. We’ll discuss versioning, documentation, and collaboration tactics to make sure everyone’s aligned from ideation to production.",
-          "time_estimate_m": 60,
-          "type": "lecture",
-          "rationale": "Improves organization-wide implementation of design systems, which is tied to faster, more consistent delivery and strong collaboration—key business outcomes.",
-          "tools_and_technologies": ["Currency Design System"]
-        },
-        {
-          "title": "Team Collaboration with CDS Lab",
-          "overview": "Work in groups to complete a design challenge using the Currency Design System. You’ll coordinate tasks, share components, and present a solution that demonstrates both velocity and cohesion.",
-          "time_estimate_m": 75,
-          "type": "lab",
-          "rationale": "Solidifies collaborative skills and design system fluency as learners work cross-functionally, reinforcing critical course and client learning objectives.",
-          "tools_and_technologies": ["Currency Design System"]
         }
       ]
     }
