@@ -1,44 +1,39 @@
 {
   "competencies": [
     {
-      "competency": "Apply baseline user research methodologies to inform design decisions",
-      "time_estimate_m": 270,
-      "rationale": "This competency directly supports business outcomes related to equipping the tech team with research methodologies and client priorities requiring understanding of foundational research techniques for cross-discipline collaboration. It also addresses the learning outcome of evaluating business requirements by practicing research that underpins sound design. Allocating 270 minutes allows time for instruction, guided exercises, and analysis practice for learners new to formal UX research."
+      "competency": "Conduct foundational user research using leading methodologies",
+      "time_estimate_m": 360,
+      "rationale": "This competency directly addresses the client's priority for establishing a baseline in research techniques and best practices for cross-discipline collaboration, as well as the business outcome of equipping tech teams with research methodologies. The extended time supports hands-on exercises and practice, enabling learners to apply research frameworks appropriate for their background."
     },
     {
-      "competency": "Create low-fidelity wireframes to communicate user flows and application structure",
+      "competency": "Develop and refine wireframes to communicate design solutions",
+      "time_estimate_m": 300,
+      "rationale": "Wireframing aligns with the need for engineers to visually communicate and collaboratively iterate on ideas, satisfying the client's priority for tool-based communication (such as Miro) and supporting efficient collaborative processes to speed up development and design alignment. Practice and feedback cycles are embedded in this duration."
+    },
+    {
+      "competency": "Apply information architecture principles to structure product interfaces",
+      "time_estimate_m": 210,
+      "rationale": "Information architecture is foundational to effective navigation and product usability, supporting learning outcomes related to structuring logical navigation and enhancing foundational visual design. This competency complements learners' existing skills in UI building and expands their critical design decision-making."
+    },
+    {
+      "competency": "Build high-fidelity, interactive prototypes demonstrating end-to-end design flows",
+      "time_estimate_m": 330,
+      "rationale": "This addresses the business outcome of creating polished, professional designs and supports the client's focus on exposure to design systems (such as Primer Design System). The allotted time includes instruction, guided practice, tool setup, and peer review sessions."
+    },
+    {
+      "competency": "Evaluate designs against business goals and technical constraints",
       "time_estimate_m": 240,
-      "rationale": "Aligns with the client’s priority for engineers to visually express and iterate ideas for enhanced collaboration and lays the groundwork for higher-fidelity design work. It also satisfies the need for hands-on Miro practice, as required by the client. The time estimate covers instruction, practical group work, and peer feedback on wireframes."
+      "rationale": "Meeting business requirements and technical constraints ensures designs are realistic and valuable, aligning with both business outcomes and learning outcomes, including the use of product management techniques. The duration allows for in-depth application to real-world scenarios and robust group critique."
     },
     {
-      "competency": "Develop high-fidelity prototypes that meet defined design requirements",
-      "time_estimate_m": 390,
-      "rationale": "This directly addresses the business outcome for demonstrating high-fidelity design abilities and enables learners to meet learning outcomes involving creating polished, professional designs. The extended time is justified by the complexity and iterative nature of building, testing, and refining interactive prototypes."
-    },
-    {
-      "competency": "Implement visual design principles to enhance usability and aesthetic appeal",
-      "time_estimate_m": 210,
-      "rationale": "Supports the outcome of utilizing fundamental visual design techniques and meets the need for developers to critically apply design theory in their UI implementations. The time allocated allows for concept instruction, critique, and application to ongoing project work."
-    },
-    {
-      "competency": "Design intuitive navigation and information architecture for digital products",
-      "time_estimate_m": 210,
-      "rationale": "Fulfills the learning outcome around structuring product interactions logically using information architecture methodologies and aligns with client priorities on understanding end-to-end design processes. Time covers instruction, exercises, and review of navigation schemas."
-    },
-    {
-      "competency": "Use a design system to build consistent and scalable UI components",
-      "time_estimate_m": 210,
-      "rationale": "Directly links to the client’s emphasis on collaborative tools like the Currency Design System, ensuring learners build familiarity with efficient, standards-based UI creation. This time allows for guided demos, individual building sessions, and review."
-    },
-    {
-      "competency": "Evaluate and iterate on design solutions using usability testing feedback",
+      "competency": "Utilize a design system when implementing UI components",
       "time_estimate_m": 180,
-      "rationale": "Enables meeting business outcomes related to speeding up design-development collaboration by practicing feedback cycles and supports the learning outcome of articulating design decisions to UX peers. The time allocated permits running user tests, gathering insights, and refining designs accordingly."
+      "rationale": "This competency targets the client's priority of reinforcing cohesive product design and increasing efficiency by leveraging reusable UI components. It also supports the business goal of making developers more self-reliant in design implementation. This estimate incorporates setup, guided walkthrough, and exercise."
     },
     {
-      "competency": "Articulate and defend design choices to technical and non-technical audiences",
-      "time_estimate_m": 90,
-      "rationale": "Supports the learning outcome requiring articulation of design decisions and is critical for effective cross-discipline collaboration, per the client's priorities. This time focuses on preparing and delivering short presentations and peer critique."
+      "competency": "Articulate and document design decisions for peer and stakeholder review",
+      "time_estimate_m": 180,
+      "rationale": "Clear communication of design rationale is vital for cross-functional work and fulfilling the learning outcome of articulating and defending design decisions. Given the learner persona's technical expertise, this module will focus on bridging gaps between engineering and UX through effective documentation and presentation."
     }
   ]
 }

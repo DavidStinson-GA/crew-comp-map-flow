@@ -309,6 +309,36 @@ generate_learning_objectives:
     - Update existing array elements and utilize methods like `push()` and `pop()` to add or remove elements at the start or end of an array.
     - Implement a mobile-first design approach and use the viewport meta tag to optimize web pages for mobile devices.
 
+
+    ## Important Exceptions
+
+    When developing learning objectives, we do not use the following Bloom's verbs because they are not measurable:
+
+    - Assign
+    - Compute
+    - Initialize
+    - Manipulate
+    - Edit
+    - Practice
+    - Use
+    - Utilize
+    - Breakdown
+    - Compare
+    - Contrast
+    - Construct
+    - Build
+    - Instantiate
+    - Create
+    - Design
+    - Develop
+    - Establish
+    - Generate
+    - Reconstruct
+    - Write
+    - Code
+
+    Please review the above list of Bloom's verbs and ensure you do not include them in the learning objectives you generate.
+
     ## Context
 
     When writing learning objectives for each module, you should use the following context:

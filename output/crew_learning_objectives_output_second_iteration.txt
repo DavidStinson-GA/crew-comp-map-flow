@@ -12,11 +12,6 @@
           "type": "lecture",
           "rationale": "This module gives software engineers foundational knowledge in UX research, matching the client’s priority for baseline techniques and supporting effective cross-discipline collaboration.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Expand the overview to a full 4–5 sentences to include when to integrate research into dev workflows.",
-            "Clarify how engineers apply each method in their day-to-day work to reinforce practical application.",
-            "Consider referencing a documentation or note-taking tool so engineers know how to capture research outputs."
-          ],
           "learning_objectives": [
             "Define core UX research methods and their purposes.",
             "Explain when and why to use surveys, interviews, and observational studies.",
@@ -30,11 +25,6 @@
           "type": "lab",
           "rationale": "This immersive activity builds practical skills in implementing research methodologies, fulfilling the competency’s emphasis on self-reliance and actionable research application.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Expand the overview to 4–5 sentences to outline expected deliverables, like a research plan template.",
-            "Mention a tool or shared board (for example, Miro) to capture interview notes and insights.",
-            "Clarify how pairs will exchange feedback to solidify learning outcomes."
-          ],
           "learning_objectives": [
             "Create a basic user interview plan with clear objectives.",
             "Conduct a mock user interview and record qualitative data.",
@@ -48,11 +38,6 @@
           "type": "lecture",
           "rationale": "This module translates raw research into actionable insights, giving engineers a replicable approach for informing their development decisions.",
           "tools_and_technologies": ["Miro"],
-          "qa_feedback": [
-            "Expand the overview to 4–5 sentences by describing how insights feed into backlog grooming or sprint planning.",
-            "Ensure the overview explicitly mentions using Miro for affinity mapping.",
-            "Include an example scenario to make the application of personas concrete."
-          ],
           "learning_objectives": [
             "Use affinity mapping to group qualitative data.",
             "Develop a user persona based on synthesized insights.",
@@ -66,11 +51,6 @@
           "type": "lab",
           "rationale": "By practicing synthesis and using collaborative tools, this lab addresses both research methodology skills and the client’s priority for cross-team collaboration.",
           "tools_and_technologies": ["Miro"],
-          "qa_feedback": [
-            "Expand to 4–5 sentences to break down each activity step by step.",
-            "Specify required outputs (such as a persona card and theme clusters).",
-            "Reinforce how the lab ties back to development workflows and sprint planning."
-          ],
           "learning_objectives": [
             "Create an affinity map in Miro from interview notes.",
             "Draft at least two user personas representing distinct user segments.",
@@ -84,11 +64,6 @@
           "type": "lecture",
           "rationale": "Clear communication of research findings is critical for project alignment and fulfills the outcome of effective cross-disciplinary advocacy.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Extend the overview to 4–5 sentences, specifying the tools or templates to use for presentations.",
-            "Clarify how to adapt findings for both UX and engineering audiences.",
-            "Include a note on slide versus live demo formats to guide learners."
-          ],
           "learning_objectives": [
             "Design a presentation structure for research findings.",
             "Apply data visualization techniques to qualitative results.",
@@ -109,11 +84,6 @@
           "type": "lecture",
           "rationale": "Engineers need to understand wireframing conventions and goals, setting the stage for hands-on tool use and collaborative ideation.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Expand to 4–5 sentences by describing the handoff from sketch to wireframe tool.",
-            "Clarify how fidelity choices affect development workflows.",
-            "Include an example of a common wireframe pattern."
-          ],
           "learning_objectives": [
             "Differentiate wireframe fidelities and their uses.",
             "Identify common UI patterns for web applications.",
@@ -127,11 +97,6 @@
           "type": "lab",
           "rationale": "This lab ensures engineers can use industry tools (Miro) to build and communicate visual concepts, directly supporting the client goal of better cross-team collaboration.",
           "tools_and_technologies": ["Miro"],
-          "qa_feedback": [
-            "Ensure the overview has 4–5 sentences by detailing the sample app scenario.",
-            "Clarify how participants will share and export their wireframes.",
-            "Mention specific Miro features (like frames, components) that will be covered."
-          ],
           "learning_objectives": [
             "Create a wireframe in Miro with frames and UI components.",
             "Apply real-time collaboration tools for rapid iteration.",
@@ -145,11 +110,6 @@
           "type": "lab",
           "rationale": "This module builds iteration skills and fosters collaborative critique, both vital for refining ideas and communicating effectively with UX teams.",
           "tools_and_technologies": ["Miro"],
-          "qa_feedback": [
-            "Expand to 4–5 sentences to outline the critique process step by step.",
-            "Ensure the focus remains on usability testing rather than purely on peer collaboration.",
-            "Clarify how iteration updates feed back into the development pipeline."
-          ],
           "learning_objectives": [
             "Use structured critique methods to evaluate wireframes.",
             "Document feedback and plan iterative improvements.",
@@ -163,11 +123,6 @@
           "type": "lecture",
           "rationale": "This ensures participants can capture their reasoning and communicate it clearly, serving the learning outcome of clear design articulation.",
           "tools_and_technologies": ["Miro"],
-          "qa_feedback": [
-            "Extend overview to 4–5 sentences by describing typical documentation templates.",
-            "Include an example of a well-documented wireframe.",
-            "Clarify how these docs integrate with engineering workflows."
-          ],
           "learning_objectives": [
             "Annotate wireframes with callouts and rationale.",
             "Create simple flowcharts to explain user paths.",
@@ -188,11 +143,6 @@
           "type": "lecture",
           "rationale": "Engineers are introduced to IA as a backbone for structuring content and ensuring intuitive product interaction, satisfying the client priority for end-to-end design knowledge.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Expand to 4–5 sentences by referencing how IA influences routing in frameworks like React.",
-            "Include a concrete example or case study.",
-            "Clarify how IA artifacts inform development structure."
-          ],
           "learning_objectives": [
             "Explain key IA concepts: hierarchy, labeling, navigation.",
             "Analyze existing navigation models in web applications.",
@@ -206,11 +156,6 @@
           "type": "lecture",
           "rationale": "Practically connects IA theory to frameworks engineers are familiar with, bridging knowledge to implementation.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Extend the overview to 4–5 sentences by describing implementation considerations in code.",
-            "Add a mention of how to document chosen patterns for the team.",
-            "Clarify how this module ties back to the IA sketch created earlier."
-          ],
           "learning_objectives": [
             "Identify common navigation components in web applications.",
             "Compare trade-offs of different navigation patterns.",
@@ -224,11 +169,6 @@
           "type": "lab",
           "rationale": "This lab brings IA concepts into practice via team-based exercises, reinforcing collaboration and effective structure design.",
           "tools_and_technologies": ["Miro"],
-          "qa_feedback": [
-            "Expand to 4–5 sentences to detail deliverables, like a Miro board export.",
-            "Clarify how card sorting results translate into IA diagrams.",
-            "Ensure each participant understands their role in the sort."
-          ],
           "learning_objectives": [
             "Conduct open and closed card sorts in Miro.",
             "Interpret sorting results to define content groupings.",
@@ -242,11 +182,6 @@
           "type": "lab",
           "rationale": "This module merges IA with practical wireframing, giving engineers hands-on experience to improve product navigation and usability.",
           "tools_and_technologies": ["Miro"],
-          "qa_feedback": [
-            "Extend to 4–5 sentences by describing how to test flows with users.",
-            "Include a note on documenting changes back to the IA diagram.",
-            "Clarify how to export or share the prototype for feedback."
-          ],
           "learning_objectives": [
             "Set up a clickable navigation prototype in Miro.",
             "Link frames to represent user journeys.",
@@ -267,11 +202,6 @@
           "type": "lecture",
           "rationale": "Establishes clear expectations and criteria for hi-fi prototyping, supporting the business goal of professional, polished deliverables.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Ensure the overview has 4–5 sentences by including an example workflow.",
-            "Clarify how hi-fi prototypes integrate into sprint cycles.",
-            "Add a note on key interactivity features to focus on."
-          ],
           "learning_objectives": [
             "Define characteristics of high-fidelity prototypes.",
             "Compare hi-fi and lo-fi prototypes in terms of development effort.",
@@ -285,11 +215,6 @@
           "type": "lecture",
           "rationale": "Familiarizes engineers with the design system standards the client uses, supporting cohesive product design and improving workflow efficiency.",
           "tools_and_technologies": ["Primer Design System"],
-          "qa_feedback": [
-            "Expand to 4–5 sentences by giving an example of a common component.",
-            "Clarify how to access and install the Primer library.",
-            "Mention naming conventions or usage best practices."
-          ],
           "learning_objectives": [
             "Navigate the Primer Design System documentation.",
             "Identify key UI components and their variants.",
@@ -303,11 +228,6 @@
           "type": "lab",
           "rationale": "This lab ensures direct, practical experience applying design systems, cementing learning outcomes around efficient and reusable design.",
           "tools_and_technologies": ["Primer Design System", "Miro"],
-          "qa_feedback": [
-            "Extend to 4–5 sentences by specifying the sample screens you’ll build.",
-            "Clarify how to import Primer assets into the chosen tool.",
-            "Ensure the focus remains on applying system standards rather than styling whims."
-          ],
           "learning_objectives": [
             "Import and use Primer components in a prototyping tool.",
             "Create two high-fidelity screens following system guidelines.",
@@ -321,11 +241,6 @@
           "type": "lab",
           "rationale": "This module supports rapid improvement cycles and integration of feedback, aligning with business needs for fast collaboration.",
           "tools_and_technologies": ["Miro", "Primer Design System"],
-          "qa_feedback": [
-            "Expand overview to 4–5 sentences by outlining steps for collecting feedback.",
-            "Clarify how changes are documented and tracked.",
-            "Ensure the focus stays on prototyping improvements rather than group discussion."
-          ],
           "learning_objectives": [
             "Set up a feedback loop for prototype review.",
             "Integrate feedback into your high-fidelity design.",
@@ -339,11 +254,6 @@
           "type": "lecture",
           "rationale": "Links prototyping with the learner’s development workflow, ensuring design concepts translate smoothly into real products.",
           "tools_and_technologies": ["Visual Studio Code"],
-          "qa_feedback": [
-            "Extend to 4–5 sentences by describing the asset export process.",
-            "Clarify which plugins or extensions to use in VS Code.",
-            "Include a note on verifying pixel-perfect fidelity."
-          ],
           "learning_objectives": [
             "Export design assets for development.",
             "Inspect and extract CSS properties in VS Code.",
@@ -357,11 +267,6 @@
           "type": "lab",
           "rationale": "Addresses the outcome of building professional, production-ready designs that meet real-world standards for inclusivity.",
           "tools_and_technologies": ["Miro", "Primer Design System"],
-          "qa_feedback": [
-            "Expand the overview to 4–5 sentences by listing specific accessibility guidelines covered.",
-            "Clarify how to test prototypes and record issues.",
-            "Include a note on using browser tools or plugins for checks."
-          ],
           "learning_objectives": [
             "Apply contrast and typography checks for accessibility.",
             "Add ARIA attributes to prototype components.",
@@ -382,11 +287,6 @@
           "type": "lecture",
           "rationale": "Ensures engineers understand the sources and methods of collecting feedback, foundational to iteration success.",
           "tools_and_technologies": ["Miro"],
-          "qa_feedback": [
-            "Expand to 4–5 sentences by including examples of different stakeholder roles.",
-            "Clarify how to prioritize conflicting feedback.",
-            "Mention how this plan ties back to sprint cycles."
-          ],
           "learning_objectives": [
             "Identify stakeholder groups and feedback needs.",
             "Use a template to capture and organize feedback.",
@@ -400,11 +300,6 @@
           "type": "lab",
           "rationale": "Hands-on activity builds iterative design skills and supports adapting work to meet business and user needs.",
           "tools_and_technologies": ["Miro", "Primer Design System"],
-          "qa_feedback": [
-            "Ensure the overview is 4–5 sentences by detailing the source of feedback.",
-            "Clarify how to track which feedback items were implemented.",
-            "Mention expected deliverables like an updated prototype link."
-          ],
           "learning_objectives": [
             "Map stakeholder feedback to UI changes.",
             "Update a prototype using Primer components.",
@@ -418,11 +313,6 @@
           "type": "lecture",
           "rationale": "Gives engineers tools to evaluate feasibility and business alignment in their iterative process.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Extend the overview to 4–5 sentences with a brief case study example.",
-            "Clarify the outputs, like a prioritization matrix or roadmap draft.",
-            "Mention how these techniques integrate with UX research insights."
-          ],
           "learning_objectives": [
             "Create a simple product roadmap for a feature set.",
             "Perform a trade-off analysis using a matrix.",
@@ -436,11 +326,6 @@
           "type": "lab",
           "rationale": "This capstone lab builds workflow fluency by giving participants repeated practice in applying feedback loops, matching the business goal of development velocity.",
           "tools_and_technologies": ["Miro", "Primer Design System"],
-          "qa_feedback": [
-            "Expand to 4–5 sentences by describing each iteration phase.",
-            "Clarify how to capture version history and decisions.",
-            "Ensure the focus remains on rapid iteration rather than general collaboration."
-          ],
           "learning_objectives": [
             "Run two feedback-driven iteration cycles.",
             "Track design changes and decision rationale.",
@@ -461,11 +346,6 @@
           "type": "lecture",
           "rationale": "Provides a framework and examples for clear design documentation, essential for sharing decisions with broader teams.",
           "tools_and_technologies": ["Miro"],
-          "qa_feedback": [
-            "Ensure the overview is 4–5 sentences by detailing an example template.",
-            "Clarify how documentation links back to prototype artifacts.",
-            "Mention common pitfalls to avoid in decision logs."
-          ],
           "learning_objectives": [
             "Use a template to document design decisions.",
             "Annotate wireframes with clear rationale.",
@@ -479,11 +359,6 @@
           "type": "lab",
           "rationale": "Builds practical handoff skills to improve collaboration and technical team alignment.",
           "tools_and_technologies": ["Visual Studio Code", "Miro"],
-          "qa_feedback": [
-            "Expand to 4–5 sentences by describing the spec document format.",
-            "Clarify which asset formats are preferred.",
-            "Mention how to verify alignment between design and code."
-          ],
           "learning_objectives": [
             "Export UI assets from Miro for development.",
             "Create a spec document in VS Code.",
@@ -497,11 +372,6 @@
           "type": "lecture",
           "rationale": "Supports effective communication and advocacy for UX best practices, ensuring consistent cross-discipline alignment.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Ensure overview is 4–5 sentences by adding an example scenario.",
-            "Clarify any slide or board templates participants will use.",
-            "Mention time allocations for Q&A in presentations."
-          ],
           "learning_objectives": [
             "Explain design decisions to diverse audiences.",
             "Structure presentations for clarity and impact.",
@@ -515,11 +385,6 @@
           "type": "lab",
           "rationale": "Reinforces confidence and skill in live articulation, which is critical for long-term team success and transparent processes.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Expand to 4–5 sentences by detailing each reflection step.",
-            "Clarify how action items will be recorded and tracked.",
-            "Ensure focus remains on skill refinement rather than open discussion."
-          ],
           "learning_objectives": [
             "Present design decisions and handle live questions.",
             "Reflect on communication performance.",
@@ -540,11 +405,6 @@
           "type": "lecture",
           "rationale": "Gives engineers the baseline design vocabulary to apply visual enhancements and align with UX/UI best practices.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Ensure the overview has 4–5 sentences by adding a brief example of each principle.",
-            "Clarify how these principles tie into responsive design considerations.",
-            "Mention any reference resources for further study."
-          ],
           "learning_objectives": [
             "Explain core visual design principles.",
             "Evaluate UI mockups for visual consistency.",
@@ -558,11 +418,6 @@
           "type": "lab",
           "rationale": "Transforms theory into practice, helping participants internalize design enhancements and utilize shared systems.",
           "tools_and_technologies": ["Primer Design System"],
-          "qa_feedback": [
-            "Expand to 4–5 sentences by specifying the starting mockup scenario.",
-            "Clarify how to use Primer tokens for color and typography.",
-            "Ensure focus remains on visual enhancements rather than general layout."
-          ],
           "learning_objectives": [
             "Use Primer tokens to update color and font styles.",
             "Adjust spacing and layout for improved visual hierarchy.",
@@ -576,11 +431,6 @@
           "type": "lecture",
           "rationale": "Ensures final designs add value for all users and reinforces the goal of building professional, user-centered solutions.",
           "tools_and_technologies": [],
-          "qa_feedback": [
-            "Ensure the overview is 4–5 sentences by adding an example of an accessibility failure case.",
-            "Clarify which browser tools or plugins will be demonstrated.",
-            "Mention how to document accessibility issues."
-          ],
           "learning_objectives": [
             "Identify key accessibility standards (WCAG basics).",
             "Use browser tools to test color contrast and semantic markup.",
@@ -594,11 +444,6 @@
           "type": "lab",
           "rationale": "Provides essential practice in applying visual and accessibility principles for polished, inclusive design.",
           "tools_and_technologies": ["Primer Design System"],
-          "qa_feedback": [
-            "Expand to 4–5 sentences by describing the starting prototype and expected outputs.",
-            "Clarify how to test ARIA roles and keyboard navigation.",
-            "Mention how to record and present accessibility fixes."
-          ],
           "learning_objectives": [
             "Apply ARIA roles to UI components.",
             "Enhance color contrast and typography for accessibility.",
