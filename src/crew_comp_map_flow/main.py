@@ -8,6 +8,7 @@ from crewai.flow import Flow, listen, start
 
 from crew_comp_map_flow.crews.competencies_crew.competencies_crew import CompetenciesCrew
 from crew_comp_map_flow.crews.modules_crew.modules_crew import ModulesCrew
+from crew_comp_map_flow.crews.all_modules_crew.all_modules_crew import AllModulesCrew
 
 from crew_comp_map_flow.data import documentation
 
@@ -188,7 +189,7 @@ class CompetencyFlow(Flow[CompMapState]):
         print("Starting to generate competencies")
 
     @listen(generate_comp_map)
-    def generate_competencies(self):
+    async def generate_competencies(self):
         print("Generating competencies")
         result = (
             CompetenciesCrew()
@@ -207,6 +208,43 @@ class CompetencyFlow(Flow[CompMapState]):
             .kickoff(inputs=self.state.model_dump())
         )
         print("Modules generated", result.raw)
+
+        self.state.competencies = json.loads(result.raw)["competencies"]
+
+        all_modules = []
+
+        for competency in self.state.competencies:
+            for module in competency:
+                all_modules.append({
+                    "competency": competency,
+                    "module": module,
+                    **self.state.model_dump()
+                })
+
+        result = (
+            await AllModulesCrew()
+            .crew()
+            .kickoff_for_each_async(all_modules)
+        )
+
+        # print("All modules", result)
+
+        final_modules = []
+
+        for module in result:
+            final_modules.append(json.loads(module.raw))
+
+        print("Final modules", final_modules[0])
+
+        print("Final modules 2", json.dumps(final_modules, indent=2, ensure_ascii=False))
+
+        # for competency in self.state.competencies:
+        #     for module in competency:
+        #         for final_module in final_modules:
+        #             if module["id"] == final_module["id"]:
+        #                 module.update(final_module)
+
+        print("Updated competencies", self.state.competencies)
 
 def kickoff():
     competency_flow = CompetencyFlow()
