@@ -8,6 +8,7 @@ from crewai.flow import Flow, listen, start
 
 from crew_comp_map_flow.crews.competencies_crew.competencies_crew import CompetenciesCrew
 from crew_comp_map_flow.crews.modules_crew.modules_crew import ModulesCrew
+from crew_comp_map_flow.crews.all_modules_crew.all_modules_crew import AllModulesCrew
 
 from crew_comp_map_flow.data import documentation
 
@@ -188,7 +189,7 @@ class CompetencyFlow(Flow[CompMapState]):
         print("Starting to generate competencies")
 
     @listen(generate_comp_map)
-    def generate_competencies(self):
+    async def generate_competencies(self):
         print("Generating competencies")
         result = (
             CompetenciesCrew()
@@ -206,7 +207,72 @@ class CompetencyFlow(Flow[CompMapState]):
             .crew()
             .kickoff(inputs=self.state.model_dump())
         )
-        print("Modules generated", result.raw)
+        modules_output = json.loads(result.raw)
+        all_modules = []
+        for competency in modules_output["competencies"]:
+            for module in competency["modules"]:
+                all_modules.append({
+                    **module,
+                    "competency": competency["competency"]
+                })
+
+        print(f"Total modules: {len(all_modules)}")
+
+        module_id_to_competency = {
+            module["id"]: module["competency"]
+            for module in all_modules
+        }
+
+        inputs = [
+            {
+                "module": module,
+                "competency": module["competency"],
+                **self.state.model_dump()
+            }
+            for module in all_modules
+        ]
+
+        results = await AllModulesCrew().crew().kickoff_for_each_async(inputs)
+
+        final_modules = []
+        for res in results:
+            try:
+                parsed = json.loads(res.raw)
+                # CASE 1: direct single module object
+                if isinstance(parsed, dict) and "id" in parsed:
+                    module_id = parsed["id"]
+                    parsed["competency"] = module_id_to_competency.get(module_id, None)
+                    final_modules.append(parsed)
+                # CASE 2: dict with "modules" key (list of modules)
+                elif isinstance(parsed, dict) and "modules" in parsed and isinstance(parsed["modules"], list):
+                    for mod in parsed["modules"]:
+                        module_id = mod.get("id")
+                        mod["competency"] = module_id_to_competency.get(module_id, None)
+                        final_modules.append(mod)
+                # CASE 3: list of modules directly
+                elif isinstance(parsed, list):
+                    for mod in parsed:
+                        module_id = mod.get("id")
+                        mod["competency"] = module_id_to_competency.get(module_id, None)
+                        final_modules.append(mod)
+                else:
+                    print("Unrecognized agent output structure:", parsed)
+            except Exception as e:
+                print("Error parsing result:", res, e)
+        
+        modules_by_comp = {}
+        for m in final_modules:
+            comp = m["competency"]
+            modules_by_comp.setdefault(comp, []).append(m)
+
+        new_competencies = []
+        for comp, modules in modules_by_comp.items():
+            new_competencies.append({
+                "competency": comp,
+                "modules": modules
+            })
+        self.state.competencies = new_competencies
+
 
 def kickoff():
     competency_flow = CompetencyFlow()

@@ -105,6 +105,10 @@ generate_modules:
 
     It is natural for some modules to take longer than others. Attempt to make each time estimate a multiple of 15 minutes.
 
+    ## Module ID
+
+    Each module should have a unique ID to identify it. Start at 1 and increment by 1 for each module.
+
     ## Context
 
     When writing student-facing copy, you should use the following context:
@@ -125,6 +129,7 @@ generate_modules:
           "rationale": "Explain the purpose of including this competency in relation to the input you were provided. Again, this should match the rationale for the competency in the input data."
           "modules": [
             {
+              "id": "A unique ID for the module",
               "title": "",
               "overview": "",
               "time_estimate_m": ""
@@ -142,248 +147,194 @@ generate_modules:
     You should only output a JSON object. Never output markdown. NO MARKDOWN.
   agent: led
 
-qa_modules:
-  output_file: output/crew_modules_qa_output.txt
-  description: >
-    # Objectives
+# qa_modules:
+#   output_file: output/crew_modules_qa_output.txt
+#   description: >
+#     # Objectives
 
-    As a Learning Experience Designer at General Assembly you develop courses using competency-based learning.
+#     As a Learning Experience Designer at General Assembly you develop courses using competency-based learning.
 
-    Your task is to review the generated modules and provide quality assurance work to ensure the modules are aligned with the competencies and other inputs you're provided.
+#     Your task is to review the generated modules and provide quality assurance work to ensure the modules are aligned with the competencies and other inputs you're provided.
 
-    Do not make suggestions related to what students should do in the module - focus on auditing the data received from the previous agent.
+#     Do not make suggestions related to what students should do in the module - focus on auditing the data received from the previous agent.
 
-    Do not build a "checklist" of targets met. You should only provide feedback on changes that are necessary to meet the client's priorities and course business outcomes.
+#     Do not build a "checklist" of targets met. You should only provide feedback on changes that are necessary to meet the client's priorities and course business outcomes.
 
-    You must use the following inputs (denoted by the <inputs> tag) to review the modules:
+#     You must use the following inputs (denoted by the <inputs> tag) to review the modules:
 
-    <inputs>
-    The generated module output from the previous task.
+#     <inputs>
+#     The module you will QA: {module}
 
-    The course description: {course_description}
+#     It's associated competency: {competency}
 
-    The course's business outcomes: {course_business_outcomes}
+#     The course description: {course_description}
 
-    The client's priorities: {client_priorities}
+#     The course's business outcomes: {course_business_outcomes}
 
-    The primary learner persona job role: {primary_persona_job_role}
+#     The client's priorities: {client_priorities}
 
-    The learner persona description: {learner_persona_description}
+#     The primary learner persona job role: {primary_persona_job_role}
 
-    The learner persona attributes and background: {learner_persona_attributes_and_background}
+#     The learner persona description: {learner_persona_description}
 
-    The learner persona's existing foundational knowledge related to the course topic (to be used as pre-requisites for the course): {learner_persona_existing_knowledge}
+#     The high-level learning outcomes of the course: {course_learning_outcomes}
+#     </inputs>
 
-    The high-level learning outcomes of the course: {course_learning_outcomes}
+#     ## Background on modules
 
-    The software and tools that will be used in the course: {course_software_and_tools}
-    </inputs>
+#     Modules are the building blocks of a course. They are the units of learning that are tied to a single competency.
 
-    ## Background on modules
+#     Modules represent the component parts or steps required to achieve a single competency. Those steps require the application of various skills and knowledge to meet the competency's learning outcomes.
 
-    Modules are the building blocks of a course. They are the units of learning that are tied to a single competency.
+#     By extension, modules in a course should generally build on each other - don't skip important topics, or have students complete labs when they haven't yet learned the necessary skills.
 
-    Modules represent the component parts or steps required to achieve a single competency. Those steps require the application of various skills and knowledge to meet the competency's learning outcomes.
+#     Modules should always focus on hard skills. If soft-skills will never be the focus of the entirety of a module.
 
-    By extension, modules in a course should generally build on each other - don't skip important topics, or have students complete labs when they haven't yet learned the necessary skills.
+#     ## Reviewing modules
 
-    Modules should always focus on hard skills. If soft-skills will never be the focus of the entirety of a module.
+#     Take what you know about modules into account when you're reviewing them.
 
-    ## Reviewing modules
+#     You will only provide feedback on the module's content in the "qa_feedback" field of a module. Base your feedback on what you received from the previous agent. The rest of a module's details should be left as is. A human reviewer will make the final changes later.
 
-    Take what you know about modules into account when you're reviewing them.
-
-    You will only provide feedback on the module's content in the "qa_feedback" field of a module. Base your feedback on what you received from the previous agent. The rest of a module's details should be left as is. A human reviewer will make the final changes later.
-
-    You should specifically check for the following:
+#     You should specifically check for the following:
     
-    - The client's priorities should be addressed in the modules.
-    - Modules should not lead with a soft-skill (for example - collaboration should not be the focus of any module, even if the client requests directly reference collaboration as a priority in the course).
-    - Tool usage is appropriate for the module's content.
-    - The module overview should be at 4-5 sentences and use student-facing language that provides a high-level overview of the module's content.
+#     - The client's priorities should be addressed in the modules.
+#     - Modules should not lead with a soft-skill (for example - collaboration should not be the focus of any module, even if the client requests directly reference collaboration as a priority in the course).
+#     - Tool usage is appropriate for the module's content.
+#     - The module overview should be at 4-5 sentences and use student-facing language that provides a high-level overview of the module's content.
 
-    ## Module time estimates
+#     ## Module time estimates
 
-    Time estimates should be provided in minutes. Modules are typically 60-90 minutes long, but may be longer or shorter, depending on the topic. Modules will be delivered live in a classroom setting, so leave time for student questions and discussion along the way.
+#     Time estimates should be provided in minutes. Modules are typically 60-90 minutes long, but may be longer or shorter, depending on the topic. Modules will be delivered live in a classroom setting, so leave time for student questions and discussion along the way.
 
-    It is natural for some modules to take longer than others. Attempt to make each time estimate a multiple of 15 minutes.
-
-    ## Context
-
-    When writing student-facing copy, you should use the following context:
-
-    <voice id=1 title="Voice" purpose="This critical document outlines the best practices for writing content. It provides guidelines for writing clear, accurate, and engaging content that is tailored to the broad needs of a audience.">
-    {doc_voice}
-    </voice>
+#     It is natural for some modules to take longer than others. Attempt to make each time estimate a multiple of 15 minutes.
     
-  expected_output: >
-    A set of competencies for the crew to use in developing a competency map 
-    formatted in JSON with the following structure:
+#   expected_output: >
+#     A module for the crew to use in developing a competency map formatted in JSON with the following structure:
 
-    {
-      "competencies": [
-        {
-          "competency": "A single competency - matching the input data",
-          "time_estimate_m": An integer representing the time it will take to deliver the competency in minutes. This should match the time estimate for the competency in the input data.
-          "rationale": "Explain the purpose of including this competency in relation to the input you were provided. Again, this should match the rationale for the competency in the input data."
-          "modules": [
-            {
-              "title": "",
-              "overview": "",
-              "time_estimate_m": ""
-              "type": "lecture" | "lab"
-              "rationale": "Explain the purpose of including this module in relation to the input you were provided."
-              "tools_and_technologies": [
-                "A list of tools and technologies used in the module. Only include tools and technologies that are relevant to the module's content. Do not include any tools or software that are not present in the input data."
-              ]
-              "qa_feedback": [
-                "A list of suggestions for the module's content. Only include suggestions for the module's content. Do not include any suggestions for the module's time estimate or type."
-              ]
-              "learning_objectives": [
-                "A list of learning objectives for each module."
-              ]
-            }
-          ]
-        }
-      ]
-    }
+#     {
+#       "title": "",
+#       "overview": "",
+#       "time_estimate_m": ""
+#       "type": "lecture" | "lab"
+#       "rationale": "Explain the purpose of including this module in relation to the input you were provided."
+#       "tools_and_technologies": [
+#         "A list of tools and technologies used in the module. Only include tools and technologies that are relevant to the module's content. Do not include any tools or software that are not present in the input data."
+#       ]
+#       "qa_feedback": [
+#         "A list of suggestions for the module's content. Only include suggestions for the module's content. Do not include any suggestions for the module's time estimate or type."
+#       ]
+#     }
 
-    You should only output a JSON object. Never output markdown. NO MARKDOWN.
-  agent: led_qa
+#     You should only output a JSON object. Never output markdown. NO MARKDOWN.
+#   agent: led_qa
 
-generate_learning_objectives:
-  output_file: output/crew_learning_objectives_output.txt
-  description: >
-    # Objectives
+# generate_learning_objectives:
+#   output_file: output/crew_learning_objectives_output.txt
+#   description: >
+#     # Objectives
 
-    As a Learning Experience Designer at General Assembly you develop courses using competency-based learning.
+#     As a Learning Experience Designer at General Assembly you develop courses using competency-based learning.
 
-    Your task is to review the generated modules and come up with learning objectives for them based on the inputs you were provided.
+#     Your task is to review the generated modules and come up with learning objectives for them based on the inputs you were provided.
 
-    A learning objective (LO) is: 
+#     A learning objective (LO) is: 
 
-    - SIMPLE. Clearly and plainly phrased. Don't make me think! Not yet! 
-    - CLEAR. Someone who hasn't taken the lesson yet can understand it. 
-    - VALUABLE. A user or client would “pay” for it (with time and/or money). 
-    - REALISTIC. Reflects an action that someone is likely to take in real life. 
-    - MEASURABLE. Can be evaluated. 
+#     - SIMPLE. Clearly and plainly phrased. Don't make me think! Not yet! 
+#     - CLEAR. Someone who hasn't taken the lesson yet can understand it. 
+#     - VALUABLE. A user or client would “pay” for it (with time and/or money). 
+#     - REALISTIC. Reflects an action that someone is likely to take in real life. 
+#     - MEASURABLE. Can be evaluated. 
 
-    You must use the following inputs (denoted by the <inputs> tag) to develop the modules:
+#     You must use the following inputs (denoted by the <inputs> tag) to develop the modules:
 
-    <inputs>
-    The competencies: {competencies}
+#     <inputs>
+#     The module you will develop learning objectives for was provided by the previous agent.
 
-    The course description: {course_description}
+#     The module's associated competency: {competency}
 
-    The primary learner persona job role: {primary_persona_job_role}
+#     The course description: {course_description}
 
-    The learner persona description: {learner_persona_description}
+#     The primary learner persona job role: {primary_persona_job_role}
 
-    The learner persona attributes and background: {learner_persona_attributes_and_background}
+#     The learner persona description: {learner_persona_description}
 
-    The learner persona's existing foundational knowledge related to the course topic (to be used as pre-requisites for the course): {learner_persona_existing_knowledge}
+#     The learner persona attributes and background: {learner_persona_attributes_and_background}
 
-    </inputs>
+#     The learner persona's existing foundational knowledge related to the course topic (to be used as pre-requisites for the course): {learner_persona_existing_knowledge}
 
-    ## Developing Learning Objectives
+#     </inputs>
+
+#     ## Developing Learning Objectives
     
-    When it comes to developing of effective learning objectives, we use the Bloom's Taxonomy, a widely adopted instructional design model.
+#     When it comes to developing of effective learning objectives, we use the Bloom's Taxonomy, a widely adopted instructional design model.
 
-    Bloom's Taxonomy scaffolds learning objectives from "low-level learning" objectives (knowledge, comprehension) through to "high-level learning" objectives (evaluation, synthesis).
+#     Bloom's Taxonomy scaffolds learning objectives from "low-level learning" objectives (knowledge, comprehension) through to "high-level learning" objectives (evaluation, synthesis).
 
-    It is important to remember that we work with busy, professional, adult learners, often high achievers. We aim to teach through stories and through action, and should avoid lessons that are completely lower level whenever possible. 
+#     It is important to remember that we work with busy, professional, adult learners, often high achievers. We aim to teach through stories and through action, and should avoid lessons that are completely lower level whenever possible. 
 
-    Each learning objective should be able to be accomplished within 5 to 20 minutes of class time. This means that there will be multiple learning objectives for each module. While you won't output a time estimate for each learning objective, you should consider how long each learning objective will take to complete so you're able to create a list of learning objectives that are appropriate for the module's content.
+#     Each learning objective should be able to be accomplished within 5 to 20 minutes of class time. This means that there will be multiple learning objectives for each module. While you won't output a time estimate for each learning objective, you should consider how long each learning objective will take to complete so you're able to create a list of learning objectives that are appropriate for the module's content.
 
-    As a general rule, you must create at least 4 learning objectives for a 60 minute module. Infer the number of learning objectives for other module lengths from this.
+#     As a general rule, you must create at least 4 learning objectives for a 60 minute module. Infer the number of learning objectives for other module lengths from this.
 
-    Remember to stay focused on the module's content and the competencies it's tied to - learning objectives should be tailored to a module's content and not stray from it.
+#     Remember to stay focused on the module's content and the competencies it's tied to - learning objectives should be tailored to a module's content and not stray from it.
     
-    ## Example Learning Objectives
+#     ## Example Learning Objectives
 
-    Here are a few examples:
+#     Here are a few examples:
 
-    - Compose a for loop to repeat specific blocks of code.
-    - Choose the most appropriate graphics to communicate your data story. 
-    - Explain your designs in a user-centric way.
-    - Discuss how empathy plays a role in the customer mindset.
-    - Choose the appropriate flow chart to ideate on potential designs.
-    - Describe six distinct phases a person goes through when making a purchase, known as the “customer decision journey.”
+#     - Compose a for loop to repeat specific blocks of code.
+#     - Choose the most appropriate graphics to communicate your data story. 
+#     - Explain your designs in a user-centric way.
+#     - Discuss how empathy plays a role in the customer mindset.
+#     - Choose the appropriate flow chart to ideate on potential designs.
+#     - Describe six distinct phases a person goes through when making a purchase, known as the “customer decision journey.”
 
 
-    ## Important Exceptions
+#     ## Important Exceptions
 
-    When developing learning objectives, we do not use the following Bloom's verbs because they are not measurable:
+#     When developing learning objectives, we do not use the following Bloom's verbs because they are not measurable:
 
-    - Assign
-    - Compute
-    - Initialize
-    - Manipulate
-    - Edit
-    - Practice
-    - Use
-    - Utilize
-    - Breakdown
-    - Compare
-    - Contrast
-    - Construct
-    - Build
-    - Instantiate
-    - Design
-    - Develop
-    - Establish
-    - Generate
-    - Reconstruct
-    - Write
-    - Code
-    - Know
-    - Understand
+#     - Use
+#     - Utilize
+#     - Know
+#     - Understand
+#     - Learn
 
-    Please review the above list of Bloom's verbs and ensure you do not include them in the learning objectives you generate.
+#     Please review the above list of Bloom's verbs and ensure you do not include them in the learning objectives you generate.
 
-    ### Double-barreled learning objectives
+#     ### Double-barreled learning objectives
 
-    Do not generate double-barreled learning objectives.
+#     Do not generate double-barreled learning objectives.
 
-    In the context of writing learning objectives, "double-barreled" means that a single objective contains two or more distinct and separate learning outcomes or actions. This makes the objective problematic because it becomes difficult to assess whether a learner has achieved both parts, or to identify which part they struggled with.
+#     In the context of writing learning objectives, "double-barreled" means that a single objective contains two or more distinct and separate learning outcomes or actions. This makes the objective problematic because it becomes difficult to assess whether a learner has achieved both parts, or to identify which part they struggled with.
 
-    
-    ## Context
+#     ## Context
 
-    When writing learning objectives for each module, you should use the following context:
+#     When writing learning objectives for each module, you should use the following context:
 
-    <writing_learning_objectives id=1 title="Writing Learning Objectives" purpose="This critical document outlines the philosophy behind creating effective learning objectives.">
-    {doc_writing_learning_objectives}
-    </writing_learning_objectives>
+#     <writing_learning_objectives id=1 title="Writing Learning Objectives" purpose="This critical document outlines the philosophy behind creating effective learning objectives.">
+#     {doc_writing_learning_objectives}
+#     </writing_learning_objectives>
 
-  expected_output: >
-    A set of competencies for the crew to use in developing a competency map complete with corresponding modules and learning objectives
-    formatted in JSON with the following structure:
+#   expected_output: >
+#     A modules with learning objectives formatted in JSON with the following structure:
 
-    {
-      "competencies": [
-        {
-          "competency": "A single competency - matching the input data",
-          "time_estimate_m": An integer representing the time it will take to deliver the competency in minutes. This should match the time estimate for the competency in the input data.
-          "rationale": "Explain the purpose of including this competency in relation to the input you were provided. Again, this should match the rationale for the competency in the input data."
-          "modules": [
-            {
-              "title": "",
-              "overview": "",
-              "time_estimate_m": ""
-              "type": "lecture" | "lab"
-              "rationale": "Explain the purpose of including this module in relation to the input you were provided."
-              "tools_and_technologies": [
-                "A list of tools and technologies used in the module. Only include tools and technologies that are relevant to the module's content. Do not include any tools or software that are not present in the input data."
-              ],
-              "learning_objectives": [
-                "A list of learning objectives for each module."
-              ]
-            }
-          ]
-        }
-      ]
-    }
 
-    You should only output a JSON object. Never output markdown. NO MARKDOWN.
-  agent: led
+#     {
+#       "title": "",
+#       "overview": "",
+#       "time_estimate_m": ""
+#       "type": "lecture" | "lab"
+#       "rationale": "Explain the purpose of including this module in relation to the input you were provided."
+#       "tools_and_technologies": [
+#         "A list of tools and technologies used in the module. Only include tools and technologies that are relevant to the module's content. Do not include any tools or software that are not present in the input data."
+#       ],
+#       "learning_objectives": [
+#         "A list of learning objectives for each module."
+#       ]
+#     }
+
+#     You should only output a JSON object. Never output markdown. NO MARKDOWN.
+#   agent: led_los
+

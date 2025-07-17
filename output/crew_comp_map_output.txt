@@ -1,44 +1,39 @@
 {
   "competencies": [
     {
-      "competency": "Implement user research methodologies for informed design decisions",
-      "time_estimate_m": 270,
-      "rationale": "This competency ensures developers can apply foundational UX research techniques and methodologies, meeting business outcomes like equipping the tech team with research practices and enabling informed, user-centered design. The dedicated time reflects the need for hands-on activity, practice, and debrief to cement these new skills, as these methods may be unfamiliar to software engineers."
+      "competency": "Apply baseline user research techniques to inform development decisions",
+      "time_estimate_m": 300,
+      "rationale": "Understanding and practicing foundational research methodologies aligns with the client's priority to equip engineers with research techniques for better cross-discipline collaboration and supports business outcomes by enabling self-reliant developers who can evaluate needs before building."
     },
     {
-      "competency": "Create wireframes to communicate UX concepts and workflows",
-      "time_estimate_m": 210,
-      "rationale": "Wireframing is essential for developers to express and test ideas visually and collaborate with UX teams, aligning with the client’s priority on effective idea communication using tools like Miro. The time allocated allows for guided instruction, individual wireframe creation, feedback, and iteration to ensure mastery."
-    },
-    {
-      "competency": "Apply information architecture principles to organize digital products",
-      "time_estimate_m": 180,
-      "rationale": "Understanding and applying information architecture enables developers to create logical navigation and clear structures, supporting the learning outcome of designing easy-to-use navigation and aligning with client priorities about incorporating foundational UX processes into engineering workflows."
-    },
-    {
-      "competency": "Utilize visual design techniques to enhance user interfaces",
-      "time_estimate_m": 270,
-      "rationale": "This competency is critical for enabling developers to create polished, professional designs, supporting business goals around self-reliance and higher collaboration efficiency. Extra time is required for iterative design activities, critique, and feedback cycles as these skills require practice and review for development beyond basic HTML/CSS knowledge."
-    },
-    {
-      "competency": "Build high-fidelity prototypes to demonstrate complete design solutions",
+      "competency": "Develop information architectures for intuitive product navigation",
       "time_estimate_m": 240,
-      "rationale": "High-fidelity prototyping directly addresses the business outcome to demonstrate the ability to develop a complete, professional design. The time estimate supports in-depth engagement with prototyping tools, preparing the learner to articulate their design intent and receive actionable feedback."
+      "rationale": "Building logical structures for product interactions and navigation is directly linked to the course outcomes around information architecture and creating easy-to-use digital products, meeting both client and business needs for enhanced user experience."
     },
     {
-      "competency": "Integrate design system components into product development",
+      "competency": "Create high-fidelity digital product designs using established design systems",
+      "time_estimate_m": 330,
+      "rationale": "Crafting complete, polished designs with design systems (such as the Primer Design System) supports the business goal of delivering high-fidelity designs and reinforces client priorities by ensuring engineers have practice with cohesive, scalable product design and industry-standard systems."
+    },
+    {
+      "competency": "Utilize wireframing tools to visualize and communicate design ideas",
+      "time_estimate_m": 270,
+      "rationale": "Wireframing supports clear idea communication within teams, aligning with the client’s priority on Miro and similar tools and contributing to business outcomes by streamlining collaboration and refining technical communication between engineering and UX."
+    },
+    {
+      "competency": "Apply foundational visual design principles to enhance digital interfaces",
       "time_estimate_m": 210,
-      "rationale": "Using a company-standard design system ensures product cohesion and efficiency—core client priorities for reinforcing cohesive designs and improving delivery velocity. The time allows for hands-on practice with usage guidelines and component integration."
+      "rationale": "Visual design principles are necessary for software engineers to elevate the professionalism and polish of their products, supporting the learning outcomes of designing complete, high-quality outputs and meeting the client’s expectation of improved user-facing work."
     },
     {
-      "competency": "Evaluate technical constraints and stakeholder requirements in the design process",
+      "competency": "Evaluate product designs against business requirements and technical constraints",
       "time_estimate_m": 180,
-      "rationale": "Software engineers must consider business and technical constraints when designing, aligning with the high-level learning outcome of evaluating requirements and metrics. The allotted time includes discussion of real-world scenarios, group critique, and applied exercises."
+      "rationale": "The ability to critically assess designs with respect to business objectives, stakeholder needs, metrics, and development limitations makes engineers more self-reliant and effective, helping them make informed choices and trade-offs early in the process."
     },
     {
-      "competency": "Document and articulate design decisions for stakeholder review",
-      "time_estimate_m": 240,
-      "rationale": "Developers must clearly document and justify their design choices to UX peers and broader teams. Mastering this competency addresses the learning outcome of articulating design decisions and supports improved cross-discipline collaboration. The time provides opportunity for practice, feedback, and revision, essential for developing this hard skill at a professional level."
+      "competency": "Implement interactive prototypes to test and refine product solutions",
+      "time_estimate_m": 270,
+      "rationale": "Prototyping is essential for validating user experiences before development, reducing wasted effort and aligning outcomes to user needs, directly supporting both business and learning goals around prototyping and iterative development."
     }
   ]
 }
