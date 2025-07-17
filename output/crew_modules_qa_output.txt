@@ -1,32 +1,7 @@
-{
-  "modules": [
-    {
-      "title": "Visual Design Foundations",
-      "overview": "We’ll cover core principles of color theory, typography, spacing, and layout. You’ll see how these elements impact readability and aesthetics. By the end, you’ll have a toolkit for applying visual hierarchy and consistent styling to your work. We will examine how these principles are applied in real-world design systems to maintain consistency across products.",
-      "time_estimate_m": 60,
-      "type": "lecture",
-      "rationale": "Introduces essential visual design concepts that underpin all polished interfaces.",
-      "tools_and_technologies": [],
-      "qa_feedback": [
-        "Expand the overview to explicitly mention how learners will engage with examples from a real-world design system to reinforce application of principles.",
-        "Reference the Currency Design System in examples to show how style guides and design tokens enforce consistency in professional interfaces.",
-        "Include a brief case study or scenario illustrating the impact of typography and color choices on usability to align with high-fidelity design outcomes."
-      ]
-    },
-    {
-      "title": "Visual Refinement Lab",
-      "overview": "In VS Code, you’ll apply visual design principles to a sample HTML/CSS interface. You’ll adjust color schemes, refine typography, and polish spacing. Before coding, you’ll sketch initial refinements using a design system reference. This hands-on exercise cements your ability to enhance both usability and aesthetics, simulating real-world collaboration between engineers and designers.",
-      "time_estimate_m": 60,
-      "type": "lab",
-      "rationale": "Provides practical experience refining real interface code to improve visual quality and usability.",
-      "tools_and_technologies": [
-        "Visual Studio Code"
-      ],
-      "qa_feedback": [
-        "Expand the overview to 4–5 sentences by detailing the initial sketching or planning step to reinforce the end-to-end design process.",
-        "Incorporate reference to the Currency Design System’s design tokens or components to simulate real-world implementation and collaboration.",
-        "Include a brief requirement to document design decision rationale to practice articulating choices in line with high-fidelity design outcomes."
-      ]
-    }
-  ]
-}
+{"id":"24","title":"Prototyping Iteration Lab","overview":"In this lab, you’ll build and refine a functional prototype based on user feedback. You’ll cycle through testing, gather insights, and implement changes. By the end, you’ll have a validated solution ready for handoff.","time_estimate_m":150,"type":"lab","rationale":"Offers hands-on experience iterating prototypes, reinforcing iterative development and user-centered design.","tools_and_technologies":["Visual Studio Code"],"qa_feedback":[  
+  "Expand the module overview to 4–5 sentences, explicitly framing how learners will draw on prior baseline research outputs and articulate their iteration goals.",  
+  "Introduce a collaborative low-fidelity prototyping step using Miro before moving into high-fidelity code-based prototypes in VS Code.",  
+  "Reference the Currency Design System to guide consistent UI component usage and teach efficient design handoff practices.",  
+  "Incorporate a checkpoint for learners to map user research insights to specific prototype changes, reinforcing research-driven decision-making.",  
+  "Clarify how this lab advances course business outcomes such as speeding up design and development collaboration by highlighting streamlined iteration workflows."  
+]}

@@ -81,111 +81,112 @@ qa_modules:
     You should only output a JSON object. Never output markdown. NO MARKDOWN.
   agent: led_qa
 
-# generate_learning_objectives:
-#   output_file: output/crew_learning_objectives_output.txt
-#   description: >
-#     # Objectives
+generate_learning_objectives:
+  output_file: output/crew_learning_objectives_output.txt
+  description: >
+    # Objectives
 
-#     As a Learning Experience Designer at General Assembly you develop courses using competency-based learning.
+    As a Learning Experience Designer at General Assembly you develop courses using competency-based learning.
 
-#     Your task is to review the generated modules and come up with learning objectives for them based on the inputs you were provided.
+    Your task is to review the generated modules and come up with learning objectives for them based on the inputs you were provided.
 
-#     A learning objective (LO) is: 
+    A learning objective (LO) is: 
 
-#     - SIMPLE. Clearly and plainly phrased. Don't make me think! Not yet! 
-#     - CLEAR. Someone who hasn't taken the lesson yet can understand it. 
-#     - VALUABLE. A user or client would “pay” for it (with time and/or money). 
-#     - REALISTIC. Reflects an action that someone is likely to take in real life. 
-#     - MEASURABLE. Can be evaluated. 
+    - SIMPLE. Clearly and plainly phrased. Don't make me think! Not yet! 
+    - CLEAR. Someone who hasn't taken the lesson yet can understand it. 
+    - VALUABLE. A user or client would “pay” for it (with time and/or money). 
+    - REALISTIC. Reflects an action that someone is likely to take in real life. 
+    - MEASURABLE. Can be evaluated. 
 
-#     You must use the following inputs (denoted by the <inputs> tag) to develop the modules:
+    You must use the following inputs (denoted by the <inputs> tag) to develop the modules:
 
-#     <inputs>
-#     The module you will develop learning objectives for was provided by the previous agent.
+    <inputs>
+    The module you will develop learning objectives for was provided by the previous agent.
 
-#     The module's associated competency: {competency}
+    The module's associated competency: {competency}
 
-#     The course description: {course_description}
+    The course description: {course_description}
 
-#     The primary learner persona job role: {primary_persona_job_role}
+    The primary learner persona job role: {primary_persona_job_role}
 
-#     The learner persona description: {learner_persona_description}
+    The learner persona description: {learner_persona_description}
 
-#     The learner persona attributes and background: {learner_persona_attributes_and_background}
+    The learner persona attributes and background: {learner_persona_attributes_and_background}
 
-#     The learner persona's existing foundational knowledge related to the course topic (to be used as pre-requisites for the course): {learner_persona_existing_knowledge}
+    The learner persona's existing foundational knowledge related to the course topic (to be used as pre-requisites for the course): {learner_persona_existing_knowledge}
 
-#     </inputs>
+    </inputs>
 
-#     ## Developing Learning Objectives
+    ## Developing Learning Objectives
     
-#     When it comes to developing of effective learning objectives, we use the Bloom's Taxonomy, a widely adopted instructional design model.
+    When it comes to developing of effective learning objectives, we use the Bloom's Taxonomy, a widely adopted instructional design model.
 
-#     Bloom's Taxonomy scaffolds learning objectives from "low-level learning" objectives (knowledge, comprehension) through to "high-level learning" objectives (evaluation, synthesis).
+    Bloom's Taxonomy scaffolds learning objectives from "low-level learning" objectives (knowledge, comprehension) through to "high-level learning" objectives (evaluation, synthesis).
 
-#     It is important to remember that we work with busy, professional, adult learners, often high achievers. We aim to teach through stories and through action, and should avoid lessons that are completely lower level whenever possible. 
+    It is important to remember that we work with busy, professional, adult learners, often high achievers. We aim to teach through stories and through action, and should avoid lessons that are completely lower level whenever possible. 
 
-#     Each learning objective should be able to be accomplished within 5 to 20 minutes of class time. This means that there will be multiple learning objectives for each module. While you won't output a time estimate for each learning objective, you should consider how long each learning objective will take to complete so you're able to create a list of learning objectives that are appropriate for the module's content.
+    Each learning objective should be able to be accomplished within 5 to 20 minutes of class time. This means that there will be multiple learning objectives for each module. While you won't output a time estimate for each learning objective, you should consider how long each learning objective will take to complete so you're able to create a list of learning objectives that are appropriate for the module's content.
 
-#     As a general rule, you must create at least 4 learning objectives for a 60 minute module. Infer the number of learning objectives for other module lengths from this.
+    As a general rule, you must create at least 4 learning objectives for a 60 minute module. Infer the number of learning objectives for other module lengths from this.
 
-#     Remember to stay focused on the module's content and the competencies it's tied to - learning objectives should be tailored to a module's content and not stray from it.
+    Remember to stay focused on the module's content and the competencies it's tied to - learning objectives should be tailored to a module's content and not stray from it.
     
-#     ## Example Learning Objectives
+    ## Example Learning Objectives
 
-#     Here are a few examples:
+    Here are a few examples:
 
-#     - Compose a for loop to repeat specific blocks of code.
-#     - Choose the most appropriate graphics to communicate your data story. 
-#     - Explain your designs in a user-centric way.
-#     - Discuss how empathy plays a role in the customer mindset.
-#     - Choose the appropriate flow chart to ideate on potential designs.
-#     - Describe six distinct phases a person goes through when making a purchase, known as the “customer decision journey.”
-
-
-#     ## Important Exceptions
-
-#     When developing learning objectives, we do not use the following Bloom's verbs because they are not measurable:
-
-#     - Use
-#     - Utilize
-#     - Know
-#     - Understand
-#     - Learn
-
-#     Please review the above list of Bloom's verbs and ensure you do not include them in the learning objectives you generate.
-
-#     ### Double-barreled learning objectives
-
-#     Do not generate double-barreled learning objectives.
-
-#     In the context of writing learning objectives, "double-barreled" means that a single objective contains two or more distinct and separate learning outcomes or actions. This makes the objective problematic because it becomes difficult to assess whether a learner has achieved both parts, or to identify which part they struggled with.
-
-#     ## Context
-
-#     When writing learning objectives for each module, you should use the following context:
-
-#     <writing_learning_objectives id=1 title="Writing Learning Objectives" purpose="This critical document outlines the philosophy behind creating effective learning objectives.">
-#     {doc_writing_learning_objectives}
-#     </writing_learning_objectives>
-
-#   expected_output: >
-#     A modules with learning objectives formatted in JSON with the following structure:
+    - Compose a for loop to repeat specific blocks of code.
+    - Choose the most appropriate graphics to communicate your data story. 
+    - Explain your designs in a user-centric way.
+    - Discuss how empathy plays a role in the customer mindset.
+    - Choose the appropriate flow chart to ideate on potential designs.
+    - Describe six distinct phases a person goes through when making a purchase, known as the “customer decision journey.”
 
 
-#     {
-#       "title": "",
-#       "overview": "",
-#       "time_estimate_m": ""
-#       "type": "lecture" | "lab"
-#       "rationale": "Explain the purpose of including this module in relation to the input you were provided."
-#       "tools_and_technologies": [
-#         "A list of tools and technologies used in the module. Only include tools and technologies that are relevant to the module's content. Do not include any tools or software that are not present in the input data."
-#       ],
-#       "learning_objectives": [
-#         "A list of learning objectives for each module."
-#       ]
-#     }
+    ## Important Exceptions
 
-#     You should only output a JSON object. Never output markdown. NO MARKDOWN.
-#   agent: led
+    When developing learning objectives, we do not use the following Bloom's verbs because they are not measurable:
+
+    - Use
+    - Utilize
+    - Know
+    - Understand
+    - Learn
+
+    Please review the above list of Bloom's verbs and ensure you do not include them in the learning objectives you generate.
+
+    ### Double-barreled learning objectives
+
+    Do not generate double-barreled learning objectives.
+
+    In the context of writing learning objectives, "double-barreled" means that a single objective contains two or more distinct and separate learning outcomes or actions. This makes the objective problematic because it becomes difficult to assess whether a learner has achieved both parts, or to identify which part they struggled with.
+
+    ## Context
+
+    When writing learning objectives for each module, you should use the following context:
+
+    <writing_learning_objectives id=1 title="Writing Learning Objectives" purpose="This critical document outlines the philosophy behind creating effective learning objectives.">
+    {doc_writing_learning_objectives}
+    </writing_learning_objectives>
+
+  expected_output: >
+    A modules with learning objectives formatted in JSON with the following structure:
+
+
+    {
+      "id": "",
+      "title": "",
+      "overview": "",
+      "time_estimate_m": ""
+      "type": "lecture" | "lab"
+      "rationale": "Explain the purpose of including this module in relation to the input you were provided."
+      "tools_and_technologies": [
+        "A list of tools and technologies used in the module. Only include tools and technologies that are relevant to the module's content. Do not include any tools or software that are not present in the input data."
+      ],
+      "learning_objectives": [
+        "A list of learning objectives for each module."
+      ]
+    }
+
+    You should only output a JSON object. Never output markdown. NO MARKDOWN.
+  agent: led

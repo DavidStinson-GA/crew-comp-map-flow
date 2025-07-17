@@ -31,18 +31,18 @@ class AllModulesCrew():
             )
         )
 
-    # @agent
-    # def led(self) -> Agent:
-    #     return Agent(
-    #         config=self.agents_config['led'],
-    #         verbose=True,
-    #         llm = LLM(
-    #             model="openai/gpt-4.1"
-    #             # model="perplexity/sonar-pro"
-    #             # model="openai/o4-mini",
-    #             # additional_drop_params=["stop"]
-    #         )
-    #     )
+    @agent
+    def led(self) -> Agent:
+        return Agent(
+            config=self.agents_config['led_los'],
+            verbose=True,
+            llm = LLM(
+                # model="openai/gpt-4.1"
+                # model="perplexity/sonar-pro"
+                model="openai/o4-mini",
+                additional_drop_params=["stop"]
+            )
+        )
 
     # To learn more about structured task outputs,
     # task dependencies, and task callbacks, check out the documentation:
@@ -55,12 +55,12 @@ class AllModulesCrew():
             config=self.tasks_config['qa_modules'],
         )
     
-    # @task
-    # def generate_learning_objectives(self) -> Task:
-    #     return Task(
-    #         name="Generate Learning Objectives",
-    #         config=self.tasks_config['generate_learning_objectives'],
-    #     )
+    @task
+    def generate_learning_objectives(self) -> Task:
+        return Task(
+            name="Generate Learning Objectives",
+            config=self.tasks_config['generate_learning_objectives'],
+        )
 
     @crew
     def crew(self) -> Crew:
