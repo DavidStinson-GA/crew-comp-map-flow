@@ -1,17 +1,19 @@
 {
   "id": 29,
-  "title": "Reusable Components Lab",
-  "overview": "In this hands-on lab, you’ll implement a set of reusable Primer components in a sample application. You’ll focus on prop usage, theming, and accessibility. This exercise cements your ability to leverage the design system in real code.",
-  "time_estimate_m": 120,
-  "type": "lab",
-  "rationale": "Gives engineers extended practice integrating and customizing design system components for self-reliant development.",
+  "title": "Feedback Collection Methods",
+  "overview": "In this lecture, you'll explore three core methods for gathering user feedback: moderated usability testing, surveys, and in-app analytics. You'll learn how to select the appropriate technique based on research goals and project constraints. We'll discuss best practices for designing tests, writing survey questions, and setting up analytics tracking. Through real-world examples and hands-on walkthroughs in Miro, you’ll see how feedback drives rapid iteration and improves design outcomes. By the end of this session, you’ll be equipped to plan and schedule feedback activities that integrate seamlessly into your design workflow.",
+  "time_estimate_m": 45,
+  "type": "lecture",
+  "rationale": "Introduces the feedback techniques that drive meaningful iteration cycles.",
   "tools_and_technologies": [
-    "Visual Studio Code",
-    "Primer Design System"
+    "Miro"
   ],
   "qa_feedback": [
-    "The overview is only three sentences; expand it to 4-5 sentences using clear, student-facing language that outlines the lab’s high-level goals, scope, and expected outcomes.",
-    "Recommend referencing how mastering reusable components will enhance developer self-reliance and speed collaboration with UX/design teams."
+    "The overview has been expanded to 4-5 sentences to provide a high-level, student-facing summary, meeting the module length guidelines.",
+    "Add a brief example or exercise using the Currency Design System during feedback sessions to address the client priority of reinforcing cohesive product design.",
+    "The time estimate of 45 minutes aligns with the current content; if you include the suggested Design System activity, consider extending to 60 minutes.",
+    "Tool usage of Miro is appropriate for mapping and visualizing feedback methods; no additional tools are required for this module.",
+    "This module effectively addresses baseline research techniques and demonstrates how to integrate feedback into rapid design iteration."
   ],
   "learning_objectives": []
 }

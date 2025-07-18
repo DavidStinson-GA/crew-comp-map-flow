@@ -8,7 +8,8 @@ from crewai.flow import Flow, listen, start
 
 from crew_comp_map_flow.crews.competencies_crew.competencies_crew import CompetenciesCrew
 from crew_comp_map_flow.crews.modules_crew.modules_crew import ModulesCrew
-from crew_comp_map_flow.crews.all_modules_crew.all_modules_crew import AllModulesCrew
+from crew_comp_map_flow.crews.qa_modules_crew.qa_modules_crew import QAModulesCrew
+from crew_comp_map_flow.crews.learning_objectives_crew.learning_objectives_crew import LearningObjectivesCrew
 
 from crew_comp_map_flow.data import documentation
 
@@ -223,7 +224,9 @@ class CompetencyFlow(Flow[CompMapState]):
             for module in all_modules
         }
 
-        inputs = [
+
+        print("QA'ing modules")
+        qa_inputs = [
             {
                 "module": module,
                 "competency": module["competency"],
@@ -232,30 +235,37 @@ class CompetencyFlow(Flow[CompMapState]):
             for module in all_modules
         ]
 
-        results = await AllModulesCrew().crew().kickoff_for_each_async(inputs)
+        qa_results = await QAModulesCrew().crew().kickoff_for_each_async(qa_inputs)
 
-        final_modules = []
-        for res in results:
-            try:
-                # Parse the JSON response (expecting a single module object)
-                parsed = json.loads(res.raw)
-                
-                # Assert required fields to catch model hallucination early
-                assert isinstance(parsed, dict), f"Agent output is not a dict: {parsed}"
-                assert "id" in parsed, f"Module missing 'id': {parsed}"
-                
-                module_id = parsed["id"]
-                # Attach competency if not present (but ideally already included)
-                if "competency" not in parsed:
-                    parsed["competency"] = module_id_to_competency.get(module_id, None)
-                final_modules.append(parsed)
-                
-            except Exception as e:
-                print("Error parsing agent output (expected a single module object):", res.raw, e)
+        qa_modules = []
+        for res in qa_results:
+            parsed = json.loads(res.raw)
+            if "competency" not in parsed:
+                parsed["competency"] = module_id_to_competency.get(parsed["id"])
+            qa_modules.append(parsed)
 
-        
+        print("Generating learning objectives")
+        lo_inputs = [
+            {
+                "module": module,
+                "competency": module["competency"],
+                **self.state.model_dump()
+            }
+            for module in qa_modules
+        ]
+
+        lo_results = await LearningObjectivesCrew().crew().kickoff_for_each_async(lo_inputs)
+
+        modules_with_lo = []
+        for res in lo_results:
+            parsed = json.loads(res.raw)
+            if "competency" not in parsed:
+                parsed["competency"] = module_id_to_competency.get(parsed["id"])
+            modules_with_lo.append(parsed)
+
+
         modules_by_comp = {}
-        for m in final_modules:
+        for m in modules_with_lo:
             comp = m["competency"]
             modules_by_comp.setdefault(comp, []).append(m)
 
@@ -265,7 +275,9 @@ class CompetencyFlow(Flow[CompMapState]):
                 "competency": comp,
                 "modules": modules
             })
+
         self.state.competencies = new_competencies
+
 
 
 def kickoff():
