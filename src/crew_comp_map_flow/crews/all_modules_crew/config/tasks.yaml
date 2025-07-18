@@ -61,24 +61,28 @@ qa_modules:
     It is natural for some modules to take longer than others. Attempt to make each time estimate a multiple of 15 minutes.
     
   expected_output: >
-    A module for the crew to use in developing a competency map formatted in JSON with the following structure:
+    1. A module for the crew to use in developing a competency map formatted in JSON with the following structure:
 
-    {
-      "id": "",
-      "title": "",
-      "overview": "",
-      "time_estimate_m": ""
-      "type": "lecture" | "lab"
-      "rationale": "Explain the purpose of including this module in relation to the input you were provided."
-      "tools_and_technologies": [
-        "A list of tools and technologies used in the module. Only include tools and technologies that are relevant to the module's content. Do not include any tools or software that are not present in the input data."
-      ]
-      "qa_feedback": [
-        "A list of suggestions for the module's content. Only include suggestions for the module's content. Do not include any suggestions for the module's time estimate or type."
-      ]
-    }
+      {
+        "id": "You must copy the 'id' field from the input module to the output module, 
+        unchanged. Never generate a new id or modify the existing one.",
+        "title": "string, required",
+        "overview": "string, required",
+        "time_estimate_m": "integer, required",
+        "type": "lecture" or "lab",  // string, required, allowed values only
+        "rationale": "string, required",
+        "tools_and_technologies": [
+          "string, list, required"
+        ],
+        "qa_feedback": [
+          "string, list, can be empty"
+        ],
+        "learning_objectives": [
+          // always present, empty list from QA agent
+        ]
+      }
 
-    You should only output a JSON object. Never output markdown. NO MARKDOWN.
+    2. Only output the JSON object for this single module. Do not output a list. Do not wrap your output in another object. Do not add any commentary, text, or markdown. Only the raw JSON object as above.
   agent: led_qa
 
 generate_learning_objectives:
@@ -101,7 +105,7 @@ generate_learning_objectives:
     You must use the following inputs (denoted by the <inputs> tag) to develop the modules:
 
     <inputs>
-    The module you will develop learning objectives for was provided by the previous agent.
+    The module you will develop learning objectives for: {module}
 
     The module's associated competency: {competency}
 
@@ -170,23 +174,27 @@ generate_learning_objectives:
     </writing_learning_objectives>
 
   expected_output: >
-    A modules with learning objectives formatted in JSON with the following structure:
-
+    Output a single module as a JSON object with the following structure.  
 
     {
-      "id": "",
-      "title": "",
-      "overview": "",
-      "time_estimate_m": ""
-      "type": "lecture" | "lab"
-      "rationale": "Explain the purpose of including this module in relation to the input you were provided."
+      "id": "You must copy the 'id' value exactly from the input module.",
+      "title": "string, required",
+      "overview": "string, required",
+      "time_estimate_m": "integer, required",
+      "type": "lecture" or "lab",  // string, required, allowed values only
+      "rationale": "string, required",
       "tools_and_technologies": [
-        "A list of tools and technologies used in the module. Only include tools and technologies that are relevant to the module's content. Do not include any tools or software that are not present in the input data."
+        "string, list, required"
+      ],
+      "qa_feedback": [
+        // always present, empty list from LO agent
       ],
       "learning_objectives": [
-        "A list of learning objectives for each module."
+        "string, list, required (at least one recommended)"
       ]
     }
 
-    You should only output a JSON object. Never output markdown. NO MARKDOWN.
+
+    Only output the JSON object for this single module. Never output a list, and do not add any commentary, text, or markdown. If you change the id, your output will be rejected.
+
   agent: led

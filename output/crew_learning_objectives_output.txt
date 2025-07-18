@@ -1,66 +1,23 @@
-{  
-  "modules": [  
-    {  
-      "id": "module-1",  
-      "title": "Fundamentals of Evaluating UX Product Designs",  
-      "overview": "Introduce learners to the principles of product design evaluation, focusing on aligning designs with business goals and technical feasibility.",  
-      "time_estimate_m": 60,  
-      "type": "lecture",  
-      "rationale": "This module establishes the foundational knowledge and mindset needed to systematically evaluate product designs against business requirements and technical constraints, setting the stage for hands-on activities.",  
-      "tools_and_technologies": ["HTML", "CSS", "JavaScript", "React", "Node.js"],  
-      "learning_objectives": [  
-        "Explain the role of business requirements and technical constraints in guiding product design decisions.",  
-        "Identify key components of a product design evaluation framework.",  
-        "Categorize design elements based on their impact on user experience and system performance.",  
-        "Justify why balancing business goals with technical feasibility is critical for successful product development."  
-      ]  
-    },  
-    {  
-      "id": "module-2",  
-      "title": "Aligning Product Designs with Business Requirements",  
-      "overview": "Focus on techniques for analyzing business goals and translating them into design evaluation criteria.",  
-      "time_estimate_m": 60,  
-      "type": "lecture",  
-      "rationale": "Learners need to understand how to interpret business requirements and apply them when assessing design proposals to ensure alignment with organizational objectives.",  
-      "tools_and_technologies": ["Business requirement documents"],  
-      "learning_objectives": [  
-        "Analyze a set of business requirement documents to extract core user and stakeholder needs.",  
-        "Construct evaluation criteria based on business goals for a given design mockup.",  
-        "Compare multiple design options against defined business requirements to recommend the optimal solution.",  
-        "Draft feedback to a UX team illustrating how a design meets or deviates from business objectives."  
-      ]  
-    },  
-    {  
-      "id": "module-3",  
-      "title": "Assessing Technical Constraints in Product Design",  
-      "overview": "Teach learners to identify and evaluate technical limitations that impact design viability and user experience.",  
-      "time_estimate_m": 60,  
-      "type": "lecture",  
-      "rationale": "Developers must recognize technical constraints early in the design process to provide accurate evaluations and prevent costly redesigns.",  
-      "tools_and_technologies": ["React", "Node.js"],  
-      "learning_objectives": [  
-        "Inspect a design spec to identify potential performance and implementation challenges in React and Node.js environments.",  
-        "Evaluate the feasibility of interactive features within given technical constraints.",  
-        "Propose alternative design solutions that address identified technical limitations.",  
-        "Summarize trade-offs between design complexity and system maintainability."  
-      ]  
-    },  
-    {  
-      "id": "module-4",  
-      "title": "Collaborative UX and Engineering Design Review Lab",  
-      "overview": "Hands-on lab where software engineers collaborate with UX team members to evaluate product designs against business and technical criteria.",  
-      "time_estimate_m": 90,  
-      "type": "lab",  
-      "rationale": "This lab simulates real-world collaboration, reinforcing skills in communication, negotiation, and joint evaluation of designs.",  
-      "tools_and_technologies": ["HTML", "CSS", "JavaScript", "React", "Node.js"],  
-      "learning_objectives": [  
-        "Facilitate a group discussion to align on evaluation criteria drawn from business requirements and technical constraints.",  
-        "Conduct a peer review session to assess a design prototype and document feedback.",  
-        "Negotiate adjustments to a design prototype with UX practitioners based on technical feasibility.",  
-        "Draft a joint action plan outlining next steps for prototype iteration.",  
-        "Present evaluation findings to stakeholders, highlighting business benefits and technical trade-offs.",  
-        "Reflect on collaborative decision-making processes and identify areas for improvement in cross-functional workflows."  
-      ]  
-    }  
-  ]  
+{
+  "id": "29",
+  "title": "Reusable Components Lab",
+  "overview": "In this hands-on lab, you’ll implement a set of reusable Primer components in a sample application. You’ll focus on prop usage, theming, and accessibility. This exercise cements your ability to leverage the design system in real code.",
+  "time_estimate_m": 120,
+  "type": "lab",
+  "rationale": "Gives engineers extended practice integrating and customizing design system components for self-reliant development.",
+  "tools_and_technologies": [
+    "Visual Studio Code",
+    "Primer Design System"
+  ],
+  "qa_feedback": [],
+  "learning_objectives": [
+    "Implement three Primer components (Button, Alert, Tooltip) in the React sample app by importing them and passing required props.",
+    "Apply theme tokens in PrimerProvider to switch the application between light and dark themes.",
+    "Configure a Primer Button component by specifying its variant prop as 'primary' to highlight key actions.",
+    "Adjust a Primer Button component's size prop to 'large' to align with UI guidelines.",
+    "Compose a form using Primer Input and Select components and set validation props for error and warning states.",
+    "Integrate ARIA attributes (aria-label, role) into a Primer Form component to enhance accessibility.",
+    "Validate component accessibility by executing axe-core tests and fixing at least two flagged issues.",
+    "Document the usage and customization steps for at least two Primer components in the project README."
+  ]
 }

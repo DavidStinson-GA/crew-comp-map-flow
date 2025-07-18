@@ -1,7 +1,17 @@
-{"id":"24","title":"Prototyping Iteration Lab","overview":"In this lab, you’ll build and refine a functional prototype based on user feedback. You’ll cycle through testing, gather insights, and implement changes. By the end, you’ll have a validated solution ready for handoff.","time_estimate_m":150,"type":"lab","rationale":"Offers hands-on experience iterating prototypes, reinforcing iterative development and user-centered design.","tools_and_technologies":["Visual Studio Code"],"qa_feedback":[  
-  "Expand the module overview to 4–5 sentences, explicitly framing how learners will draw on prior baseline research outputs and articulate their iteration goals.",  
-  "Introduce a collaborative low-fidelity prototyping step using Miro before moving into high-fidelity code-based prototypes in VS Code.",  
-  "Reference the Currency Design System to guide consistent UI component usage and teach efficient design handoff practices.",  
-  "Incorporate a checkpoint for learners to map user research insights to specific prototype changes, reinforcing research-driven decision-making.",  
-  "Clarify how this lab advances course business outcomes such as speeding up design and development collaboration by highlighting streamlined iteration workflows."  
-]}
+{
+  "id": 29,
+  "title": "Reusable Components Lab",
+  "overview": "In this hands-on lab, you’ll implement a set of reusable Primer components in a sample application. You’ll focus on prop usage, theming, and accessibility. This exercise cements your ability to leverage the design system in real code.",
+  "time_estimate_m": 120,
+  "type": "lab",
+  "rationale": "Gives engineers extended practice integrating and customizing design system components for self-reliant development.",
+  "tools_and_technologies": [
+    "Visual Studio Code",
+    "Primer Design System"
+  ],
+  "qa_feedback": [
+    "The overview is only three sentences; expand it to 4-5 sentences using clear, student-facing language that outlines the lab’s high-level goals, scope, and expected outcomes.",
+    "Recommend referencing how mastering reusable components will enhance developer self-reliance and speed collaboration with UX/design teams."
+  ],
+  "learning_objectives": []
+}

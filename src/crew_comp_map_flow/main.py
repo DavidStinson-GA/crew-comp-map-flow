@@ -237,28 +237,22 @@ class CompetencyFlow(Flow[CompMapState]):
         final_modules = []
         for res in results:
             try:
+                # Parse the JSON response (expecting a single module object)
                 parsed = json.loads(res.raw)
-                # CASE 1: direct single module object
-                if isinstance(parsed, dict) and "id" in parsed:
-                    module_id = parsed["id"]
+                
+                # Assert required fields to catch model hallucination early
+                assert isinstance(parsed, dict), f"Agent output is not a dict: {parsed}"
+                assert "id" in parsed, f"Module missing 'id': {parsed}"
+                
+                module_id = parsed["id"]
+                # Attach competency if not present (but ideally already included)
+                if "competency" not in parsed:
                     parsed["competency"] = module_id_to_competency.get(module_id, None)
-                    final_modules.append(parsed)
-                # CASE 2: dict with "modules" key (list of modules)
-                elif isinstance(parsed, dict) and "modules" in parsed and isinstance(parsed["modules"], list):
-                    for mod in parsed["modules"]:
-                        module_id = mod.get("id")
-                        mod["competency"] = module_id_to_competency.get(module_id, None)
-                        final_modules.append(mod)
-                # CASE 3: list of modules directly
-                elif isinstance(parsed, list):
-                    for mod in parsed:
-                        module_id = mod.get("id")
-                        mod["competency"] = module_id_to_competency.get(module_id, None)
-                        final_modules.append(mod)
-                else:
-                    print("Unrecognized agent output structure:", parsed)
+                final_modules.append(parsed)
+                
             except Exception as e:
-                print("Error parsing result:", res, e)
+                print("Error parsing agent output (expected a single module object):", res.raw, e)
+
         
         modules_by_comp = {}
         for m in final_modules:

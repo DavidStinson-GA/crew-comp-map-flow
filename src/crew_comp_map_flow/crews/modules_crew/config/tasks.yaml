@@ -129,7 +129,7 @@ generate_modules:
           "rationale": "Explain the purpose of including this competency in relation to the input you were provided. Again, this should match the rationale for the competency in the input data."
           "modules": [
             {
-              "id": "A unique ID for the module",
+              "id": "A unique ID for the module. Start at 1 and increment by 1 for each module.",
               "title": "",
               "overview": "",
               "time_estimate_m": ""
