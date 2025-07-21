@@ -1,7 +1,17 @@
-{"id":"24","title":"Prototyping Iteration Lab","overview":"In this lab, you’ll build and refine a functional prototype based on user feedback. You’ll cycle through testing, gather insights, and implement changes. By the end, you’ll have a validated solution ready for handoff.","time_estimate_m":150,"type":"lab","rationale":"Offers hands-on experience iterating prototypes, reinforcing iterative development and user-centered design.","tools_and_technologies":["Visual Studio Code"],"qa_feedback":[  
-  "Expand the module overview to 4–5 sentences, explicitly framing how learners will draw on prior baseline research outputs and articulate their iteration goals.",  
-  "Introduce a collaborative low-fidelity prototyping step using Miro before moving into high-fidelity code-based prototypes in VS Code.",  
-  "Reference the Currency Design System to guide consistent UI component usage and teach efficient design handoff practices.",  
-  "Incorporate a checkpoint for learners to map user research insights to specific prototype changes, reinforcing research-driven decision-making.",  
-  "Clarify how this lab advances course business outcomes such as speeding up design and development collaboration by highlighting streamlined iteration workflows."  
-]}
+{
+  "id": "30",
+  "title": "Visual Design Lab",
+  "overview": "In this lab, you’ll implement a polished UI using Primer components in VS Code. You’ll apply color, type, and spacing principles to a multi-screen mockup. We’ll review your work and iterate for consistency and aesthetic impact.",
+  "time_estimate_m": 120,
+  "type": "lab",
+  "rationale": "Gives engineers hands-on experience applying visual design principles within a real design system.",
+  "tools_and_technologies": [
+    "Visual Studio Code",
+    "Primer Design System"
+  ],
+  "qa_feedback": [
+    "The module overview is only three sentences; expand to 4-5 sentences using student-facing language to provide a clearer high-level overview of the lab.",
+    "The time estimate of 120 minutes exceeds the typical 60-90 minute module length; consider adjusting the duration or ensuring sufficient content and activities to justify this length."
+  ],
+  "learning_objectives": []
+}

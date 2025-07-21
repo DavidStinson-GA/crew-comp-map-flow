@@ -1,5 +1,24 @@
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
+from pydantic import BaseModel
+
+class Module(BaseModel):
+    id: str
+    title: str
+    overview: str
+    time_estimate_m: int
+    type: str
+    rationale: str
+    tools_and_technologies: list[str]
+
+class Competency(BaseModel):
+    competency: str
+    time_estimate_m: int
+    rationale: str
+    modules: list[Module]
+
+class ModulesResponse(BaseModel):
+    competencies: Competency
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators
@@ -63,6 +82,7 @@ class ModulesCrew():
         return Task(
             name="Generate Modules",
             config=self.tasks_config['generate_modules'],
+            output_json=ModulesResponse
         )
 
     # @task
