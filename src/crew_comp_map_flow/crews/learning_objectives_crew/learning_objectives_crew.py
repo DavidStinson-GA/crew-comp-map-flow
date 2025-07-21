@@ -2,6 +2,18 @@ from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
 from typing import List
+from pydantic import BaseModel
+
+class Module(BaseModel):
+    id: str
+    title: str
+    overview: str
+    time_estimate_m: int
+    type: str
+    rationale: str
+    tools_and_technologies: list[str]
+    qa_feedback: list[str]
+    learning_objectives: list[str]
 
 @CrewBase
 class LearningObjectivesCrew():
@@ -28,6 +40,7 @@ class LearningObjectivesCrew():
         return Task(
             name="Generate Learning Objectives",
             config=self.tasks_config['generate_learning_objectives'],
+            output_json=Module
         )
 
     @crew

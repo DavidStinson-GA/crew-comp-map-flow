@@ -1,1 +1,27 @@
-{"id":"27","title":"Heuristic Evaluation Lab","overview":"In this hands-on lab, participants will evaluate a sample interface in Miro against established product requirements, user needs, and technical constraints. By systematically applying Nielsen’s heuristics, participants will identify and document usability issues on a shared Miro board. The sample interface uses the Currency Design System to give you practice with collaborative design systems and consistent UI patterns. You will categorize each issue, rank its severity and impact, and propose actionable design improvements aligned with system guidelines. This lab prepares you to conduct rigorous heuristic evaluations and deliver prioritized recommendations in real-world projects.","time_estimate_m":60,"type":"lab","rationale":"Offers hands-on practice applying evaluation methods to real designs.","tools_and_technologies":["Miro"],"qa_feedback":["Overview is only one sentence and needs to be expanded to 4–5 sentences using student-facing language to clearly describe the activity.","Overview should explicitly call out that participants will evaluate the interface against product requirements, user needs, and technical constraints to align with the stated competency.","Consider clarifying if the sample interface uses the Currency Design System to meet the client priority of exposure and practice with collaborative design systems."],"learning_objectives":["Apply Nielsen’s heuristics to the sample interface in Miro and identify at least five usability violations.","Categorize each documented usability issue as a violation of product requirements, user needs, or technical constraints.","Prioritize identified heuristic violations by ranking them according to severity and impact on key user tasks.","Propose two actionable design improvements for each high-severity violation that adhere to the Currency Design System guidelines.","Document your evaluation findings and improvement suggestions on a structured Miro board with the provided template."]}
+{
+  "id": "24",
+  "title": "Usability Testing Methods",
+  "overview": "In this module, you’ll explore both formative and summative usability testing methods to gather actionable user insights. You will examine baseline research techniques to establish a foundation for your tests and learn how to design detailed test scripts. The module covers participant recruitment and ethical informed consent processes for both remote and in-person sessions using tools such as Miro, UserTesting.com, and the Currency Design System. You’ll practice conducting sessions, analyze test results to identify usability issues, and translate feedback into concrete design improvements. By the end of this lecture, you will understand how to integrate user feedback into high-fidelity designs to support efficient cross-disciplinary collaboration and iterative product enhancements.",
+  "time_estimate_m": 60,
+  "type": "lecture",
+  "rationale": "Introduces key testing methodologies to gather actionable user feedback.",
+  "tools_and_technologies": [
+    "Miro",
+    "Currency Design System",
+    "UserTesting.com"
+  ],
+  "qa_feedback": [
+    "Overview is only three sentences and omits client priorities; expand to four or five sentences and include explicit reference to baseline research techniques and connecting feedback to iterative improvements.",
+    "tools_and_technologies list is empty; add relevant tools such as Miro, UserTesting.com, and the Currency Design System to align with client priorities on collaborative and research tools.",
+    "Overview should explicitly reference how insights from usability testing feed into the iterative product improvement competency to ensure alignment.",
+    "Include mention of best practices for baseline research methodologies in the overview to address the client’s priority for foundational techniques."
+  ],
+  "learning_objectives": [
+    "Differentiate formative and summative usability tests based on their research objectives.",
+    "Compose a structured usability test script incorporating baseline research techniques.",
+    "Establish ethical procedures for participant recruitment and informed consent in usability studies.",
+    "Conduct usability test sessions in remote and in-person settings using Miro and UserTesting.com.",
+    "Analyze test session data to identify and prioritize usability issues by severity and frequency.",
+    "Translate prioritized usability issues into actionable recommendations for iterative product improvements."
+  ]
+}
